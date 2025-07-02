@@ -14,6 +14,7 @@
 A **CronJob** is used to **run Jobs on a schedule**, just like a Linux
 cron.
 ##### Use Cases:
+
 - **Scheduled backups**
 - **Daily reports**
 - **Database cleanup**

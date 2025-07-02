@@ -13,7 +13,6 @@
 
 - Continuous Integration Continuous Deployment/Delivery
 - It’s a methodology
-
 ##### Jenkins
 
 - Its an open-source project written in java that runs on windows, mac OS and other UNIX like operating system its free, community supported and might be your first choice tool for CI
