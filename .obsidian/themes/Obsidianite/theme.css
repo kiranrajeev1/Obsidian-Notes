@@ -554,6 +554,19 @@ h6 {
   position: relative;
 }
 
+/* Base h5 style – applies to all modes */
+.markdown-preview-section h5,
+.markdown-preview-view h5,
+.cm-header-5 {
+  font-size: 16px !important;
+  color: var(--color-accent);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-top: 35px;
+  padding-bottom: 6px;
+  position: relative;
+}
+
 /* Live Preview only: fallback border (full width, but ensures visibility) */
 .cm-header-5 {
   border-bottom: 1px dotted var(--color-accent);
@@ -576,6 +589,7 @@ h6 {
 .markdown-preview-view h5 {
   display: inline-block;
 }
+
 
 
 
