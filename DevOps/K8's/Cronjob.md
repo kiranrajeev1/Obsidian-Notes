@@ -85,9 +85,9 @@ times** or intervals.
 ## 🧾 Commands
 
 ```bash
-kubectl create -f cronjob.yaml \# Create CronJob\
-kubectl get cronjobs \# List CronJobs\
-kubectl describe cronjob \<name\> \# View details\
-kubectl delete cronjob \<name\> \# Delete CronJob\
-kubectl get jobs \--watch \# Watch Job executions
+kubectl create -f cronjob.yaml # Create CronJob
+kubectl get cronjobs # List CronJobs
+kubectl describe cronjob <name> # View details
+kubectl delete cronjob <name> # Delete CronJob
+kubectl get jobs --watch # Watch Job executions
 ```
