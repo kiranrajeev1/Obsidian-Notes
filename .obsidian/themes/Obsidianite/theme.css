@@ -541,17 +541,31 @@ h6 {
 
 
 
-/* ✅ Then apply your custom style */
+.markdown-preview-section h5,
 .markdown-preview-view h5,
 .cm-header-5 {
+  position: relative;
+  display: inline-block; /* makes border fit text */
   font-size: 16px !important;
-  color: var(--color-accent); /* theme accent */
-  margin-top: 35px;
-  padding-bottom: 6px;
-  border-bottom: 1px dashed var(--color-accent);
+  color: var(--color-accent);
   font-weight: 600;
   letter-spacing: 0.3px;
+  margin-top: 35px;
+  padding-bottom: 4px;
 }
+
+/* Underline as dotted line beneath text width */
+.markdown-preview-section h5::after,
+.markdown-preview-view h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dotted var(--color-accent);
+}
+
 
 
 
