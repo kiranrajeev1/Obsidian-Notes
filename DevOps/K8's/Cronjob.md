@@ -13,14 +13,12 @@
 
 A **CronJob** is used to **run Jobs on a schedule**, just like a Linux
 cron.
- 
 ##### Use Cases:
 
 - **Scheduled backups**
 - **Daily reports**
 - **Database cleanup**
 - **Regular batch jobs**
- 
 ##### Basic YAML Example:
 
 ```yaml
@@ -40,8 +38,6 @@ spec:
             command: ["echo", "Hello from CronJob"]
           restartPolicy: OnFailure
 ```
-
- 
 ##### Key Fields:
 
 - schedule: **Cron expression** (e.g., \"0 2 \* \* \*\" = every day at 2
@@ -53,8 +49,6 @@ spec:
 - Allow (default): Jobs can run in parallel.
 - Forbid: Skip if the previous is still running.
 - Replace: Kill the previous and start a new one.
- 
-
 ##### CronJob vs Job:
 
 |**Feature**|**Job**|**CronJob**|
@@ -69,15 +63,11 @@ spec:
 
 It allows users to **run commands or scripts automatically at scheduled
 times** or intervals.
-
- 
-
 ##### Key Features:
 
 - Automates repetitive tasks (e.g., backups, updates, emails).
 - Runs in the background via the **crond** daemon.
 - Uses **cron expressions** to define schedules.
-
 ### ⏱️ Cron Expression Format
 
 ```scss
