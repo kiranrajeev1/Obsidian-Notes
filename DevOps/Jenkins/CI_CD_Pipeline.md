@@ -22,7 +22,6 @@
 - Jenkins helps us to achieve this because of CI, now bugs will be reported fast and get rectified fast. So the entire SDLC happens fast
 
 	Jenkins has a **Master-Slave Architecture**
-
 ##### Jenkins Workflow
 
 - We can attach git, Maven and Selenium at Artifactory plugins to Jenkins
@@ -30,7 +29,6 @@
 - Once build is done Jenkins pull that code and send to selenium for testing
 - once testing is done Jenkins pull that code and send to Artifactory as per requirement and so on
 - We can also deploy with Jenkins
-
 ##### Advantages of Jenkins
 
 - It has lot of plug-ins available
@@ -38,7 +36,6 @@
 - We can attach slaves to Jenkins master. It instruct others to do jobs. If slaves are not available Jenkins itself do the jobs
 - Jenkins also behaves as Cron-server replacement that is it can do scheduled tasks
 - It can create labels
-
 ## 🧾 Commands
 
 ```bash
