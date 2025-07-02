@@ -549,6 +549,7 @@ h6 {
   margin-top: 35px;
   padding-bottom: 6px;
   border-bottom: 1px dashed var(--color-accent);
+  border-width: 35%;
   font-weight: 600;
   letter-spacing: 0.3px;
 }
