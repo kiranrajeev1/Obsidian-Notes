@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "DevOps/K8's/Cronjob.md",
+            "file": "DevOps/Jenkins/CI_CD_Pipeline.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2954b1dfd0778323",
+  "active": "06049d35a9ebcba7",
   "lastOpenFiles": [
     "DevOps/K8's/Cronjob.md",
     "DevOps/Jenkins/CI_CD_Pipeline.md"
