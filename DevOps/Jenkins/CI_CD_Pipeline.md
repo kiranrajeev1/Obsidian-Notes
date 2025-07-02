@@ -9,7 +9,7 @@
 
 ## 📝 Notes
 
- ##### CI/CD pipeline:
+ ##### CI/CD pipeline: aa
 
 - Continuous Integration Continuous Deployment/Delivery
 - It’s a methodology

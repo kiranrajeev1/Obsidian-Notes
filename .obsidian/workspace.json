@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "DevOps/Jenkins/CI_CD_Pipeline.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -151,9 +151,19 @@
               "icon": "lucide-list",
               "title": "Outline of CI_CD_Pipeline"
             }
+          },
+          {
+            "id": "b638e75940d2a089",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "6e3a44b6593e721a",
