@@ -541,20 +541,25 @@ h6 {
 
 
 
+/* Base h5 style – applies to all modes */
 .markdown-preview-section h5,
 .markdown-preview-view h5,
 .cm-header-5 {
-  position: relative;
-  display: inline-block; /* makes border fit text */
   font-size: 16px !important;
   color: var(--color-accent);
   font-weight: 600;
   letter-spacing: 0.3px;
   margin-top: 35px;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
+  position: relative;
 }
 
-/* Underline as dotted line beneath text width */
+/* Live Preview only: fallback border (full width, but ensures visibility) */
+.cm-header-5 {
+  border-bottom: 1px dotted var(--color-accent);
+}
+
+/* Reading Mode: inline underline using ::after, matches text width */
 .markdown-preview-section h5::after,
 .markdown-preview-view h5::after {
   content: "";
@@ -565,6 +570,13 @@ h6 {
   height: 1px;
   border-bottom: 1px dotted var(--color-accent);
 }
+
+/* Limit width to text only (Reading Mode) */
+.markdown-preview-section h5,
+.markdown-preview-view h5 {
+  display: inline-block;
+}
+
 
 
 
