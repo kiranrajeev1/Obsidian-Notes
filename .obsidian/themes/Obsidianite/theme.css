@@ -539,14 +539,7 @@ h6 {
   color: var(--text-title-h4);
 }
 
-/* 🧹 Remove inherited underline from h5 */
-.markdown-preview-view h5 {
-  border: none !important;
-  border-image: none !important;
-  border-width: 0 !important;
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
+
 
 /* ✅ Then apply your custom style */
 .markdown-preview-view h5,
