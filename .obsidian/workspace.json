@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "a7d9c054ba681ebe",
+    "type": "split",
+    "children": [
+      {
+        "id": "c51fb2f099d2eeaf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "85bfb7270c475488",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevOps/K8's/Cronjob.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cronjob"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "be5aa0f1a6456068",
+    "type": "split",
+    "children": [
+      {
+        "id": "792a522648a28442",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1aedae8325c3b1c9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5a9a9b63c92cb730",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c0299e50b9f6b6da",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "82a39dfac6187a8f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0966fe684d621c9e",
+        "type": "tabs",
+        "dimension": 65.38461538461539,
+        "children": [
+          {
+            "id": "f3c6fa33bcf3cb71",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "DevOps/K8's/Cronjob.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Cronjob"
+            }
+          },
+          {
+            "id": "34cd3c0b23e2e4bb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "DevOps/K8's/Cronjob.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Cronjob"
+            }
+          },
+          {
+            "id": "cab00204429cb00d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1e8be011dc4b72d4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DevOps/K8's/Cronjob.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Cronjob"
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "6e3a44b6593e721a",
+        "type": "tabs",
+        "dimension": 34.61538461538461,
+        "children": [
+          {
+            "id": "88545ceeafe86c44",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "1aedae8325c3b1c9",
+  "lastOpenFiles": [
+    "DevOps/K8's/Cronjob.md",
+    "2025-07-02.md",
+    "DevOps/Jenkins/CI_CD_Pipeline.md",
+    "Templates/Jenkins Note Template.md.md",
+    "Templates/Kubernetes Note Template.md.md",
+    "DevOps/Jenkins",
+    "DevOps/K8's/Daemonsets.md",
+    "DevOps/K8's/Deployment.md",
+    "DevOps/K8's/Quick_Notes.md",
+    "DevOps/K8's/RS_SS_Deployment.md",
+    "DevOps/K8's/Pods.md",
+    "DevOps/K8's/Namespace.md",
+    "DevOps/K8's/Jobs.md",
+    "DevOps/K8's/CronJob.md",
+    "DevOps/K8's/RS, SS & Deployment.md",
+    "DevOps/K8's/Services.md",
+    "j.md",
+    "Untitled.md",
+    "DevOps/K8's",
+    "new.md",
+    "jsdf.md",
+    "Services.md",
+    "DevOps",
+    "Notes/K8's/Untitled.md",
+    "Notes/K8's/RS, SS & Deployment.md",
+    "Notes/K8's/Pods.md",
+    "Notes/K8's/Namespace.md",
+    "Notes/K8's/Kubernetes Quick Notes.md",
+    "Notes/K8's/Jobs.md",
+    "Notes/K8's",
+    "Notes",
+    "DevOps/New folder",
+    "Templates/QuickNotes.md.txt",
+    "Templates/New Text Document.txt",
+    "Templates",
+    "Template"
+  ]
+}
