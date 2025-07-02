@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/K8's/Cronjob.md",
+                "file": "DevOps/Jenkins/CI_CD_Pipeline.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cronjob"
+              "title": "CI_CD_Pipeline"
             }
           }
         ]
@@ -167,6 +167,7 @@
   },
   "active": "2954b1dfd0778323",
   "lastOpenFiles": [
+    "DevOps/K8's/Cronjob.md",
     "DevOps/Jenkins/CI_CD_Pipeline.md"
   ]
 }
