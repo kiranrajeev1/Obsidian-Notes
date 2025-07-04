@@ -17,7 +17,7 @@ or
 
 The definition of Kubernetes services]refers to a" Service which is a method for exposing a network application that is running as one or more Pods in your cluster." Service is a static IP address or a permanent IP address that can be attached to the Pod. We need Service because the life cycles of Service and the Pod are not connected, so even if the Pod dies, the Service and its IP address will stay so we don't have to change that endpoint every time the Pod dies.
 
-##### Why Kubernetes Service is Needed?
+###### Why Kubernetes Service is Needed?
 
 - Pods have dynamic IPs → hard to track
 - Services offer stable access to these Pods

@@ -593,28 +593,39 @@ h6 {
 
 
 
-
-
+/* Clean and minimal h6 style */
 .markdown-preview-section h6,
+.markdown-preview-view h6,
 .cm-header-6 {
-  font-size: 18px;
-  color: var(--text-title-h5);
+  display: inline-block;
+  position: relative;
+  font-size: 14px !important;
+  color: var(--color-accent); /* Theme accent color */
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-top: 25px;
+  padding-bottom: 4px;
 }
 
-/** headings */
-.markdown-preview-view h2,
-.markdown-preview-view h3,
-.markdown-preview-view h4,
-.markdown-preview-view h6 {
-  /* padding-top: 1.25rem; */
-  margin: 45px 0 20px 0;
-  position: relative;
-  padding-bottom: 10px;
-  border-bottom: 1px solid;
-  border-width: 35%;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to right, var(--text-sub-accent), #100e17, #100e17, #100e17);
+/* Underline using ::after for text-width dotted line */
+.markdown-preview-section h6::after,
+.markdown-preview-view h6::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px dotted var(--color-accent);
+  height: 1px;
 }
+
+/* Fallback border for edit mode */
+.cm-header-6 {
+  border-bottom: 1px dotted var(--color-accent);
+}
+
+
+
 
 .view-header-icon {
   color: var(--text-accent);
