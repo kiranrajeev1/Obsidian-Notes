@@ -23,7 +23,7 @@
   directly).
 - Matches Pods using **labels**.
 
-**🧾 Example:**
+**Example:**
 
 ```YAML
 apiVersion: apps/v1
