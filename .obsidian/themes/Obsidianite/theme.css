@@ -576,7 +576,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #b185db;
   font-weight: 500;
   letter-spacing: 0.5px;
-  margin-top: 8px !important;
+  margin-top: 0;
+  padding-top: 0;
   margin-bottom: 4px;
   display: inline-block;
   background-color: transparent;
