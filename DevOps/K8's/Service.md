@@ -111,6 +111,23 @@ Kubernetes uses **iptables** or **IPVS** to do the routing/load-balancing.
 ##### Flow diagram
 
 `Client --> <NodeIP>:<NodePort> --> NodePort Service --> ClusterIP --> Pod
+
+##### Example
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-nodeport-service
+spec:
+  type: NodePort
+  selector:
+    app: myapp
+  ports:
+    - port: 80          # Service port
+      targetPort: 8080  # Pod port
+      nodePort: 30036   # Exposed port on each node
+```
 ## 🧾 Commands
 
 ```bash
