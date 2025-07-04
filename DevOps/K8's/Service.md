@@ -206,13 +206,16 @@ spec:
     targetPort: 9376
 ```
 
-### 🔹 DNS Behavior
+##### DNS Behavior
 
 - Normal service: `my-service.default.svc.cluster.local` → **Single ClusterIP**
-    
 - Headless service: `my-service.default.svc.cluster.local` → **Multiple A records** (Pod IPs)
-    
 - With StatefulSet: You get **DNS entries per pod**:
+
+```pgsql
+pod-0.my-headless-service.default.svc.cluster.local
+pod-1.my-headless-service.default.svc.cluster.local
+```
 
 **Use Cases**
 Headless services are commonly used in:
