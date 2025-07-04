@@ -45,6 +45,7 @@ spec:
 
 ```
 
+---
 ##### StatefulSet
 ###### Purpose:
 - Manages **stateful applications** (like databases).
@@ -83,8 +84,7 @@ spec:
 
 ```
 
- 
-
+ ---
 #####  Deployment
 
 ###### Purpose:

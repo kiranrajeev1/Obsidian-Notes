@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/K8's/Service.md",
+                "file": "DevOps/K8's/RS_SS_Deployment.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Service"
+              "title": "RS_SS_Deployment"
             }
           }
         ],
@@ -158,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/K8's/Service.md",
+                "file": "DevOps/K8's/RS_SS_Deployment.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Service"
+              "title": "Outline of RS_SS_Deployment"
             }
           }
         ],
@@ -222,6 +222,7 @@
   },
   "active": "e764b0ac9ca92088",
   "lastOpenFiles": [
+    "DevOps/K8's/Service.md",
     "DevOps/K8's/RS_SS_Deployment.md",
     "DevOps/K8's/Pods.md",
     "DevOps/K8's/Namespace.md",
@@ -233,7 +234,6 @@
     "Templates/Kubernetes Note Template.md.md",
     "Templates/Jenkins Note Template.md.md",
     "DevOps/Jenkins/CI_CD_Pipeline.md",
-    "DevOps/K8's/Service.md",
     "2025-07-02.md",
     "DevOps/Jenkins",
     "DevOps/K8's/CronJob.md",

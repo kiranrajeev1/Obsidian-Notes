@@ -192,7 +192,6 @@ spec:
 ```
 
 ###### DNS Behavior
-
 - Normal service: `my-service.default.svc.cluster.local` → **Single ClusterIP**
 - Headless service: `my-service.default.svc.cluster.local` → **Multiple A records** (Pod IPs)
 - With StatefulSet: You get **DNS entries per pod**:
@@ -204,7 +203,6 @@ pod-1.my-headless-service.default.svc.cluster.local
 
 **Use Cases**
 Headless services are commonly used in:
-
 - StatefulSets: e.g. databases like Cassandra, Kafka, MongoDB, etc., where each Pod needs to be addressed individually.
 - Service discovery: When clients need to discover each Pod instance directly (e.g. for sharding or replication).
 - DNS-based access: You can query the headless service's DNS to get the list of all Pod IPs.
