@@ -48,13 +48,10 @@ This Service forwards traffic from `my-service:80` to all Pods with `app: my-app
 
 ---
 ##### ClusterIP
-
 In Kubernetes, a **ClusterIP** service is the default type of service that provides a stable internal IP address for accessing a set of Pods **within the cluster**. It acts as a virtual IP that load-balances requests to one or more backend Pods.
 
 ###### What is a ClusterIP Service?
-
 A **ClusterIP** service:
-
 - Creates a **virtual IP address** accessible only from **within the cluster**.
 - Distributes traffic to the matching Pods (usually selected using labels).
 - Does **not expose** the service externally (e.g., to the internet or outside the cluster).
@@ -78,9 +75,7 @@ spec:
 ```
 
 ###### How It Works
-
 Let’s say you have multiple backend Pods running your service:
-
 - Each Pod has a unique IP address.
 - Kubernetes assigns a **ClusterIP**, e.g., `10.96.0.1`, to the service.
 - Any request to `10.96.0.1:80` (or `my-internal-service:80`) will be forwarded to one of the backend Pods on port `8080`.
@@ -88,26 +83,22 @@ Let’s say you have multiple backend Pods running your service:
 Kubernetes uses **iptables** or **IPVS** to do the routing/load-balancing.
 
 ###### When to Use ClusterIP
-
 - You want **internal services** that don't need external access.
 - You’re building **microservices** that talk to each other inside the cluster.
 - You want to **decouple** how clients find and connect to Pods.
 
 ---
 ##### NodePort
-
 - A **NodePort** is a type of Kubernetes **Service** that **exposes a pod on a static port** on each Node’s IP.
 - This allows you to **access your application externally** using `<NodeIP>:<NodePort>`.
 
 ######  How It Works
-
 1. You define a `NodePort` service in your YAML or via `kubectl`.
 2. Kubernetes allocates a **port (30000–32767)** on each node.
 3. It **forwards traffic** from this port to the **ClusterIP** of the service.
 4. The service then forwards it to the **matching pods**.
 
 ###### Flow diagram
-
 `Client --> <NodeIP>:<NodePort> --> NodePort Service --> ClusterIP --> Pod
 
 ###### Example
@@ -128,12 +119,10 @@ spec:
 ```
 
 ---
-
 ##### Loadbalancer
-
 A **LoadBalancer** is one of the Kubernetes **Service types** that exposes a Service externally using a cloud provider's **external load balancer** (e.g., AWS ELB, GCP Load Balancer, Azure Load Balancer).
-######  Key Features
 
+######  Key Features
 - **Exposes service externally** to the internet.
 - Automatically **provisions a cloud load balancer** and assigns a **public IP**.
 - Forwards external traffic to the **ClusterIP** of the service.
@@ -155,7 +144,6 @@ spec:
 ```
 
 ###### How It Works
-
 1. **Service is created** with type LoadBalancer.
 2. Kubernetes **provisions an external load balancer** via the cloud provider.
 3. Traffic to the **external IP** is routed through the load balancer.
@@ -180,7 +168,6 @@ spec:
 ---
 
 ##### headless service
-
 A Kubernetes headless service is a special kind of service that does not have a ClusterIP, and is typically used when you want to directly access individual Pods behind the service, instead of load balancing traffic across them.
 
 **What Is a Headless Service?**
