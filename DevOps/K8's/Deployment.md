@@ -44,10 +44,7 @@ spec:
 
 ```
 
-
- 
-
-**🎯 Use Cases**
+###### Use Cases
 
 - Auto-replace crashed Pods
 - Smooth app updates
