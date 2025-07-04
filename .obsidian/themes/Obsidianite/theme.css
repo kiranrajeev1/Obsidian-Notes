@@ -543,7 +543,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-accent);
   font-weight: 600;
   letter-spacing: 0.3px;
-  margin-top: 35px;
+  margin-top: 0;
   padding-bottom: 6px;
   position: relative;
   display: inline-block;
