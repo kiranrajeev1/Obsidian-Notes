@@ -9,14 +9,14 @@
 
 ## 📝 Notes
 
-1. ReplicaSet (RS)
+##### ReplicaSet (RS)
 
-**✅ Purpose:**
+**Purpose:**
 
 - Ensures a **specified number of pod replicas** are running at all
   times.
 
-**🔹 Key Points:**
+**Key Points:**
 
 - Automatically replaces failed/missing Pods.
 - Used **internally by Deployments** (you usually don't create RS
