@@ -14,18 +14,14 @@
 - A **Deployment** manages **replica sets** and **Pods**.
 - Ensures the **desired number of Pods** are running and updated.
 
-**🔧 Key Features**
+###### Key Features
 
 - **Self-healing**: restarts failed Pods.
 - **Scaling**: increase or decrease replicas.
 - **Rolling updates**: updates Pods without downtime.
 - **Rollback**: revert to a previous version if needed.
 
- 
-
-**🧱 Structure**
-
-Basic YAML:
+###### Basic YAML:
 
 ```YAML
 apiVersion: apps/v1
