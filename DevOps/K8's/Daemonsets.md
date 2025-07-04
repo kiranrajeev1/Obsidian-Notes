@@ -50,7 +50,6 @@ spec:
   run.
 - No need to specify replicas -- it\'s managed per node.
 
- 
 ###### my code
 ```YAML
 apiVersion: apps/v1
