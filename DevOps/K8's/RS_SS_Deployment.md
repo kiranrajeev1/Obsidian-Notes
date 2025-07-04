@@ -46,27 +46,22 @@ spec:
 
 ```
 
- 
+##### StatefulSet
 
-StatefulSet
-
-**✅ Purpose:**
-
+###### Purpose:
 - Manages **stateful applications** (like databases).
 
-**🔹 Key Features:**
-
+###### Key Features:
 - Gives each Pod a **unique, stable identity** (e.g., pod-0, pod-1).
 - **Stable storage**: PersistentVolume per Pod.
 - **Ordered deployment and scaling**.
 - Used when **Pod identity and order** matter.
 
-**🔁 Use Cases:**
-
+###### Use Cases:
 - Databases (e.g., MySQL, Cassandra)
 - Distributed systems (e.g., Kafka, Zookeeper)
 
-**🧾 Example:**
+###### Example:
 
 ```YAML
 apiVersion: apps/v1
