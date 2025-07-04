@@ -9,9 +9,7 @@
 
 ## 📝 Notes
 
-**🚀 Kubernetes Deployment -- Quick Notes**
-
-**✅ What is a Deployment?**
+** What is a Deployment?**
 
 - A **Deployment** manages **replica sets** and **Pods**.
 - Ensures the **desired number of Pods** are running and updated.
