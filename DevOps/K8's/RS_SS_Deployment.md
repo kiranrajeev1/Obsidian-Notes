@@ -48,7 +48,7 @@ spec:
 
  
 
-**🧱 2. StatefulSet**
+StatefulSet
 
 **✅ Purpose:**
 

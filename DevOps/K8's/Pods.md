@@ -60,25 +60,20 @@ spec:
     - containerPort: 80
 ```
 
-
 ###### Health Checks
 - **Liveness probe** -- Checks if the container is still running.
 - **Readiness probe** -- Checks if the container is ready to serve
   traffic.
 - **Startup probe** -- Checks if the container has started properly.
 
-
 ###### Volume Mounts
 - Pods support different **volume types** like emptyDir, hostPath,
   configMap, secret, etc.
 - Volumes are shared between containers in the same Pod.
 
-
-imitations
-
+###### Limitations
 - Not designed for **long-term persistence**.
 - Pods may be **rescheduled** to a different node if the node fails.
-
 ## 🧾 Commands
 
 ```bash
