@@ -23,13 +23,13 @@ The definition of Kubernetes services]refers to a" Service which is a method fo
 - Services offer stable access to these Pods
 - Allow **load balancing**, **discovery**, and **communication**
 
-##### How It Works
+###### How It Works
 
 - A **Service** selects Pods using **labels** (like `app: frontend`)
 - It gets a stable **ClusterIP** (virtual IP)
 - Traffic sent to the Service is load-balanced across matching Pods
 
-##### Example
+###### Example
 
 ```yaml
 apiVersion: v1
@@ -53,7 +53,7 @@ This Service forwards traffic from `my-service:80` to all Pods with `app: my-app
 
 In Kubernetes, a **ClusterIP** service is the default type of service that provides a stable internal IP address for accessing a set of Pods **within the cluster**. It acts as a virtual IP that load-balances requests to one or more backend Pods.
 
-##### What is a ClusterIP Service?
+###### What is a ClusterIP Service?
 
 A **ClusterIP** service:
 
@@ -62,7 +62,7 @@ A **ClusterIP** service:
 - Does **not expose** the service externally (e.g., to the internet or outside the cluster).
 - Is ideal for **internal communication** between services, like communication between a frontend and backend app inside the cluster.
 
-##### Example
+###### Example
 
 ```yaml
 apiVersion: v1
@@ -79,7 +79,7 @@ spec:
       targetPort: 8080  # The port on the Pod that receives traffic
 ```
 
-##### How It Works
+###### How It Works
 
 Let’s say you have multiple backend Pods running your service:
 
@@ -89,7 +89,7 @@ Let’s say you have multiple backend Pods running your service:
 
 Kubernetes uses **iptables** or **IPVS** to do the routing/load-balancing.
 
-##### When to Use ClusterIP
+###### When to Use ClusterIP
 
 - You want **internal services** that don't need external access.
 - You’re building **microservices** that talk to each other inside the cluster.
@@ -101,18 +101,18 @@ Kubernetes uses **iptables** or **IPVS** to do the routing/load-balancing.
 - A **NodePort** is a type of Kubernetes **Service** that **exposes a pod on a static port** on each Node’s IP.
 - This allows you to **access your application externally** using `<NodeIP>:<NodePort>`.
 
-#####  How It Works
+######  How It Works
 
 1. You define a `NodePort` service in your YAML or via `kubectl`.
 2. Kubernetes allocates a **port (30000–32767)** on each node.
 3. It **forwards traffic** from this port to the **ClusterIP** of the service.
 4. The service then forwards it to the **matching pods**.
 
-##### Flow diagram
+###### Flow diagram
 
 `Client --> <NodeIP>:<NodePort> --> NodePort Service --> ClusterIP --> Pod
 
-##### Example
+###### Example
 
 ```yaml
 apiVersion: v1
@@ -134,13 +134,13 @@ spec:
 ##### Loadbalancer
 
 A **LoadBalancer** is one of the Kubernetes **Service types** that exposes a Service externally using a cloud provider's **external load balancer** (e.g., AWS ELB, GCP Load Balancer, Azure Load Balancer).
-#####  Key Features
+######  Key Features
 
 - **Exposes service externally** to the internet.
 - Automatically **provisions a cloud load balancer** and assigns a **public IP**.
 - Forwards external traffic to the **ClusterIP** of the service.
 - Works only on **supported cloud platforms**.
-##### Example
+###### Example
 
 ```yaml
 apiVersion: v1
@@ -156,7 +156,7 @@ spec:
       targetPort: 8080
 ```
 
-##### How It Works
+###### How It Works
 
 1. **Service is created** with type LoadBalancer.
 2. Kubernetes **provisions an external load balancer** via the cloud provider.
@@ -190,7 +190,7 @@ In Kubernetes, a regular Service provides a stable IP and DNS name, and performs
 
 A headless service is created by setting clusterIP: None in the Service manifest. This disables the load balancer and DNS resolves to the individual Pod IPs.
 
-##### Example
+###### Example
 
 ```yaml
 apiVersion: v1
@@ -206,7 +206,7 @@ spec:
     targetPort: 9376
 ```
 
-##### DNS Behavior
+###### DNS Behavior
 
 - Normal service: `my-service.default.svc.cluster.local` → **Single ClusterIP**
 - Headless service: `my-service.default.svc.cluster.local` → **Multiple A records** (Pod IPs)
