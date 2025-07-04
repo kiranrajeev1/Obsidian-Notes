@@ -162,6 +162,22 @@ spec:
 2. Kubernetes **provisions an external load balancer** via the cloud provider.
 3. Traffic to the **external IP** is routed through the load balancer.
 4. Load balancer forwards traffic to **NodePort**, which is mapped to the pod's `targetPort`.
+
+```scss
+[Client/User]
+     ↓
+[Cloud Load Balancer (EXTERNAL-IP)]
+     ↓
+[NodePort on Kubernetes Node]
+     ↓
+[kube-proxy on that Node]
+     ↓
+[ClusterIP Service (Virtual IP)]
+     ↓
+[Pod (via internal cluster network)]
+     ↓
+[Response flows back the same way]
+```
 ## 🧾 Commands
 
 ```bash
