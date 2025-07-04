@@ -15,7 +15,6 @@
 - Ensures the **desired number of Pods** are running and updated.
 
 ###### Key Features
-
 - **Self-healing**: restarts failed Pods.
 - **Scaling**: increase or decrease replicas.
 - **Rolling updates**: updates Pods without downtime.
@@ -45,14 +44,13 @@ spec:
 ```
 
 ###### Use Cases
-
 - Auto-replace crashed Pods
 - Smooth app updates
 - Easy scaling
 
 ## 🧾 Commands
 
-**🔥 Common Commands**
+**Common Commands**
 
 ```bash
 kubectl create -f deployment.yaml # Create deployment
