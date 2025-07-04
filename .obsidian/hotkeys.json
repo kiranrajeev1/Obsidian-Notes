@@ -46,5 +46,13 @@
       ],
       "key": "5"
     }
+  ],
+  "editor:set-heading-6": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "6"
+    }
   ]
 }
