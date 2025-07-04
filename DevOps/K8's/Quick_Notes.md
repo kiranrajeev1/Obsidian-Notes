@@ -14,14 +14,17 @@
 - **Pod** -- An abstraction over a container. The **smallest deployable
   unit** in Kubernetes, which can hold one or more containers sharing
   storage, network, and a specification.
+
 - **Node** -- A **server** (virtual or physical) in the Kubernetes
   cluster that runs workloads.
   - Two types of nodes:
     - **Master Node (Control Plane Node)** -- Manages the cluster and
       makes global decisions.
     - **Worker Node** -- Runs application Pods.
+
 - **Cluster** -- A group of nodes (master and worker) that run
   containerized applications managed by Kubernetes.
+
 - **Kubelet** -- A Kubernetes **agent** that runs on each node and
   ensures containers in Pods are running as specified; it communicates
   with the control plane and manages container lifecycle.
