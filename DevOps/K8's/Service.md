@@ -62,7 +62,7 @@ A **ClusterIP** service:
 - Does **not expose** the service externally (e.g., to the internet or outside the cluster).
 - Is ideal for **internal communication** between services, like communication between a frontend and backend app inside the cluster.
 
-
+##### example
 ## 🧾 Commands
 
 ```bash
