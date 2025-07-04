@@ -570,20 +570,36 @@ h1, h2, h3, h4, h5, h6 {
 | H6 Styling – Soft Purple, no underline
 ---------------------*/
 .markdown-preview-section h6,
-.markdown-preview-view h6,
+/* Edit Mode (Live Preview) */
 .cm-header-6 {
-  font-size: 14px !important;               /* slightly larger */
-  color: #b185db;                           /* soft purple */
+  font-size: 14px !important;
+  color: #b185db;
   font-weight: 500;
   letter-spacing: 0.4px;
   margin-top: 8px;
   margin-bottom: 6px;
   line-height: 1.6;
-  display: block;                           /* ✅ full-width, heading behavior */
+  display: inline; /* ✅ This keeps # and text on same line */
   background-color: transparent;
   border: none !important;
   box-shadow: none !important;
 }
+
+/* Read Mode (Preview) */
+.markdown-preview-view h6 {
+  font-size: 14px !important;
+  color: #b185db;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  line-height: 1.6;
+  display: block; /* ✅ works fine here */
+  background-color: transparent;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 
 
 

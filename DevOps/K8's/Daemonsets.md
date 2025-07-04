@@ -21,7 +21,7 @@ specific nodes) in the cluster
 - Networking plugins (e.g., CNI plugins)
 - Security tools (e.g., antivirus, audit)
 
-**🧾 Basic YAML Example:**
+###### Basic YAML Example:
 
 ```YAML
 apiVersion: apps/v1
