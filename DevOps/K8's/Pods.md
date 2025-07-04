@@ -16,26 +16,20 @@
   cluster.
 - A Pod **encapsulates one or more containers**, storage, a unique
   network IP, and options for how the container(s) should run.
--
-###### Key Characteristics
 
+###### Key Characteristics
 - **Single IP address per Pod** (shared by all containers in the Pod).
 - **Tightly coupled containers** in a Pod share:
   - Network namespace
   - Volumes (shared storage)
 - **Designed to be ephemeral** -- not self-healing.
 
- 
-
-**🔹 Use Cases**
-
+######  Use Cases
 - **Single-container Pod**: most common scenario.
 - **Multi-container Pod**: containers that are tightly coupled (e.g.,
   sidecar pattern -- log shipper, proxy, etc.).
 
-
-**🔹 Pod Lifecycle Phases**
-
+######  Pod Lifecycle Phases
 1.  **Pending** -- Pod is accepted but not yet scheduled.
 2.  **Running** -- Pod is bound to a node and containers are running.
 3.  **Succeeded** -- All containers have terminated successfully.
@@ -43,8 +37,7 @@
 5.  **Unknown** -- State can't be determined.
 
 
-**🔹 Pod Management**
-
+###### Pod Management
 Pods are usually **not created directly**; they are managed by
 higher-level objects:
 - **Deployments**
