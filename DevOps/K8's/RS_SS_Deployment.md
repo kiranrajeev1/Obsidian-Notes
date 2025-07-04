@@ -3,7 +3,7 @@
 🗓️ **Date:** 2025-07-02  
 🕒 **Time:** 00:00  
 
-🏷️ **Tags:** #kubernetes #devops #RS_SS_Deployment  
+🏷️ **Tags:** #kubernetes #devops #RS_SS_Deployment  #ReplicaSet #StatefulSet #Deployment
 
 ---
 
