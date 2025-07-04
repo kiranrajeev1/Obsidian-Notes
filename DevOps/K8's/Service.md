@@ -133,23 +133,28 @@ spec:
 
 ##### Loadbalancer
 
-## 🌐 Kubernetes LoadBalancer Service – Notes
-
-### 🔹 What is a LoadBalancer Service?
-
 A **LoadBalancer** is one of the Kubernetes **Service types** that exposes a Service externally using a cloud provider's **external load balancer** (e.g., AWS ELB, GCP Load Balancer, Azure Load Balancer).
-
----
-
-### 📌 Key Features
+#####  Key Features
 
 - **Exposes service externally** to the internet.
-    
 - Automatically **provisions a cloud load balancer** and assigns a **public IP**.
-    
 - Forwards external traffic to the **ClusterIP** of the service.
-    
 - Works only on **supported cloud platforms**.
+##### Example
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: my-app
+  ports:
+    - port: 80
+      targetPort: 8080
+```
 ## 🧾 Commands
 
 ```bash
