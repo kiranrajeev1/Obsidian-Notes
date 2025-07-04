@@ -49,7 +49,22 @@ spec:
 This Service forwards traffic from `my-service:80` to all Pods with `app: my-app` on port `8080`.
 
 ---
-ClusterIP
+##### ClusterIP
+
+In Kubernetes, a **ClusterIP** service is the default type of service that provides a stable internal IP address for accessing a set of Pods **within the cluster**. It acts as a virtual IP that load-balances requests to one or more backend Pods.
+
+
+### 🔹 What is a ClusterIP Service?
+
+A **ClusterIP** service:
+
+- Creates a **virtual IP address** accessible only from **within the cluster**.
+    
+- Distributes traffic to the matching Pods (usually selected using labels).
+    
+- Does **not expose** the service externally (e.g., to the internet or outside the cluster).
+    
+- Is ideal for **internal communication** between services, like communication between a frontend and backend app inside the cluster.
 ## 🧾 Commands
 
 ```bash
