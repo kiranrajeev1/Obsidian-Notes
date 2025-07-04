@@ -178,7 +178,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "6e3a44b6593e721a",
@@ -213,7 +213,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e764b0ac9ca92088",
+  "active": "1e8be011dc4b72d4",
   "lastOpenFiles": [
     "DevOps/K8's/Pods.md",
     "DevOps/K8's/Namespace.md",

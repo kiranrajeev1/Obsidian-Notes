@@ -87,20 +87,18 @@ spec:
 
  
 
-**🚀 3. Deployment**
+#####  Deployment
 
-**✅ Purpose:**
-
+###### Purpose:
 - Manages **stateless applications**.
 - Handles **rolling updates**, **rollbacks**, and **scaling**.
 
-**🔹 Key Features:**
-
+###### Key Features:
 - Manages ReplicaSets.
 - Best for apps **without persistent state**.
 - Supports **rolling updates** to avoid downtime.
 
-**🧾 Example:**
+###### Example:
 
 ```YAML
 apiVersion: apps/v1
