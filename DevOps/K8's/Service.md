@@ -221,7 +221,7 @@ pod-1.my-headless-service.default.svc.cluster.local
 Headless services are commonly used in:
 
 - StatefulSets: e.g. databases like Cassandra, Kafka, MongoDB, etc., where each Pod needs to be addressed individually.
-Service discovery: When clients need to discover each Pod instance directly (e.g. for sharding or replication).
+- Service discovery: When clients need to discover each Pod instance directly (e.g. for sharding or replication).
 - DNS-based access: You can query the headless service's DNS to get the list of all Pod IPs.
 ## 🧾 Commands
 
