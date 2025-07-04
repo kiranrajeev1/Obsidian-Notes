@@ -57,7 +57,7 @@ spec:
 |Scheduled runs|❌ No|✅ Yes|
 |Use case|One-time tasks|Recurring tasks|
 
-###### What is Linux Cron?
+##### What is Linux Cron?
 
 **Cron** is a **time-based job scheduler** in Unix/Linux systems.
 

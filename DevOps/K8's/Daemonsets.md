@@ -9,16 +9,13 @@
 
 ## 📝 Notes
 
-**⚙️ Kubernetes DaemonSet -- Quick Notes**
-
-**✅ What is a DaemonSet?**
+##### DaemonSet
 
 A **DaemonSet** ensures that **a copy of a Pod runs on every node** (or
 specific nodes) in the cluster.
 
- 
 
-**🔹 Use Cases:**
+###### Use Cases:
 
 - Running **node-level services**, such as:
 - Log collectors (e.g., Fluentd, Filebeat)
