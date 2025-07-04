@@ -62,7 +62,22 @@ A **ClusterIP** service:
 - Does **not expose** the service externally (e.g., to the internet or outside the cluster).
 - Is ideal for **internal communication** between services, like communication between a frontend and backend app inside the cluster.
 
-##### example
+##### Example
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-internal-service
+spec:
+  type: ClusterIP
+  selector:
+    app: my-backend
+  ports:
+    - protocol: TCP
+      port: 80       # The port the service will expose
+      targetPort: 8080  # The port on the Pod that receives traffic
+```
 ## 🧾 Commands
 
 ```bash
