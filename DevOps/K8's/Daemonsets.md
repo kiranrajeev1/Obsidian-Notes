@@ -49,7 +49,9 @@ spec:
 - Use **node selectors or taints/tolerations** to control where Pods
   run.
 - No need to specify replicas -- it's managed per node.
-###### my code
+
+###### My code
+
 ```YAML
 apiVersion: apps/v1
 kind: DaemonSet
