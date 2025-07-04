@@ -102,7 +102,7 @@
       {
         "id": "0966fe684d621c9e",
         "type": "tabs",
-        "dimension": 65.38461538461539,
+        "dimension": 45.96153846153846,
         "children": [
           {
             "id": "f3c6fa33bcf3cb71",
@@ -166,7 +166,15 @@
               "icon": "lucide-list",
               "title": "Outline of RS_SS_Deployment"
             }
-          },
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "f5a30c2fbc068218",
+        "type": "tabs",
+        "dimension": 19.423076923076923,
+        "children": [
           {
             "id": "b638e75940d2a089",
             "type": "leaf",
@@ -177,8 +185,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "6e3a44b6593e721a",
@@ -213,7 +220,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1e8be011dc4b72d4",
+  "active": "e764b0ac9ca92088",
   "lastOpenFiles": [
     "DevOps/K8's/Pods.md",
     "DevOps/K8's/Namespace.md",

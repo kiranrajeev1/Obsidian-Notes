@@ -10,7 +10,6 @@
 ## 📝 Notes
 
 ##### ReplicaSet (RS)
-
 **Purpose:**
 
 - Ensures a **specified number of pod replicas** are running at all
@@ -47,7 +46,6 @@ spec:
 ```
 
 ##### StatefulSet
-
 ###### Purpose:
 - Manages **stateful applications** (like databases).
 
