@@ -9,10 +9,7 @@
 
 ## 📝 Notes
 
-**🧪 Kubernetes Job -- Quick Notes**
-
-**✅ What is a Job?**
-
+##### Job
 A **Job** is used to **run a task to completion** in Kubernetes.
 It ensures that **a specified number of Pods successfully complete**
 their work.
