@@ -593,19 +593,22 @@ h6 {
 
 
 
-/* Clean and minimal h6 style */
 .markdown-preview-section h6,
 .markdown-preview-view h6,
 .cm-header-6 {
+  font-size: 13px !important;
+  color: var(--text-sub-accent); /* subtle color */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding: 2px 4px;
   display: inline-block;
-  position: relative;
-  font-size: 14px !important;
-  color: var(--color-accent); /* Theme accent color */
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  margin-top: 25px;
-  padding-bottom: 4px;
+  background-color: transparent; /* optional: soft bg like rgba(255,255,255,0.03) */
+  border: none !important;
+  box-shadow: none !important;
 }
+
 
 /* Underline using ::after for text-width dotted line */
 .markdown-preview-section h6::after,
