@@ -9,7 +9,7 @@
 
 ## 📝 Notes
 
-Service
+##### Service
 
 In **Kubernetes**, a **Service** is an abstraction that defines a logical set of **Pods** and a policy by which to access them. Since Pods in Kubernetes are **ephemeral** (they can be created or destroyed anytime), their IPs can change. A **Service** provides a stable IP and DNS name for a set of Pods and helps them communicate internally or externally.
 
@@ -48,6 +48,8 @@ spec:
 
 This Service forwards traffic from `my-service:80` to all Pods with `app: my-app` on port `8080`.
 
+---
+ClusterIP
 ## 🧾 Commands
 
 ```bash
