@@ -585,10 +585,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none !important;
 }
 
-.markdown-preview-section::after,
-.markdown-preview-view::after{
-  top: 0;
-}
+
 
 /* Remove underline from H6 in edit mode */
 .cm-header-6 {
