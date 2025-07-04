@@ -155,6 +155,13 @@ spec:
     - port: 80
       targetPort: 8080
 ```
+
+##### How It Works
+
+1. **Service is created** with type LoadBalancer.
+2. Kubernetes **provisions an external load balancer** via the cloud provider.
+3. Traffic to the **external IP** is routed through the load balancer.
+4. Load balancer forwards traffic to **NodePort**, which is mapped to the pod's `targetPort`.
 ## 🧾 Commands
 
 ```bash
