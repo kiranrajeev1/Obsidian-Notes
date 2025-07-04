@@ -9,7 +9,7 @@
 
 ## 📝 Notes
 
- ##### CI/CD pipeline: aa
+ ##### CI/CD pipeline:
 
 - Continuous Integration Continuous Deployment/Delivery
 - It’s a methodology
@@ -22,14 +22,14 @@
 - Jenkins helps us to achieve this because of CI, now bugs will be reported fast and get rectified fast. So the entire SDLC happens fast
 
 	Jenkins has a **Master-Slave Architecture**
-##### Jenkins Workflow
+###### Jenkins Workflow
 
 - We can attach git, Maven and Selenium at Artifactory plugins to Jenkins
 - Once developers put code to GitHub, Jenkins pull that code and send to maven for build
 - Once build is done Jenkins pull that code and send to selenium for testing
 - once testing is done Jenkins pull that code and send to Artifactory as per requirement and so on
 - We can also deploy with Jenkins
-##### Advantages of Jenkins
+###### Advantages of Jenkins
 
 - It has lot of plug-ins available
 - You can write your own plugin Jenkins is not just a tool it is a framework i.e. you can do whatever you want all you need is plugins
