@@ -9,19 +9,15 @@
 
 ## 📝 Notes
 
-**🐳 Kubernetes Pods**
-
-**🔹 What is a Pod?**
-
+###### Pods
 - **Pod** is the **smallest and simplest deployable unit** in
   Kubernetes.
 - It represents a **single instance of a running process** in your
   cluster.
 - A Pod **encapsulates one or more containers**, storage, a unique
   network IP, and options for how the container(s) should run.
-
-
-**🔹 Key Characteristics**
+-
+###### Key Characteristics
 
 - **Single IP address per Pod** (shared by all containers in the Pod).
 - **Tightly coupled containers** in a Pod share:
