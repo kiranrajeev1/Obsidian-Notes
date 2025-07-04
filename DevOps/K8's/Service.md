@@ -94,6 +94,9 @@ Kubernetes uses **iptables** or **IPVS** to do the routing/load-balancing.
 - You want **internal services** that don't need external access.
 - You’re building **microservices** that talk to each other inside the cluster.
 - You want to **decouple** how clients find and connect to Pods.
+
+---
+
 ## 🧾 Commands
 
 ```bash
