@@ -9,7 +9,7 @@
 
 ## 📝 Notes
 
-**📦 1. ReplicaSet (RS)**
+1. ReplicaSet (RS)
 
 **✅ Purpose:**
 
