@@ -48,8 +48,7 @@ spec:
 - **Runs on all nodes automatically** (including new ones).
 - Use **node selectors or taints/tolerations** to control where Pods
   run.
-- No need to specify replicas -- it\'s managed per node.
-
+- No need to specify replicas -- it's managed per node.
 ###### my code
 ```YAML
 apiVersion: apps/v1
