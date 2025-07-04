@@ -108,7 +108,9 @@ Kubernetes uses **iptables** or **IPVS** to do the routing/load-balancing.
 3. It **forwards traffic** from this port to the **ClusterIP** of the service.
 4. The service then forwards it to the **matching pods**.
 
-flow
+##### Flow diagram
+
+`Client --> <NodeIP>:<NodePort> --> NodePort Service --> ClusterIP --> Pod
 ## 🧾 Commands
 
 ```bash
