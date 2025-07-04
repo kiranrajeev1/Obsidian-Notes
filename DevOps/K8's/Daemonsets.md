@@ -12,9 +12,7 @@
 ##### DaemonSet
 
 A **DaemonSet** ensures that **a copy of a Pod runs on every node** (or
-specific nodes) in the cluster.
-
-
+specific nodes) in the cluster
 ###### Use Cases:
 
 - Running **node-level services**, such as:
@@ -45,7 +43,7 @@ spec:
 
 ```
 
-**🔧 Key Features:**
+###### Key Features:
 
 - **Runs on all nodes automatically** (including new ones).
 - Use **node selectors or taints/tolerations** to control where Pods
@@ -53,7 +51,7 @@ spec:
 - No need to specify replicas -- it\'s managed per node.
 
  
-**my code**
+###### my code
 ```YAML
 apiVersion: apps/v1
 kind: DaemonSet
