@@ -21,7 +21,7 @@ their work.
 - **Database backups**
 - **Cron-like tasks** (when used with CronJobs)
 
-##### Example
+###### Example
 
 ```YAML
 apiVersion: batch/v1
@@ -40,7 +40,7 @@ spec:
       restartPolicy: Never
 ```
 
-##### Key Settings:
+###### Key Settings:
 - completions: Number of times the Job should successfully complete.
 - parallelism: How many Pods can run at the same time.
 - restartPolicy: Should be OnFailure or Never.
@@ -52,7 +52,7 @@ spec:
 4.  Once the goal is met, the Job is **done**.
 
 
-**my code**
+###### my code
 
 ```yaml
 apiVersion: batch/v1
