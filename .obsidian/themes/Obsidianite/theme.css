@@ -503,7 +503,7 @@ h6 {
 
 .HyperMD-header.HyperMD-header-2,
 .HyperMD-header.HyperMD-header-3,
-.HyperMD-header.HyperMD-header-4, {
+.HyperMD-header.HyperMD-header-4 {
   border-bottom: 1px solid;
   border-width: 1px;
   border-image-slice: 1;
