@@ -178,6 +178,26 @@ spec:
      ↓
 [Response flows back the same way]
 ```
+
+---
+
+##### headless service
+
+A Kubernetes headless service is a special kind of service that does not have a ClusterIP, and is typically used when you want to directly access individual Pods behind the service, instead of load balancing traffic across them.
+
+**What Is a Headless Service?**
+In Kubernetes, a regular Service provides a stable IP and DNS name, and performs load balancing to forward traffic to healthy backend Pods.
+
+A headless service is created by setting clusterIP: None in the Service manifest. This disables the load balancer and DNS resolves to the individual Pod IPs.
+
+**Use Cases**
+Headless services are commonly used in:
+
+StatefulSets: e.g. databases like Cassandra, Kafka, MongoDB, etc., where each Pod needs to be addressed individually.
+
+Service discovery: When clients need to discover each Pod instance directly (e.g. for sharding or replication).
+
+DNS-based access: You can query the headless service's DNS to get the list of all Pod IPs.
 ## 🧾 Commands
 
 ```bash
