@@ -78,6 +78,29 @@ spec:
       port: 80       # The port the service will expose
       targetPort: 8080  # The port on the Pod that receives traffic
 ```
+
+### 🧭 How It Works
+
+Let’s say you have multiple backend Pods running your service:
+
+- Each Pod has a unique IP address.
+    
+- Kubernetes assigns a **ClusterIP**, e.g., `10.96.0.1`, to the service.
+    
+- Any request to `10.96.0.1:80` (or `my-internal-service:80`) will be forwarded to one of the backend Pods on port `8080`.
+    
+
+Kubernetes uses **iptables** or **IPVS** to do the routing/load-balancing.
+
+### ✅ When to Use ClusterIP
+
+Use ClusterIP when:
+
+- You want **internal services** that don't need external access.
+    
+- You’re building **microservices** that talk to each other inside the cluster.
+    
+- You want to **decouple** how clients find and connect to Pods.
 ## 🧾 Commands
 
 ```bash
