@@ -27,6 +27,12 @@ The definition of Kubernetes services]refers to a" Service which is a method fo
 - It gets a stable **ClusterIP** (virtual IP)
 - Traffic sent to the Service is load-balanced across matching Pods
 
+######  Example
+
+
+
+This Service forwards traffic from `my-service:80` to all Pods with `app: my-app` on port `8080`.
+
 ## 🧾 Commands
 
 ```bash
