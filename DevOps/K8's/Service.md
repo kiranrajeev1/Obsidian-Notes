@@ -128,6 +128,28 @@ spec:
       targetPort: 8080  # Pod port
       nodePort: 30036   # Exposed port on each node
 ```
+
+---
+
+##### Loadbalancer
+
+## 🌐 Kubernetes LoadBalancer Service – Notes
+
+### 🔹 What is a LoadBalancer Service?
+
+A **LoadBalancer** is one of the Kubernetes **Service types** that exposes a Service externally using a cloud provider's **external load balancer** (e.g., AWS ELB, GCP Load Balancer, Azure Load Balancer).
+
+---
+
+### 📌 Key Features
+
+- **Exposes service externally** to the internet.
+    
+- Automatically **provisions a cloud load balancer** and assigns a **public IP**.
+    
+- Forwards external traffic to the **ClusterIP** of the service.
+    
+- Works only on **supported cloud platforms**.
 ## 🧾 Commands
 
 ```bash
