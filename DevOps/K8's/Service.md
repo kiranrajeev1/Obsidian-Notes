@@ -190,6 +190,30 @@ In Kubernetes, a regular Service provides a stable IP and DNS name, and performs
 
 A headless service is created by setting clusterIP: None in the Service manifest. This disables the load balancer and DNS resolves to the individual Pod IPs.
 
+##### Example
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-headless-service
+spec:
+  clusterIP: None         # <--- Key difference
+  selector:
+    app: my-app
+  ports:
+  - port: 80
+    targetPort: 9376
+```
+
+### 🔹 DNS Behavior
+
+- Normal service: `my-service.default.svc.cluster.local` → **Single ClusterIP**
+    
+- Headless service: `my-service.default.svc.cluster.local` → **Multiple A records** (Pod IPs)
+    
+- With StatefulSet: You get **DNS entries per pod**:
+
 **Use Cases**
 Headless services are commonly used in:
 
