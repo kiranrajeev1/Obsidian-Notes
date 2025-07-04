@@ -9,10 +9,7 @@
 
 ## 📝 Notes
 
-**🧾 Kubernetes Namespaces - Notes**
-
-**✅ What is a Namespace?**
-
+###### Namespace
 A **Namespace** in Kubernetes is a way to logically divide cluster
 resources. It allows multiple users or teams to share the same cluster
 without interfering with each other.
