@@ -488,15 +488,11 @@ span.cm-formatting-list,
 | relatively sync with css.
 /**************************************/
 
-/**-------------------**
-| HEADING STYLES
-**--------------------**/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+/*--------------------
+| HEADING BASE STYLES
+---------------------*/
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--default-font);
   font-weight: 600;
 }
@@ -514,35 +510,32 @@ h6 {
   padding: 20px;
 }
 
-.markdown-preview-section h1,
-.cm-header-1 {
+/*--------------------
+| HEADING SIZES + COLORS
+---------------------*/
+.markdown-preview-section h1, .cm-header-1 {
   font-size: 34px;
   color: var(--text-title-h1);
 }
 
-.markdown-preview-section h2,
-.cm-header-2 {
+.markdown-preview-section h2, .cm-header-2 {
   font-size: 26px;
   color: var(--text-title-h2);
 }
 
-.markdown-preview-section h3,
-.cm-header-3 {
+.markdown-preview-section h3, .cm-header-3 {
   font-size: 22px;
   color: var(--text-title-h3);
 }
 
-.markdown-preview-section h4,
-.cm-header-4 {
+.markdown-preview-section h4, .cm-header-4 {
   font-size: 18px;
   color: var(--text-title-h4);
 }
 
-
-
-
-
-/* Base h5 style – applies to all modes */
+/*--------------------
+| H5 Styling – Dotted underline
+---------------------*/
 .markdown-preview-section h5,
 .markdown-preview-view h5,
 .cm-header-5 {
@@ -553,14 +546,15 @@ h6 {
   margin-top: 35px;
   padding-bottom: 6px;
   position: relative;
+  display: inline-block;
 }
 
-/* Live Preview only: fallback border (full width, but ensures visibility) */
+/* Edit mode fallback */
 .cm-header-5 {
   border-bottom: 1px dotted var(--color-accent);
 }
 
-/* Reading Mode: inline underline using ::after, matches text width */
+/* Reading Mode underline */
 .markdown-preview-section h5::after,
 .markdown-preview-view h5::after {
   content: "";
@@ -572,20 +566,14 @@ h6 {
   border-bottom: 1px dotted var(--color-accent);
 }
 
-/* Limit width to text only (Reading Mode) */
-.markdown-preview-section h5,
-.markdown-preview-view h5 {
-  display: inline-block;
-}
-
-
-
-
+/*--------------------
+| H6 Styling – Soft Purple, no underline
+---------------------*/
 .markdown-preview-section h6,
 .markdown-preview-view h6,
 .cm-header-6 {
   font-size: 13px !important;
-  color: #b185db; /* soft lavender purple */
+  color: #b185db;
   font-weight: 500;
   letter-spacing: 0.5px;
   margin-bottom: 4px;
@@ -595,38 +583,24 @@ h6 {
   box-shadow: none !important;
 }
 
-
-
-/* Underline using ::after for text-width dotted line */
-.markdown-preview-section h6::after,
-.markdown-preview-view h6::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  border-bottom: 1px dotted var(--color-accent);
-  height: 1px;
-}
-
-/* Fallback border for edit mode */
+/* Remove underline from H6 in edit mode */
 .cm-header-6 {
-  border-bottom: 1px dotted var(--color-accent);
+  border-bottom: none !important;
 }
 
-
-
-
+/*--------------------
+| Icons and Formatting
+---------------------*/
 .view-header-icon {
   color: var(--text-accent);
 }
-
-/** Adding different # colors **/
 
 .cm-formatting.cm-formatting-header.cm-header {
   color: var(--text-accent);
   opacity: 0.45;
 }
+
+
 
 /**-------------------**
 | HR STYLES
