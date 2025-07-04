@@ -96,7 +96,18 @@ Kubernetes uses **iptables** or **IPVS** to do the routing/load-balancing.
 - You want to **decouple** how clients find and connect to Pods.
 
 ---
+##### NodePort
 
+- A **NodePort** is a type of Kubernetes **Service** that **exposes a pod on a static port** on each Node’s IP.
+- This allows you to **access your application externally** using `<NodeIP>:<NodePort>`.
+
+#####  How It Works
+
+1. You define a `NodePort` service in your YAML or via `kubectl`.
+2. Kubernetes allocates a **port (30000–32767)** on each node.
+3. It **forwards traffic** from this port to the **ClusterIP** of the service.
+    
+4. The service then forwards it to the **matching pods**.
 ## 🧾 Commands
 
 ```bash
