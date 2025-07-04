@@ -1524,3 +1524,13 @@ pre.line-numbers > code {
   padding-right: 0.8em;
   text-align: right;
 }
+
+/**-------------------**
+| PARAGRAPH FIXES
+**--------------------**/
+.markdown-preview-view p,
+.markdown-preview-section p {
+  margin-top: 0px;
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
