@@ -540,18 +540,7 @@ h6 {
 
 
 
-/* Base h5 style – applies to all modes */
-.markdown-preview-section h5,
-.markdown-preview-view h5,
-.cm-header-5 {
-  font-size: 16px !important;
-  color: var(--color-accent);
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  margin-top: 35px;
-  padding-bottom: 6px;
-  position: relative;
-}
+
 
 /* Base h5 style – applies to all modes */
 .markdown-preview-section h5,
