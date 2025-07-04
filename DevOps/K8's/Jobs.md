@@ -14,15 +14,14 @@ A **Job** is used to **run a task to completion** in Kubernetes.
 It ensures that **a specified number of Pods successfully complete**
 their work.
 
-**🔹 Use Cases:**
-
+###### Use Cases:
 - **Batch processing**
 - **Data migrations**
 - **One-time tasks**
 - **Database backups**
 - **Cron-like tasks** (when used with CronJobs)
 
-**🧾 Basic YAML Example:**
+##### Example
 
 ```YAML
 apiVersion: batch/v1
@@ -41,16 +40,12 @@ spec:
       restartPolicy: Never
 ```
 
-**🔧 Key Settings:**
-
+##### Key Settings:
 - completions: Number of times the Job should successfully complete.
 - parallelism: How many Pods can run at the same time.
 - restartPolicy: Should be OnFailure or Never.
 
- 
-
-**⏱️ Job Lifecycle:**
-
+###### Job Lifecycle:
 1.  Job creates one or more Pods.
 2.  Each Pod runs to **completion** (success).
 3.  Job tracks successful completions.
