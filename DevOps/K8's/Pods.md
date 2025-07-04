@@ -45,8 +45,7 @@ higher-level objects:
 - **StatefulSets**
 - **DaemonSets**
 
-
-**🔹 Pod YAML Example**
+###### Example
 
 ```YAML
 apiVersion: v1
@@ -62,21 +61,20 @@ spec:
 ```
 
 
-**🔹 Health Checks**
+###### Health Checks
 - **Liveness probe** -- Checks if the container is still running.
 - **Readiness probe** -- Checks if the container is ready to serve
   traffic.
 - **Startup probe** -- Checks if the container has started properly.
 
 
-**🔹 Volume Mounts**
-
+###### Volume Mounts
 - Pods support different **volume types** like emptyDir, hostPath,
   configMap, secret, etc.
 - Volumes are shared between containers in the same Pod.
 
 
-**🔹 Limitations**
+imitations
 
 - Not designed for **long-term persistence**.
 - Pods may be **rescheduled** to a different node if the node fails.
