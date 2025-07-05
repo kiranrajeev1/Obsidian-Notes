@@ -126,4 +126,3 @@ spec:
 # Example:
 kubectl get pods
 ```
-```
