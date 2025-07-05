@@ -10,7 +10,7 @@
 ## 📁 DevOps Sections
 
 ### ⚙️ Jenkins
-- [[Jenkins Note Template]]
+- [[CI_CD_Pipeline]]
 
 ### ☸️ Kubernetes (K8s)
 - [[Cronjob]]
@@ -21,7 +21,6 @@
 - [[Pods]]
 - [[RS_SS_Deployment]]
 - [[Service]]
-- [[Kubernetes Note Template]]
 
 ---
 
