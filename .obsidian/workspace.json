@@ -222,8 +222,9 @@
   },
   "active": "e764b0ac9ca92088",
   "lastOpenFiles": [
-    "DevOps/K8's/RS_SS_Deployment.md",
+    "2025-07-04.md",
     "DevOps/K8's/Service.md",
+    "DevOps/K8's/RS_SS_Deployment.md",
     "DevOps/K8's/Pods.md",
     "DevOps/K8's/Namespace.md",
     "DevOps/K8's/Quick_Notes.md",
@@ -250,7 +251,6 @@
     "Notes/K8's/RS, SS & Deployment.md",
     "Notes/K8's/Pods.md",
     "Notes/K8's/Namespace.md",
-    "Notes/K8's/Kubernetes Quick Notes.md",
     "Notes/K8's",
     "Notes",
     "DevOps/New folder",
