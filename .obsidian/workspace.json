@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -206,7 +207,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "5a9a9b63c92cb730",
   "lastOpenFiles": [
     "Templates/Kubernetes Note Template.md.md",
     "DevOps/Home.md",
