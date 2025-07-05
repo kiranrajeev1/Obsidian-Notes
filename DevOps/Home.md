@@ -14,9 +14,10 @@
 
 ### ☸️ Kubernetes (K8s)
 - [[Cronjob]]
-- [[Daemons]]
+- [[Daemonsets]]
 - [[Deployment]]
 - [[Jobs]]
+- [[Quick_Notes]]
 - [[Namespace]]
 - [[Pods]]
 - [[RS_SS_Deployment]]
