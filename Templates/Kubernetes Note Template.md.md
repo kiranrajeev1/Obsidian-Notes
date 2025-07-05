@@ -3,6 +3,7 @@
 🗓️ **Date:** {{date}}  
 🕒 **Time:** {{time}}  
 
+
 🏷️ **Tags:** #kubernetes #devops #{{title}}  
 
 ---
