@@ -5,7 +5,7 @@
 - [ ] Check updates
 
 ## 📁 Quick Links
-- [[J]]
+- [[CI_CD_Pipeline]]]
 - [[Daily Notes]]
 - [[Reading List]]
 
