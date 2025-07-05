@@ -1,6 +1,6 @@
 # Kubernetes – Service
 
-🗓️ **Date:** 2025-07-04  
+🗓️ **Date:** 2025-07-04 
 🕒 **Time:** 10:08  
 
 🏷️ **Tags:** #kubernetes #devops #Service  
