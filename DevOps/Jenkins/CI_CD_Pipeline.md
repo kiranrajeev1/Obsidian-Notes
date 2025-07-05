@@ -2,6 +2,8 @@
 
 🗓️ **Date:** 2025-07-02  
 🕒 **Time:** 12:00  
+📅 Linked to: [[{{date}}]]
+
 
 🏷️ **Tags:** #jenkins #devops #CI_CD_Pipeline  
 
