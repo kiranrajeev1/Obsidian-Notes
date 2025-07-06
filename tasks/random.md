@@ -1,6 +1,8 @@
 ### 📅 2025-07-06 (Sunday)
 
-**☀️ Morning (AM)**
+---
+
+**☀️ Morning (AM)**  
 - [ ] 🧼 Facewash
 - [ ] 💧 Moisturizer
 - [ ] 🧴 Sunscreen
@@ -12,8 +14,11 @@
 
 ---
 
+### 🪞 Skin Check-In
+
 **Pimples**
-- [ ] None
-- [ ] 1–2 small  
-- [ ] Moderate breakout  
-- [ ] Severe breakout
+- [x] 🟢 None ✅ 2025-07-06
+- [ ] 🟡 1–2 small  
+- [ ] 🟠 Moderate breakout  
+- [ ] 🔴 Severe breakout  
+
