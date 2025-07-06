@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/random.md",
+                "file": "tasks/random.md",
                 "mode": "source",
                 "source": false
               },
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/random.md",
+                "file": "tasks/random.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -223,8 +223,10 @@
   },
   "active": "cb42f28ae95b7b35",
   "lastOpenFiles": [
+    "tasks/template.md",
+    "tasks/random.md",
+    "tasks",
     "DevOps/Home.md",
-    "DevOps/random.md",
     "Templates/Jenkins Note Template.md.md",
     "Templates/Kubernetes Note Template.md.md",
     "Daemons.md",
@@ -250,14 +252,12 @@
     "j.md",
     "Untitled.md",
     "DevOps/K8's",
-    "new.md",
     "DevOps",
     "Notes/K8's",
     "Notes",
     "DevOps/New folder",
     "Templates/QuickNotes.md.txt",
     "Templates/New Text Document.txt",
-    "Templates",
-    "Template"
+    "Templates"
   ]
 }
