@@ -1,12 +1,19 @@
 ### 📅 {{date}} ({{date:dddd}})
 
-
 **☀️ Morning (AM)**
-- [ ] Facewash #skincare #am 📅 {{date}}
-- [ ] Moisturizer #skincare #am 📅 {{date}}
-- [ ] Sunscreen #skincare #am 📅 {{date}}
+- [ ] 🧼 Facewash
+- [ ] 💧 Moisturizer
+- [ ] 🧴 Sunscreen
 
 **🌙 Night (PM)**
-- [ ] Facewash #skincare #pm 📅 {{date}}
-- [ ] 2% Salicylic Acid Serum #skincare #pm 📅 {{date}}
-- [ ] Moisturizer #skincare #pm 📅 {{date}}
+- [ ] 🧼 Facewash
+- [ ] 🍃 2% Salicylic Acid Serum
+- [ ] 💧 Moisturizer
+
+**🌟 Notes:**  
+- 
+
+**🪞 Skin Check-In:**  
+- Oiliness:  
+- Redness:  
+- Pimples:  
