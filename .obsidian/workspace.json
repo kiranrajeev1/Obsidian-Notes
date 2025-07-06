@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tasks/random.md",
+                "file": "Templates/template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "random"
+              "title": "template"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#skincare",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -159,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tasks/random.md",
+                "file": "Templates/template.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of random"
+              "title": "Outline of template"
             }
           }
         ],
@@ -222,10 +221,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "5a9a9b63c92cb730",
+  "active": "cb42f28ae95b7b35",
   "lastOpenFiles": [
-    "Templates/template.md",
     "tasks/random.md",
+    "Templates/template.md",
     "tasks",
     "DevOps/Home.md",
     "Templates/Jenkins Note Template.md.md",
