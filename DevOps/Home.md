@@ -1,12 +1,6 @@
 # 🧭 DevOps Dashboard
 
 ---
-## ✅ Today’s Tasks
-- [ ] Review CI/CD concepts
-- [ ] Write/update Kubernetes notes
-- [ ] Backup vault `{ {date} }`  ← *(Templater or Git auto-backup)*
-
----
 ## 📁 DevOps Sections
 
 ### ⚙️ Jenkins
