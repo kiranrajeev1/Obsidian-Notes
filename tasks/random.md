@@ -1,4 +1,4 @@
-### 📅 {{date}} ({{date:dddd}})
+### 📅 2025-07-06 (Sunday)
 
 **☀️ Morning (AM)**
 - [ ] 🧼 Facewash
@@ -10,10 +10,5 @@
 - [ ] 🍃 2% Salicylic Acid Serum
 - [ ] 💧 Moisturizer
 
-**🌟 Notes:**  
-- 
+---
 
-**🪞 Skin Check-In:**  
-- Oiliness:  
-- Redness:  
-- Pimples:  

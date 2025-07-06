@@ -10,10 +10,5 @@
 - [ ] 🍃 2% Salicylic Acid Serum
 - [ ] 💧 Moisturizer
 
-**🌟 Notes:**  
-- 
+---
 
-**🪞 Skin Check-In:**  
-- Oiliness:  
-- Redness:  
-- Pimples:  
