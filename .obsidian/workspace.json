@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/template.md",
+                "file": "tasks/random.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "template"
+              "title": "random"
             }
           }
         ],
@@ -158,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/template.md",
+                "file": "tasks/random.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of template"
+              "title": "Outline of random"
             }
           }
         ],
@@ -223,8 +223,8 @@
   },
   "active": "cb42f28ae95b7b35",
   "lastOpenFiles": [
-    "tasks/random.md",
     "Templates/template.md",
+    "tasks/random.md",
     "tasks",
     "DevOps/Home.md",
     "Templates/Jenkins Note Template.md.md",
