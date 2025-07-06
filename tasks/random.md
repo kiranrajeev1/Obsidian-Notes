@@ -1,31 +1,19 @@
-### 📅 2025-07-06 (Sunday)
-
-
-**☀️ Morning (AM)**
-- [ ] Facewash #skincare #am 📅 2025-07-06
-- [ ] Moisturizer #skincare #am 📅 2025-07-06
-- [ ] Sunscreen #skincare #am 📅 2025-07-06
-
-**🌙 Night (PM)**
-- [ ] Facewash #skincare #pm 📅 2025-07-06
-- [ ] 2% Salicylic Acid Serum #skincare #pm 📅 2025-07-06
-- [ ] Moisturizer #skincare #pm 📅 2025-07-06
-
-### 📅 2025-07-06 (Sunday)
-
+### 📅 {{date}} ({{date:dddd}})
 
 **☀️ Morning (AM)**
-- [ ] Facewash #skincare #am 📅 2025-07-06
-- [ ] Moisturizer #skincare #am 📅 2025-07-06
-- [ ] Sunscreen #skincare #am 📅 2025-07-06
+- [ ] 🧼 Facewash
+- [ ] 💧 Moisturizer
+- [ ] 🧴 Sunscreen
 
 **🌙 Night (PM)**
-- [ ] Facewash #skincare #pm 📅 2025-07-06
-- [ ] 2% Salicylic Acid Serum #skincare #pm 📅 2025-07-06
-- [ ] Moisturizer #skincare #pm 📅 2025-07-06
+- [ ] 🧼 Facewash
+- [ ] 🍃 2% Salicylic Acid Serum
+- [ ] 💧 Moisturizer
 
-## 🔎 Incomplete Skincare Tasks
-```tasks
-not done
-tag: #skincare
-```
+**🌟 Notes:**  
+- 
+
+**🪞 Skin Check-In:**  
+- Oiliness:  
+- Redness:  
+- Pimples:  
