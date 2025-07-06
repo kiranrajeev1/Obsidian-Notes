@@ -1,22 +1,14 @@
 ### 📅 2025-07-06 (Sunday)
 
----
-
-**☀️ Morning (AM)**  
-- [ ] 🧼 Facewash
-- [ ] 💧 Moisturizer
-- [ ] 🧴 Sunscreen
+**☀️ Morning (AM)**
+- [x] 🧼 Facewash ✅ 2025-07-06
+- [x] 💧 Moisturizer ✅ 2025-07-06
+- [x] 🧴 Sunscreen ✅ 2025-07-06
 
 **🌙 Night (PM)**
-- [ ] 🧼 Facewash
+- [x] 🧼 Facewash ✅ 2025-07-06
 - [ ] 🍃 2% Salicylic Acid Serum
-- [ ] 💧 Moisturizer
+- [x] 💧 Moisturizer ✅ 2025-07-06
 
 ---
-### 🪞 Skin Check-In
 
-**Pimples**
-- [ ] 🟢 None
-- [ ] 🟡 1–2 small  
-- [ ] 🟠 Moderate breakout  
-- [ ] 🔴 Severe breakout  
