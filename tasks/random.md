@@ -12,18 +12,11 @@
 - [ ] 🍃 2% Salicylic Acid Serum
 - [ ] 💧 Moisturizer
 
-- ☀️ Morning (AM) | 🌙 Night (PM)
-  - [ ] Facewash   | [ ] Facewash
-  - [ ] Moisturizer | [ ] Serum
-  - [ ] Sunscreen   | [ ] Moisturizer
-
 ---
-
 ### 🪞 Skin Check-In
 
 **Pimples**
-- [x] 🟢 None ✅ 2025-07-06
+- [ ] 🟢 None
 - [ ] 🟡 1–2 small  
 - [ ] 🟠 Moderate breakout  
 - [ ] 🔴 Severe breakout  
-
