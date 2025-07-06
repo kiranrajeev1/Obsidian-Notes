@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#skincare",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -221,7 +222,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "1aedae8325c3b1c9",
+  "active": "5a9a9b63c92cb730",
   "lastOpenFiles": [
     "Templates/template.md",
     "tasks/random.md",

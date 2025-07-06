@@ -1,4 +1,5 @@
-### 📅 {{date}} ({{day}})
+### 📅 {{date}} ({{date:dddd}})
+
 
 **☀️ Morning (AM)**
 - [ ] Facewash #skincare #am 📅 {{date}}
