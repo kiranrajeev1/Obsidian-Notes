@@ -7,7 +7,7 @@
 
 **🌙 Night (PM)**
 - [ ] 🧼 Facewash
-- [ ] 🍃 2% Salicylic Acid Serum
+- [ ] 🍃 Serum
 - [ ] 💧 Moisturizer
 
 ---
