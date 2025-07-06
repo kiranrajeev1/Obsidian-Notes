@@ -1,4 +1,4 @@
-### 📅 2025-06-27 (Friday)
+### 📅 27-06-2025 (Friday)
 
 **☀️ Morning (AM)**
 - [x] 🧼 Facewash
@@ -12,7 +12,7 @@
 
 ---
 
-### 📅 2025-06-28 (Saturday)
+### 📅 28-06-2025 (Saturday)
 
 **☀️ Morning (AM)**
 - [x] 🧼 Facewash
@@ -26,7 +26,7 @@
 
 ---
 
-### 📅 2025-06-29 (Sunday)
+### 📅 29-06-2025 (Sunday)
 
 **☀️ Morning (AM)**
 - [x] 🧼 Facewash
@@ -40,7 +40,7 @@
 
 ---
 
-### 📅 2025-06-30 (Monday)
+### 📅 30-06-2025 (Monday)
 
 **☀️ Morning (AM)**
 - [x] 🧼 Facewash
@@ -54,7 +54,7 @@
 
 ---
 
-### 📅 2025-07-01 (Tuesday)
+### 📅 01-07-2025 (Tuesday)
 
 **☀️ Morning (AM)**
 - [x] 🧼 Facewash
@@ -68,7 +68,7 @@
 
 ---
 
-### 📅 2025-07-02 (Wednesday)
+### 📅 02-07-2025 (Wednesday)
 
 **☀️ Morning (AM)**
 - [x] 🧼 Facewash
@@ -82,7 +82,7 @@
 
 ---
 
-### 📅 2025-07-03 (Thursday)
+### 📅 03-07-2025 (Thursday)
 
 **☀️ Morning (AM)**
 - [x] 🧼 Facewash
@@ -96,7 +96,7 @@
 
 ---
 
-### 📅 2025-07-04 (Friday)
+### 📅 04-07-2025 (Friday)
 
 **☀️ Morning (AM)**
 - [x] 🧼 Facewash
@@ -110,7 +110,7 @@
 
 ---
 
-### 📅 2025-07-05 (Saturday)
+### 📅 05-07-2025 (Saturday)
 
 **☀️ Morning (AM)**
 - [x] 🧼 Facewash
