@@ -12,3 +12,8 @@
 
 ---
 
+**Pimples**
+- [ ] None
+- [ ] 1–2 small  
+- [ ] Moderate breakout  
+- [ ] Severe breakout
