@@ -2,15 +2,13 @@
 
 ---
 
-**☀️ Morning (AM)**  
-- [ ] 🧼 Facewash
-- [ ] 💧 Moisturizer
-- [ ] 🧴 Sunscreen
 
-**🌙 Night (PM)**
-- [ ] 🧼 Facewash
-- [ ] 🍃 2% Salicylic Acid Serum
-- [ ] 💧 Moisturizer
+
+| **☀️ Morning (AM)**  <br>- [ ] 🧼 Facewash<br>- [ ] 💧 Moisturizer<br>- [ ] 🧴 Sunscreen<br> | **🌙 Night (PM)**<br>- [ ] 🧼 Facewash<br>- [ ] 🍃 2% Salicylic Acid Serum<br>- [ ] 💧 Moisturizer<br> |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+|                                                                                              |                                                                                                        |
+
+
 
 ---
 
