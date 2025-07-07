@@ -200,7 +200,7 @@ pod-0.my-headless-service.default.svc.cluster.local
 pod-1.my-headless-service.default.svc.cluster.local
 ```
 
-**Use Cases**
+###### Use Cases
 Headless services are commonly used in:
 - StatefulSets: e.g. databases like Cassandra, Kafka, MongoDB, etc., where each Pod needs to be addressed individually.
 - Service discovery: When clients need to discover each Pod instance directly (e.g. for sharding or replication).
@@ -230,8 +230,7 @@ spec:
   externalName: example.com
 ```
 
-In this case:
-
+**In this case:**
 - When a pod does a DNS lookup for `my-external-service.default.svc.cluster.local`, it gets a CNAME pointing to `example.com`.
 - There are no endpoints, selectors, or IP addresses in this service.
 - Traffic is routed through standard DNS resolution, **not** through kube-proxy or the Kubernetes network.
