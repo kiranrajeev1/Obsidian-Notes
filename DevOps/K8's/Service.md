@@ -269,8 +269,3 @@ Then your app just accesses `legacy-db.default.svc.cluster.local` as if it were 
 kubectl get pods
 ```
 
-[^1]: 
-
-[^2]: Sharding is ==a database partitioning technique used to improve scalability and performance by distributing a large dataset across multiple servers (shards)==.
-
-[^3]: 
