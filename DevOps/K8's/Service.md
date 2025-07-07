@@ -203,7 +203,7 @@ pod-1.my-headless-service.default.svc.cluster.local
 ###### Use Cases
 Headless services are commonly used in:
 - StatefulSets: e.g. databases like Cassandra, Kafka, MongoDB, etc., where each Pod needs to be addressed individually.
-- Service discovery: When clients need to discover each Pod instance directly (e.g. for [^2]sharding or replication).
+- Service discovery: When clients need to discover each Pod instance directly (e.g. for [^3]sharding or replication).
 - DNS-based access: You can query the headless service's DNS to get the list of all Pod IPs.
 
 ---
@@ -271,4 +271,6 @@ kubectl get pods
 
 [^1]: 
 
-[^2]: 
+[^2]: Sharding is ==a database partitioning technique used to improve scalability and performance by distributing a large dataset across multiple servers (shards)==.
+
+[^3]: 
