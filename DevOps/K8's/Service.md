@@ -211,14 +211,14 @@ Headless services are commonly used in:
 
 In Kubernetes, an **ExternalName** is a special type of **Service** that allows you to map a Kubernetes service name to an external DNS name. It doesn’t create a traditional service with a cluster IP or endpoints, but instead returns a CNAME record pointing to the external name specified.
 
-### 🔹 Purpose
+###### Purpose
 
 Use `ExternalName` when you want services inside your Kubernetes cluster to access services outside the cluster **as if they were internal** services.
-### 🔧 How It Works
+###### How It Works
 
 When a pod in your cluster tries to resolve the name of the service, Kubernetes returns a **CNAME DNS record** pointing to the external name you specified.
 
-For example:
+###### Example:
 
 ```yaml
 apiVersion: v1
@@ -233,15 +233,9 @@ spec:
 In this case:
 
 - When a pod does a DNS lookup for `my-external-service.default.svc.cluster.local`, it gets a CNAME pointing to `example.com`.
-    
 - There are no endpoints, selectors, or IP addresses in this service.
-    
 - Traffic is routed through standard DNS resolution, **not** through kube-proxy or the Kubernetes network.
-    
-
----
-
-### 🔍 Use Case Example
+###### 🔍 Use Case Example
 
 Let’s say your app inside the cluster needs to access a legacy system at `legacy-db.company.com`. Instead of hardcoding that external domain, you can create a service:
 
