@@ -200,14 +200,73 @@ pod-0.my-headless-service.default.svc.cluster.local
 pod-1.my-headless-service.default.svc.cluster.local
 ```
 
-**Use Cases**
+###### Use Cases
 Headless services are commonly used in:
 - StatefulSets: e.g. databases like Cassandra, Kafka, MongoDB, etc., where each Pod needs to be addressed individually.
-- Service discovery: When clients need to discover each Pod instance directly (e.g. for sharding or replication).
+- Service discovery: When clients need to discover each Pod instance directly (e.g. for sharding[^1] or replication).
 - DNS-based access: You can query the headless service's DNS to get the list of all Pod IPs.
+
+---
+##### ExternalName
+
+In Kubernetes, an **ExternalName** is a special type of **Service** that allows you to map a Kubernetes service name to an external DNS name. It doesn’t create a traditional service with a cluster IP or endpoints, but instead returns a CNAME record pointing to the external name specified.
+
+###### Purpose
+
+Use `ExternalName` when you want services inside your Kubernetes cluster to access services outside the cluster **as if they were internal** services.
+###### How It Works
+
+When a pod in your cluster tries to resolve the name of the service, Kubernetes returns a **CNAME DNS record** pointing to the external name you specified.
+
+###### Example:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-external-service
+spec:
+  type: ExternalName
+  externalName: example.com
+```
+
+**In this case:**
+- When a pod does a DNS lookup for `my-external-service.default.svc.cluster.local`, it gets a CNAME pointing to `example.com`.
+- There are no endpoints, selectors, or IP addresses in this service.
+- Traffic is routed through standard DNS resolution, **not** through kube-proxy or the Kubernetes network.
+###### 🔍 Use Case Example
+
+Let’s say your app inside the cluster needs to access a legacy system at `legacy-db.company.com`. Instead of hardcoding that external domain, you can create a service:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: legacy-db
+spec:
+  type: ExternalName
+  externalName: legacy-db.company.com
+```
+
+Then your app just accesses `legacy-db.default.svc.cluster.local` as if it were a local service.
+
+###### ✅ Pros
+
+- Clean abstraction: hides the external domain from app configs.
+- Simple DNS redirection mechanism.
+- No need for complex service discovery logic in the app.
+###### ❌ Limitations
+
+- Only works with DNS (no IP mapping).
+- Doesn’t support ports or protocols — just redirects names.
+- Doesn’t provide load balancing or health checks.
+- Not suitable if the external service must be accessed over a specific IP or custom routing.
+
 ## 🧾 Commands
 
 ```bash
 # Example:
 kubectl get pods
 ```
+
+[^1]: Sharding is a database partitioning technique used to improve scalability and performance by distributing a large dataset across multiple servers (shards).
