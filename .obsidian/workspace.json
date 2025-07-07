@@ -206,12 +206,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "b638e75940d2a089",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "DevOps/Home.md",
     "tasks/random.md",
     "tasks/template.md",
     "tasks",
-    "DevOps/Home.md",
     "Templates/Jenkins Note Template.md.md",
     "Templates/Kubernetes Note Template.md.md",
     "Daemons.md",
