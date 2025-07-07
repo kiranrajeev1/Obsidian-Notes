@@ -251,33 +251,17 @@ spec:
 
 Then your app just accesses `legacy-db.default.svc.cluster.local` as if it were a local service.
 
----
-
-### ✅ Pros
+###### ✅ Pros
 
 - Clean abstraction: hides the external domain from app configs.
-    
 - Simple DNS redirection mechanism.
-    
 - No need for complex service discovery logic in the app.
-    
-
----
-
-### ❌ Limitations
+###### ❌ Limitations
 
 - Only works with DNS (no IP mapping).
-    
 - Doesn’t support ports or protocols — just redirects names.
-    
 - Doesn’t provide load balancing or health checks.
-    
 - Not suitable if the external service must be accessed over a specific IP or custom routing.
-    
-
----
-
-Let me know if you'd like to see a concrete example using a real-world DNS name or access pattern.
 
 ## 🧾 Commands
 
