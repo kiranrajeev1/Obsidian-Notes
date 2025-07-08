@@ -13,6 +13,16 @@
 A **Namespace** in Kubernetes is a way to logically divide cluster
 resources. It allows multiple users or teams to share the same cluster
 without interfering with each other.
+
+A Kubernetes namespace is a logical partition within a Kubernetes cluster that allows you to divide resources and manage them independently. It's like a "virtual cluster" within your main cluster. Namespaces help organize and isolate resources (such as pods, services, and deployments) to support:
+
+Multi-tenancy (different teams or projects sharing the same cluster)
+
+Environment separation (e.g., dev, test, staging, prod)
+
+Resource allocation and quota enforcement
+
+Access control via RBAC
 ###### Purpose of Namespaces
 - Logical **separation** of resources
 - **Multi-tenancy** in a single cluster
