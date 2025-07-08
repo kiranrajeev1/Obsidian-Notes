@@ -30,6 +30,16 @@ Access control via RBAC
 - Apply **RBAC** (Role-Based Access Control) per namespace
 - Set **resource quotas** per team/project
 
+🔧 Key Concepts of Namespaces
+
+Concept	Description
+
+Isolation	Resources in one namespace can't see or interact with resources in another namespace (unless explicitly allowed).
+Default Namespace	If you don’t specify a namespace, Kubernetes uses the default namespace.
+System Namespaces	Kubernetes uses special namespaces like kube-system, kube-public, and kube-node-lease.
+Scoped Resources	Most Kubernetes resources (pods, services, deployments) are namespace-scoped. Others (nodes, persistent volumes) are cluster-scoped.
+
+
 ```YAML
 kind: Namespace
 apiVersion: v1
