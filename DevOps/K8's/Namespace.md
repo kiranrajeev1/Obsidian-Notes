@@ -51,5 +51,5 @@ apiVersion: v1
 
 ```bash
 # Example:
-kubectl get pods
+kubectl 
 ```
