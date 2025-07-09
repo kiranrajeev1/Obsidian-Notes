@@ -9,46 +9,39 @@
 
 ## 📝 Notes
 
-##### 🗂️ Kubernetes ConfigMap - Notes
+##### 🗂️ Kubernetes ConfigMap
 
-### 📌 What is a ConfigMap?
+###### 📌 What is a ConfigMap?
 
 A **ConfigMap** is a Kubernetes object used to **store non-confidential configuration data** in **key-value** pairs. It helps decouple environment-specific configurations from application code.
 
----
-
-### 📄 Use Cases
+###### 📄 Use Cases
 
 - Store configuration files (e.g., `app.properties`, `settings.json`)
-    
 - Store environment variables for pods
-    
 - Centralized management of app configurations
-    
 
----
+###### 🧱 Creating a ConfigMap
 
-### 🧱 Creating a ConfigMap
-
-#### 1. From Literal Values
+###### 1. From Literal Values
 
 ```bash
 kubectl create configmap my-config --from-literal=key1=value1 --from-literal=key2=value2
 ```
 
-#### 2. From a File
+###### 2. From a File
 
 ```bash
 kubectl create configmap my-config --from-file=config.txt
 ```
 
-#### 3. From a Directory (multiple files)
+###### 3. From a Directory (multiple files)
 
 ```bash
 kubectl create configmap my-config --from-file=/path/to/config-dir/
 ```
 
-#### 4. From a YAML File
+###### 4. From a YAML File
 
 ```yaml
 apiVersion: v1
