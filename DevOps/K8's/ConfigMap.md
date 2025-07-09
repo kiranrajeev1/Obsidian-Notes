@@ -10,10 +10,8 @@
 ## 📝 Notes
 
 #####  What is Configuration?
-
 **Configuration** refers to the **settings, parameters, or options** that control how software, systems, or services behave.
 ######  In Simple Terms:
-
 > Configuration is **how you tell software what to do** without changing its code.
 #####  Kubernetes ConfigMap
 
@@ -125,6 +123,52 @@ kubectl get configmap my-config -o yaml
 ## 🧾 Commands
 
 ```bash
+# 📋 List all ConfigMaps in the current namespace
+kubectl get configmaps
+kubectl get cm
+
+# 📋 List ConfigMaps in a specific namespace
+kubectl get configmaps -n <namespace-name>
 # Example:
-kubectl get pods
+kubectl get configmaps -n dev
+
+# ➕ Create ConfigMap from literal key-value pairs
+kubectl create configmap <configmap-name> --from-literal=<key>=<value>
+# Example:
+kubectl create configmap app-config --from-literal=ENV=production --from-literal=DEBUG=false
+
+# 📄 Create ConfigMap from a file
+kubectl create configmap <configmap-name> --from-file=<filename>
+# Example:
+kubectl create configmap app-config --from-file=app.properties
+
+# 📁 Create ConfigMap from a directory (all files)
+kubectl create configmap <configmap-name> --from-file=<directory-path>
+# Example:
+kubectl create configmap app-config --from-file=./configs/
+
+# 🔍 Describe a ConfigMap
+kubectl describe configmap <configmap-name>
+# Example:
+kubectl describe configmap app-config
+
+# 📜 Get ConfigMap in YAML format
+kubectl get configmap <configmap-name> -o yaml
+# Example:
+kubectl get configmap app-config -o yaml
+
+# ❌ Delete a ConfigMap
+kubectl delete configmap <configmap-name>
+# Example:
+kubectl delete configmap app-config
+
+# 🛠️ Edit a ConfigMap interactively
+kubectl edit configmap <configmap-name>
+# Example:
+kubectl edit configmap app-config
+
+# 📦 Apply ConfigMap from YAML file
+kubectl apply -f <file.yaml>
+# Example:
+kubectl apply -f configmap.yaml
 ```
