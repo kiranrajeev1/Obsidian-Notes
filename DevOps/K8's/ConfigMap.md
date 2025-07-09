@@ -9,6 +9,15 @@
 
 ## 📝 Notes
 
+### 🧾 What is Configuration?
+
+**Configuration** refers to the **settings, parameters, or options** that control how software, systems, or services behave.
+
+---
+
+### ✅ In Simple Terms:
+
+> Configuration is **how you tell software what to do** without changing its code.
 ##### 🗂️ Kubernetes ConfigMap
 
 ###### 📌 What is a ConfigMap?
@@ -108,19 +117,13 @@ kubectl get configmap my-config -o yaml
 
 ---
 
-### 🆚 ConfigMap vs Secret
+##### 🆚 ConfigMap vs Secret
 
 | Feature    | ConfigMap    | Secret           |
 | ---------- | ------------ | ---------------- |
 | Use for    | Plain config | Sensitive data   |
 | Encoded?   | No           | Base64 encoded   |
 | Encrypted? | No           | Yes (optionally) |
-
----
-
-Let me know if you'd like examples for a specific use case (like injecting a `.env` file, Helm charts, or dynamically updating pods).
-
----
 
 ## 🧾 Commands
 
