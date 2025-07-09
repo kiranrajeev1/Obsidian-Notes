@@ -25,6 +25,7 @@ A **ConfigMap** is a Kubernetes object used to **store non-confidential configur
 
 #####  Creating a ConfigMap
 ###### 1. From Literal Values
+
 ```bash
 kubectl create configmap my-config --from-literal=key1=value1 --from-literal=key2=value2
 ```
