@@ -55,7 +55,7 @@ data:
     value
 ```
 
-Apply with:
+**Apply with:**
 
 ```bash
 kubectl apply -f configmap.yaml
@@ -63,9 +63,9 @@ kubectl apply -f configmap.yaml
 
 ---
 
-### 📥 Accessing ConfigMap in Pods
+##### 📥 Accessing ConfigMap in Pods
 
-#### 1. As Environment Variables
+###### 1. As Environment Variables
 
 ```yaml
 envFrom:
@@ -73,7 +73,7 @@ envFrom:
       name: my-config
 ```
 
-#### 2. As Individual Env Vars
+###### 2. As Individual Env Vars
 
 ```yaml
 env:
@@ -84,7 +84,7 @@ env:
         key: key1
 ```
 
-#### 3. As Volume Mount
+###### 3. As Volume Mount
 
 ```yaml
 volumes:
@@ -98,22 +98,10 @@ containers:
         mountPath: /etc/config
 ```
 
----
-
-### 🧪 Viewing ConfigMap
+##### 🧪 Viewing ConfigMap
 
 ```bash
 kubectl get configmap my-config -o yaml
-```
-
----
-
-### 🔁 Updating a ConfigMap
-
-Update YAML and re-apply:
-
-```bash
-kubectl apply -f configmap.yaml
 ```
 
 > ⚠️ Note: Pods do not automatically reload ConfigMap changes. You must restart the pod or use tools like [Reloader](https://github.com/stakater/Reloader) or [Kustomize patches].
@@ -122,11 +110,11 @@ kubectl apply -f configmap.yaml
 
 ### 🆚 ConfigMap vs Secret
 
-|Feature|ConfigMap|Secret|
-|---|---|---|
-|Use for|Plain config|Sensitive data|
-|Encoded?|No|Base64 encoded|
-|Encrypted?|No|Yes (optionally)|
+| Feature    | ConfigMap    | Secret           |
+| ---------- | ------------ | ---------------- |
+| Use for    | Plain config | Sensitive data   |
+| Encoded?   | No           | Base64 encoded   |
+| Encrypted? | No           | Yes (optionally) |
 
 ---
 
