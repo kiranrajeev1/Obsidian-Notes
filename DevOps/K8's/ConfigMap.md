@@ -12,23 +12,19 @@
 #####  What is Configuration?
 **Configuration** refers to the **settings, parameters, or options** that control how software, systems, or services behave.
 ######  In Simple Terms:
+
 > Configuration is **how you tell software what to do** without changing its code.
 #####  Kubernetes ConfigMap
-
 ######  What is a ConfigMap?
-
 A **ConfigMap** is a Kubernetes object used to **store non-confidential configuration data** in **key-value** pairs. It helps decouple environment-specific configurations from application code.
 
 ######  Use Cases
-
 - Store configuration files (e.g., `app.properties`, `settings.json`)
 - Store environment variables for pods
 - Centralized management of app configurations
 
-######  Creating a ConfigMap
-
+#####  Creating a ConfigMap
 ###### 1. From Literal Values
-
 ```bash
 kubectl create configmap my-config --from-literal=key1=value1 --from-literal=key2=value2
 ```
