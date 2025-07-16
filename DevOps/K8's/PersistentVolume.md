@@ -58,9 +58,21 @@ A **Persistent Volume Claim (PVC)** is a **request for storage** by a user (typi
 
 Kubernetes matches the PVC to a suitable PV (if available), or dynamically provisions one.
 
-### Example PVC:
+###### Example PVC:
 
-
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: my-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 3Gi
+  storageClassName: standard
+```
 ### Key Points:
 
 - The PVC doesn’t need to know the backend (EBS, NFS, etc.).
