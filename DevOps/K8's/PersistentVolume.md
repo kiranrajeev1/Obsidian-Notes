@@ -89,18 +89,15 @@ When a PVC is created:
 ###### Dynamic Provisioning:
 If PVC specifies a `storageClassName`, and no PVs match, Kubernetes will provision a volume dynamically using that class.
 ###### 🧼 Reclaim Policy
-
 When a PVC is deleted, the PV it was bound to is marked as "Released". What happens next depends on the **reclaim policy**:
 
-|Reclaim Policy|Behavior|
-|---|---|
-|`Retain`|Keeps the data for manual cleanup.|
-|`Delete`|Deletes both PV and underlying storage (e.g., EBS).|
-|`Recycle`|Wipes data and makes PV available again (deprecated).|
+| Reclaim Policy | Behavior                                              |
+| -------------- | ----------------------------------------------------- |
+| `Retain`       | Keeps the data for manual cleanup.                    |
+| `Delete`       | Deletes both PV and underlying storage (e.g., EBS).   |
+| `Recycle`      | Wipes data and makes PV available again (deprecated). |
 
----
-
-## 🔐 Access Modes (Detailed)
+###### 🔐 Access Modes (Detailed)
 
 |Mode|Description|
 |---|---|
