@@ -6,7 +6,6 @@
 🏷️ **Tags:** #kubernetes #devops #PersistentVolume  
 
 ---
-
 ## 📝 Notes
 
 #####  1. What is a Persistent Volume (PV)?
