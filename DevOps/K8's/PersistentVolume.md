@@ -105,6 +105,57 @@ When a PVC is deleted, the PV it was bound to is marked as "Released". What happ
 |`ReadWriteMany` (RWX)|Mounted as **read-write** by many nodes (e.g., NFS, GlusterFS).|
 
 ---
+## 📚 StorageClass
+
+A **StorageClass** defines the type of storage and how to provision it. Used with PVCs for dynamic provisioning.
+
+Example:
+```yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: standard
+provisioner: kubernetes.io/aws-ebs
+parameters:
+  type: gp2
+```
+
+PVC with this `storageClassName: standard` will trigger this provisioning logic.
+
+---
+
+## 🔁 Lifecycle Summary
+
+1. **Admin** defines PVs or StorageClasses.
+    
+2. **User** creates PVCs.
+    
+3. K8s matches PVCs with PVs or dynamically provisions.
+    
+4. Pods reference PVCs to mount storage volumes.
+    
+
+---
+
+## 🧪 Pod Using PVC Example
+
+yaml
+
+CopyEdit
+
+`apiVersion: v1 kind: Pod metadata:   name: pod-using-pvc spec:   containers:     - name: app       image: nginx       volumeMounts:         - mountPath: "/usr/share/nginx/html"           name: my-storage   volumes:     - name: my-storage       persistentVolumeClaim:         claimName: my-pvc`
+
+---
+
+## 🧠 Real-World Use Cases
+
+- Hosting databases (MySQL, PostgreSQL) with persistent storage.
+    
+- Sharing files between pods (if RWX is supported).
+    
+- Retaining logs or user data across pod restarts.
+
+---
 
 ## 🧾 Commands
 
