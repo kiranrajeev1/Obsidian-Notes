@@ -36,6 +36,27 @@ spec:
     path: "/mnt/data"
 ```
 
+### Fields Breakdown:
+
+- `capacity`: Size of the volume.
+    
+- `accessModes`:
+    
+    - `ReadWriteOnce` (RWO): One node can read/write.
+        
+    - `ReadOnlyMany` (ROX): Many nodes can read.
+        
+    - `ReadWriteMany` (RWX): Many nodes can read/write.
+        
+- `persistentVolumeReclaimPolicy`: What happens to the volume when it's released. Options:
+    
+    - `Retain`: Keeps data after release.
+        
+    - `Recycle`: Deprecated (used to wipe data).
+        
+    - `Delete`: Deletes the storage backend.
+        
+- `storageClassName`: Associates PV with PVCs requesting this class.
 ---
 
 ## 🧾 Commands
