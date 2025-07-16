@@ -18,6 +18,10 @@ A **Persistent Volume (PV)** is a piece of storage in the cluster that has been 
 - PV is a **Kubernetes abstraction** for physical storage.
 - It represents a **real storage resource** (e.g., AWS EBS, GCE Persistent Disk, NFS, iSCSI, Ceph, etc.).
 - Created **either manually** by a cluster admin or **automatically** via a **StorageClass**.
+
+### Example PV:
+
+
 ---
 
 ## 🧾 Commands
