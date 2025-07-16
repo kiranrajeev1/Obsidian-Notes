@@ -131,9 +131,7 @@ PVC with this `storageClassName: standard` will trigger this provisioning logic.
 3. K8s matches PVCs with PVs or dynamically provisions.
 4. Pods reference PVCs to mount storage volumes.
 
-##### #🧪 Pod Using PVC Example
-
-yaml
+###### Pod Using PVC Example
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -154,12 +152,10 @@ spec:
 
 ---
 
-## 🧠 Real-World Use Cases
+###### Real-World Use Cases
 
 - Hosting databases (MySQL, PostgreSQL) with persistent storage.
-    
 - Sharing files between pods (if RWX is supported).
-    
 - Retaining logs or user data across pod restarts.
 
 ---
