@@ -73,35 +73,22 @@ spec:
       storage: 3Gi
   storageClassName: standard
 ```
-### Key Points:
+###### Key Points:
 
 - The PVC doesn’t need to know the backend (EBS, NFS, etc.).
-    
 - It’s an abstraction to **request storage** in a declarative way.
-    
 - K8s will bind this claim to a suitable PV.
-    
 
----
-
-## 🔄 Binding Process: PV ↔️ PVC
+###### 🔄 Binding Process: PV ↔️ PVC
 
 When a PVC is created:
 
 1. Kubernetes searches for a **matching PV** that satisfies the PVC's request (capacity, access mode, and `storageClassName`).
-    
 2. If a match is found, the PV is bound to the PVC.
-    
 3. If no match is found and dynamic provisioning is enabled (via a StorageClass), K8s will create a new PV for the PVC.
-    
-
-### Dynamic Provisioning:
-
+###### Dynamic Provisioning:
 If PVC specifies a `storageClassName`, and no PVs match, Kubernetes will provision a volume dynamically using that class.
-
----
-
-## 🧼 Reclaim Policy
+###### 🧼 Reclaim Policy
 
 When a PVC is deleted, the PV it was bound to is marked as "Released". What happens next depends on the **reclaim policy**:
 
