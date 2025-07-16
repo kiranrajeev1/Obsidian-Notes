@@ -9,7 +9,7 @@
 
 ## 📝 Notes
 
-##### 🧱 1. What is a Persistent Volume (PV)?
+#####  1. What is a Persistent Volume (PV)?
 
 A **Persistent Volume (PV)** is a piece of storage in the cluster that has been **provisioned by an administrator** or **dynamically provisioned using Storage Classes**. It is a **resource in the cluster**, just like a node or pod.
 
@@ -48,7 +48,7 @@ spec:
     - `Delete`: Deletes the storage backend.
 - `storageClassName`: Associates PV with PVCs requesting this class.
 ---
-##### 📦 2. What is a Persistent Volume Claim (PVC)?
+#####  2. What is a Persistent Volume Claim (PVC)?
 
 A **Persistent Volume Claim (PVC)** is a **request for storage** by a user (typically a developer). It specifies:
 
@@ -79,7 +79,7 @@ spec:
 - It’s an abstraction to **request storage** in a declarative way.
 - K8s will bind this claim to a suitable PV.
 
-###### 🔄 Binding Process: PV ↔️ PVC
+###### Binding Process: PV PVC
 
 When a PVC is created:
 
@@ -88,7 +88,7 @@ When a PVC is created:
 3. If no match is found and dynamic provisioning is enabled (via a StorageClass), K8s will create a new PV for the PVC.
 ###### Dynamic Provisioning:
 If PVC specifies a `storageClassName`, and no PVs match, Kubernetes will provision a volume dynamically using that class.
-###### 🧼 Reclaim Policy
+######  Reclaim Policy
 When a PVC is deleted, the PV it was bound to is marked as "Released". What happens next depends on the **reclaim policy**:
 
 | Reclaim Policy | Behavior                                              |
@@ -97,7 +97,7 @@ When a PVC is deleted, the PV it was bound to is marked as "Released". What happ
 | `Delete`       | Deletes both PV and underlying storage (e.g., EBS).   |
 | `Recycle`      | Wipes data and makes PV available again (deprecated). |
 
-###### 🔐 Access Modes (Detailed)
+###### Access Modes (Detailed)
 
 |Mode|Description|
 |---|---|
