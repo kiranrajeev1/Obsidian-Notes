@@ -127,19 +127,19 @@ kubectl get pod <pod-name> -o jsonpath="{.spec.containers[*].resources}"
 
 ##### Check Pod and Node Resource Usage
 
-###### View live CPU and memory usage of pods
+###### View live CPU and memory usage of all pods
 
 ```bash
 kubectl top pod
 ```
 
-###### View CPU and memory usage of a specific pod
+###### View live CPU and memory usage of a specific pod
 
 ```bash
 kubectl top pod <pod-name>
 ```
 
-###### View live CPU and memory usage of nodes
+###### View live CPU and memory usage of all nodes
 
 ```bash
 kubectl top node
@@ -149,7 +149,7 @@ kubectl top node
 
 ##### Inspect Requests and Limits
 
-###### Get a pod’s resource requests and limits
+###### Get resource requests and limits of a pod
 
 ```bash
 kubectl get pod <pod-name> -o jsonpath="{.spec.containers[*].resources}"
@@ -163,7 +163,7 @@ kubectl describe pod <pod-name>
 
 ---
 
-##### Set Resource Requests and Limits (via YAML)
+##### Apply Resource Requests and Limits
 
 ###### Apply a pod or deployment YAML with resource limits
 
@@ -173,8 +173,24 @@ kubectl apply -f pod-with-resources.yaml
 
 ---
 
-##### 
-##### Limit Ranges
+##### Edit or Patch Resource Requests and Limits
+
+###### Edit resource configuration for a pod (not recommended for live pods)
+
+```bash
+kubectl edit pod <pod-name>
+```
+
+###### Patch a deployment to update CPU and memory requests/limits
+
+```bash
+kubectl patch deployment <deployment-name> \
+  --patch '{"spec":{"template":{"spec":{"containers":[{"name":"<container-name>","resources":{"requests":{"cpu":"250m","memory":"128Mi"},"limits":{"cpu":"500m","memory":"256Mi"}}}]}}}}'
+```
+
+---
+
+##### Limit Ranges (Optional Namespace-Level Default Limits)
 
 ###### List all limit ranges in a namespace
 
@@ -202,18 +218,16 @@ kubectl delete limitrange <name> -n <namespace>
 
 ---
 
-##### Example: Set CPU/Memory Requests and Limits in Pod YAML
+##### Example: Resource Requests and Limits in YAML
 
 ```yaml
 resources:
   requests:
-    memory: "128Mi"
     cpu: "250m"
+    memory: "128Mi"
   limits:
-    memory: "256Mi"
     cpu: "500m"
+    memory: "256Mi"
 ```
 
 ---
-
-Let me know if you'd like ready-to-use YAML templates for resource quotas, limit ranges, or deployment examples with proper resource configurations.
