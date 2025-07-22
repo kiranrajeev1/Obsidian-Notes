@@ -86,50 +86,13 @@ This means:
 | `limits.memory`          | Total memory limits allowed                 |
 
 ---
-
-##### Commands for Managing Resource Quotas
-
-###### Create a resource quota from YAML
-
-```bash
-kubectl apply -f resource-quota.yaml
-```
-
-###### List resource quotas in a namespace
-
-```bash
-kubectl get resourcequota -n <namespace>
-```
-
-###### Describe a specific resource quota
-
-```bash
-kubectl describe resourcequota <quota-name> -n <namespace>
-```
-
-###### Delete a resource quota
-
-```bash
-kubectl delete resourcequota <quota-name> -n <namespace>
-```
-
----
-
 ##### Tips
 
 - Combine with **LimitRanges** to enforce per-container limits
-    
 - Set quotas early in a multi-team environment to avoid conflicts
-    
 - Monitor usage with `kubectl describe resourcequota`
-    
 
 ---
-
-Let me know if you want a practical demo YAML with pods and quotas in action.
-
----
-
 ## 🧾 Commands
 
 ```bash
