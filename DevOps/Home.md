@@ -7,11 +7,11 @@
 - [[CI_CD_Pipeline]]
 
 ### ☸️ Kubernetes (K8s)
+- [[Quick_Notes]]
 - [[Cronjob]]
 - [[Daemonsets]]
 - [[Deployment]]
 - [[Jobs]]
-- [[Quick_Notes]]
 - [[Namespace]]
 - [[Pods]]
 - [[RS_SS_Deployment]]
