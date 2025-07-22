@@ -143,10 +143,6 @@ echo 'dXNlcm5hbWU=' | base64 --decode
 
 ## 🧾 Commands
 
-Sure! Here's the complete list of **Kubernetes Secret commands** in clean **Markdown format** using `#####` (Heading 5) and `######` (Heading 6):
-
----
-
 ##### Secret Creation Commands
 
 ###### Create a Secret from literals
