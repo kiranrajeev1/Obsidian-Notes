@@ -22,16 +22,12 @@ A **ResourceQuota** in Kubernetes is used to **limit the total resource consumpt
     - Number of pods, PVCs, secrets, etc.        
     - LoadBalancer services, ephemeral storage, etc.
 
----
-
 ##### How Resource Quotas Work
 
 - Resource quotas are **namespace-scoped**  
 - They apply to all resources in that namespace
 - Pods must request resources (`requests` or `limits`) for quotas to apply
 - Combined with **LimitRanges**, you can enforce default resource limits
-
----
 
 ##### Example ResourceQuota YAML
 
@@ -60,16 +56,12 @@ This means:
 - Max memory limit across all pods: 8Gi
 - Max 10 pods, 5 PVCs, etc. in the namespace
 
----
 ##### What Happens When Limits Are Exceeded?
 
 - If you try to create more resources (e.g., a new pod) that would exceed the quota, Kubernetes will **reject the request** with an error:    
     ```
     Error from server (Forbidden): exceeded quota: dev-quota
     ```
-
-
----
 
 ##### Common ResourceQuota Fields
 
@@ -85,7 +77,6 @@ This means:
 | `limits.cpu`             | Total CPU limits allowed                    |
 | `limits.memory`          | Total memory limits allowed                 |
 
----
 ##### Tips
 
 - Combine with **LimitRanges** to enforce per-container limits
