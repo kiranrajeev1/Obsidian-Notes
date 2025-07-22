@@ -53,6 +53,13 @@
     
 - 🚫 [[Taints and Tolerations]]
     
+[[CI_CD_Pipeline|CI/CD Pipeline]]
+[[DevOps/K8's/ConfigMap|🧾 ConfigMap]]
+🔐 [[Secrets|Secrets]]
+| Section         | Link                            |
+|----------------|----------------------------------|
+| CI/CD          | [[CI_CD_Pipeline|CI/CD Pipeline]] |
+| Config         | [[Secrets|🔐 Secrets]]            |
 
 ---
 
