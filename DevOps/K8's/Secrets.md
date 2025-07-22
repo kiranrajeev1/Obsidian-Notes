@@ -129,7 +129,7 @@ To decode values:
 echo 'dXNlcm5hbWU=' | base64 --decode
 ```
 
-## 4. ConfigMaps vs. Secrets: Key Differences
+##### ConfigMaps vs. Secrets: Key Differences
 
 | Feature            | ConfigMap                                        | Secret                                                |
 | :----------------- | :----------------------------------------------- | :---------------------------------------------------- |
@@ -139,9 +139,7 @@ echo 'dXNlcm5hbWU=' | base64 --decode
 | **Access Control** | Standard RBAC.                                   | Critical to apply strict RBAC for restricted access.  |
 | **Visibility**     | Easily readable in plain text via `kubectl get`. | Base64-encoded via `kubectl get`, requires decoding.  |
 |**Use Cases**|Environment variables, URLs, feature flags, config files.|Passwords, API keys, TLS certs, SSH keys, registry credentials.|
----
 
-Would you like an example of how to use a Secret in a full Pod spec?
 
 ## 🧾 Commands
 
