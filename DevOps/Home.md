@@ -1,75 +1,67 @@
+### 🧭 DevOps Dashboard
+
 # 🧭 DevOps Dashboard
 
-## ⚙️ CI/CD Tools
+> [!info] ⚙️ CI/CD Tools  
+> **🧪 Jenkins**  
+> - 🔁 [[CI_CD_Pipeline|CI/CD Pipeline]]
 
-#### 🧪 Jenkins
 
-- 🔁 [[CI_CD_Pipeline]]
+> [!note] ☸️ Kubernetes (K8s) – Core Concepts  
+> - 📦 [[Pods]]  
+> - 🗂️ [[Namespace]]  
+> - 📌 [[RS_SS_Deployment|ReplicaSet / StatefulSet / Deployment]]  
+> - 🧱 [[Deployment]]  
+> - 👷 [[Jobs]]  
+> - 🕰️ [[Cronjob]]  
+> - 🧑‍🔧 [[Daemonsets]]  
+> - 📡 [[Service]]
 
-## ☸️ Kubernetes (K8s)
+---
 
-### 📚 Core Concepts
+> [!tip] ⚙️ Kubernetes Configuration  
+> - 🧾 [[ConfigMap]]  
+> - 🔐 [[Secrets]]  
+> - 💾 [[PersistentVolume]]
 
-- 📦 [[Pods]]
+---
 
-- 📂 [[Namespace]]
-    
-- 📌 [[RS_SS_Deployment|ReplicaSet / StatefulSet / Deployment]]
-    
-- 🧱 [[Deployment]]
-    
-- 🧪 [[Jobs]]
-    
-- 🕰️ [[Cronjob]]
-    
-- 👷 [[Daemonsets]]
-    
-- 📡 [[Service]]
-    
+> [!warning] 📊 Resource Control  
+> - 🚦 [[ResourceManagement]]  
+> - 📏 [[ResourceQuota]]
 
-### ⚙️ Configuration
+---
 
-- 🧾 [[DevOps/K8's/ConfigMap|ConfigMap]]
-    
-- 🔐 [[Secrets]]
-    
-- 💾 [[PersistentVolume]]
-    
+> [!abstract] 📌 Scheduling & Placement  
+> - 📍 [[NodeSelector]]  
+> - 🎯 [[NodeAffinity]]  
+> - 🚫 [[Taints and Tolerations]]
+```
 
-### 📊 Resource Control
+---
 
-- 🚦 [[ResourceManagement]]
-    
-- 📏 [[ResourceQuota]]
-    
+### ✅ How This Helps
 
-### 📌 Scheduling & Placement
-
-- 📍 [[NodeSelector]]
+- Keeps **all content aligned and modular**
     
-- 🎯 [[NodeAffinity]]
+- Makes each section **stand out visually**
     
-- 🚫 [[Taints and Tolerations]]
+- Great for **mobile, tablet, or narrow window viewing**
+    
+- You can change `info`, `note`, `tip`, etc. to your own custom callout styles (if using **Style Settings**)
     
 
 ---
-> [!div-class] Core Concepts
-> - 📦 [[Pods]]
-> - 🗂️ [[Namespace]]
-> - 📌 [[RS_SS_Deployment|ReplicaSet / StatefulSet / Deployment]]
-> - 🧱 [[Deployment]]
-> - 👷 [[Jobs]]
-> - 🕰️ [[Cronjob]]
-> - 🧑‍🔧 [[Daemonsets]]
-> - 📡 [[Service]]
 
-<div style="display: flex; flex-wrap: wrap; gap: 8px;">
-  <a class="internal-link" href="Pods">📦 Pods</a>
-  <a class="internal-link" href="Namespace">🗂️ Namespace</a>
-  <a class="internal-link" href="RS_SS_Deployment">📌 ReplicaSet / StatefulSet / Deployment</a>
-  <a class="internal-link" href="Deployment">🧱 Deployment</a>
-  <a class="internal-link" href="Jobs">👷 Jobs</a>
-  <a class="internal-link" href="Cronjob">🕰️ Cronjob</a>
-  <a class="internal-link" href="Daemonsets">🧑‍🔧 Daemonsets</a>
-  <a class="internal-link" href="Service">📡 Service</a>
-</div>
+### 🎨 Want Matching Styles?
+
+If you’d like the callouts to be **even more compact or themed** (e.g. same pill-style links inside), I can generate a CSS snippet to:
+
+- Remove excessive callout padding/margins
+    
+- Apply pill/button styles inside callouts
+    
+- Make sections collapsible
+    
+
+Would you like me to generate that too?
