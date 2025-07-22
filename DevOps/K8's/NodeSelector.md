@@ -94,17 +94,12 @@ kubectl label node worker-node-1 disktype-
 ```
 
 ---
-
 ##### Create Pods Using Node Selector
-
 ###### Apply a pod YAML with a nodeSelector
-
 ```bash
 kubectl apply -f pod-with-node-selector.yaml
 ```
-
 ###### Example `pod-with-node-selector.yaml`:
-
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -117,23 +112,14 @@ spec:
   nodeSelector:
     disktype: ssd
 ```
-
 ---
-
 ##### Verify Pod Scheduling
-
 ###### Check where the pod is scheduled
-
 ```bash
 kubectl get pod nginx-pod -o wide
 ```
-
 ###### Describe pod to see nodeSelector applied and scheduling details
-
 ```bash
 kubectl describe pod nginx-pod
 ```
-
 ---
-
-Let me know if you'd like an example combining `nodeSelector` with `affinity` or how it differs from `taints` and `tolerations`.
