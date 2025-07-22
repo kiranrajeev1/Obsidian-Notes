@@ -3,7 +3,7 @@
 🗓️ **Date:** 16-07-2025  
 🕒 **Time:** 10:10  
 
-🏷️ **Tags:** #kubernetes #devops #PersistentVolume  
+🏷️ **Tags:** #kubernetes #devops #PersistentVolume  #PV #PVC
 
 ---
 ## 📝 Notes
