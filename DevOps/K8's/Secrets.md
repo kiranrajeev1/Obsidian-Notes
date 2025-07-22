@@ -210,8 +210,6 @@ kubectl get secret my-secret -o jsonpath="{.data.username}" | base64 --decode
 kubectl describe secret my-secret
 ```
 
----
-
 ##### Edit / Update / Delete Secrets
 
 ###### Edit a secret (opens in default editor)
@@ -225,8 +223,6 @@ kubectl edit secret my-secret
 ```bash
 kubectl delete secret my-secret
 ```
-
----
 
 ##### Use Secrets in Pods
 
@@ -261,8 +257,6 @@ imagePullSecrets:
 - name: my-docker-secret
 ```
 
----
-
 ##### Import from YAML
 
 ###### Apply a Secret from a manifest file
@@ -271,12 +265,7 @@ imagePullSecrets:
 kubectl apply -f my-secret.yaml
 ```
 
----
-
 ##### (Optional) Encrypt Secrets at Rest
 
 > Secrets can be encrypted at rest by configuring the Kubernetes API server. This cannot be done via `kubectl`. Let me know if you want those steps.
 
----
-
-Let me know if you'd like the same in a downloadable `.md` file or with example manifests.
