@@ -67,7 +67,44 @@ spec:
 ---
 ## 🧾 Commands
 
+###### Add a taint to a node
 ```bash
-# Example:
-kubectl get pods
+kubectl taint nodes <node-name> <key>=<value>:<effect>
 ```
+**Example:**
+```bash
+kubectl taint nodes node1 env=prod:NoSchedule
+```
+###### Remove a taint from a node
+```bash
+kubectl taint nodes <node-name> <key>:<effect>-
+```
+**Example:**
+```bash
+kubectl taint nodes node1 env:NoSchedule-
+```
+###### View taints on a node
+```bash
+kubectl describe node <node-name>
+```
+###### Apply a pod manifest with a toleration
+```bash
+kubectl apply -f pod-with-toleration.yaml
+```
+###### Example pod-with-toleration.yaml
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tolerate-prod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  tolerations:
+  - key: "env"
+    operator: "Equal"
+    value: "prod"
+    effect: "NoSchedule"
+```
+
