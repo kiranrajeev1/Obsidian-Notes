@@ -61,7 +61,15 @@
 | CI/CD          | [[CI_CD_Pipeline|CI/CD Pipeline]] |
 | Config         | [[Secrets|🔐 Secrets]]            |
 
+[CI/CD Pipeline](CI_CD_Pipeline)
+[Secrets](Secrets)
 ---
+> ### ⚙️ CI/CD  
+> - [[CI_CD_Pipeline|🛠️ Pipeline]]
+
+> ### ☸️ Kubernetes  
+> - [[Pods|📦 Pods]]  
+> - [[ConfigMap|🧾 ConfigMap]]
 
 ### 📁 Notes Structure Tips
 
