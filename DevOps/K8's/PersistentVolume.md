@@ -162,12 +162,6 @@ spec:
 
 ## 🧾 Commands
 
-Sure! Here's the complete list of **Kubernetes Persistent Volume (PV)** and **Persistent Volume Claim (PVC)** commands in **Markdown format**, with **unnecessary line breaks removed** and using `#####` and `######` headings.
-
----
-
-##### Persistent Volume (PV) & Persistent Volume Claim (PVC) Commands
-
 ##### Create Persistent Volumes and Claims
 
 ###### Create a Persistent Volume (PV) from a YAML file
@@ -293,4 +287,3 @@ kubectl describe storageclass <name>
 
 ---
 
-Let me know if you’d like YAML templates for static or dynamic provisioning examples.
