@@ -35,15 +35,11 @@ resources:
     memory: "256Mi"
     cpu: "250m"
 ```
-
 ###### 2. **Limits**
 
 - The **maximum** resource a container can use.
-    
 - If a container exceeds its **CPU limit**, it will be throttled.
-    
 - If it exceeds **memory limit**, it will be **terminated (OOMKilled)**.
-    
 
 ```yaml
 resources:
@@ -52,9 +48,7 @@ resources:
     cpu: "500m"
 ```
 
----
-
-##### 3. **CPU & Memory Units**
+###### 3.**CPU & Memory Units**
 
 - **CPU:** Expressed in millicores (`1000m = 1 core`)
     
