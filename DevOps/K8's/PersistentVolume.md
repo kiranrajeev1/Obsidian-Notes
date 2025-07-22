@@ -162,7 +162,135 @@ spec:
 
 ## 🧾 Commands
 
+Sure! Here's the complete list of **Kubernetes Persistent Volume (PV)** and **Persistent Volume Claim (PVC)** commands in **Markdown format**, with **unnecessary line breaks removed** and using `#####` and `######` headings.
+
+---
+
+##### Persistent Volume (PV) & Persistent Volume Claim (PVC) Commands
+
+##### Create Persistent Volumes and Claims
+
+###### Create a Persistent Volume (PV) from a YAML file
+
 ```bash
-# Example:
-kubectl get pods
+kubectl apply -f pv.yaml
 ```
+
+###### Create a Persistent Volume Claim (PVC) from a YAML file
+
+```bash
+kubectl apply -f pvc.yaml
+```
+
+##### List and Get PVs and PVCs
+
+###### List all Persistent Volumes
+
+```bash
+kubectl get pv
+```
+
+###### List all Persistent Volume Claims in the current namespace
+
+```bash
+kubectl get pvc
+```
+
+###### Get detailed information about a specific PV
+
+```bash
+kubectl describe pv <pv-name>
+```
+
+###### Get detailed information about a specific PVC
+
+```bash
+kubectl describe pvc <pvc-name>
+```
+
+##### Delete PVs and PVCs
+
+###### Delete a Persistent Volume
+
+```bash
+kubectl delete pv <pv-name>
+```
+
+###### Delete a Persistent Volume Claim
+
+```bash
+kubectl delete pvc <pvc-name>
+```
+
+##### Edit and Patch PVs and PVCs
+
+###### Edit a Persistent Volume
+
+```bash
+kubectl edit pv <pv-name>
+```
+
+###### Edit a Persistent Volume Claim
+
+```bash
+kubectl edit pvc <pvc-name>
+```
+
+###### Patch a PVC (e.g., update storage request)
+
+```bash
+kubectl patch pvc <pvc-name> -p '{"spec":{"resources":{"requests":{"storage":"2Gi"}}}}'
+```
+
+##### Monitor PV/PVC Usage and Binding
+
+###### Watch PVC status in real time
+
+```bash
+kubectl get pvc -w
+```
+
+###### See which PV is bound to which PVC
+
+```bash
+kubectl get pv
+```
+
+###### Check events related to PVC binding issues
+
+```bash
+kubectl describe pvc <pvc-name>
+```
+
+##### Use PVs and PVCs in Pods
+
+###### Example pod using a PVC
+
+```yaml
+volumes:
+- name: my-storage
+  persistentVolumeClaim:
+    claimName: my-pvc
+
+volumeMounts:
+- mountPath: "/data"
+  name: my-storage
+```
+
+##### StorageClass Related (if dynamic provisioning is used)
+
+###### List all StorageClasses
+
+```bash
+kubectl get storageclass
+```
+
+###### Describe a specific StorageClass
+
+```bash
+kubectl describe storageclass <name>
+```
+
+---
+
+Let me know if you’d like YAML templates for static or dynamic provisioning examples.
