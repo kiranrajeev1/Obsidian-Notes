@@ -125,7 +125,95 @@ kubectl get pod <pod-name> -o jsonpath="{.spec.containers[*].resources}"
 
 ## 🧾 Commands
 
+##### Check Pod and Node Resource Usage
+
+###### View live CPU and memory usage of pods
+
 ```bash
-# Example:
-kubectl get pods
+kubectl top pod
 ```
+
+###### View CPU and memory usage of a specific pod
+
+```bash
+kubectl top pod <pod-name>
+```
+
+###### View live CPU and memory usage of nodes
+
+```bash
+kubectl top node
+```
+
+---
+
+##### Inspect Requests and Limits
+
+###### Get a pod’s resource requests and limits
+
+```bash
+kubectl get pod <pod-name> -o jsonpath="{.spec.containers[*].resources}"
+```
+
+###### Describe a pod to see detailed resource configuration
+
+```bash
+kubectl describe pod <pod-name>
+```
+
+---
+
+##### Set Resource Requests and Limits (via YAML)
+
+###### Apply a pod or deployment YAML with resource limits
+
+```bash
+kubectl apply -f pod-with-resources.yaml
+```
+
+---
+
+##### 
+##### Limit Ranges
+
+###### List all limit ranges in a namespace
+
+```bash
+kubectl get limitrange -n <namespace>
+```
+
+###### Describe a specific limit range
+
+```bash
+kubectl describe limitrange <name> -n <namespace>
+```
+
+###### Create a limit range from a YAML file
+
+```bash
+kubectl apply -f limit-range.yaml
+```
+
+###### Delete a limit range
+
+```bash
+kubectl delete limitrange <name> -n <namespace>
+```
+
+---
+
+##### Example: Set CPU/Memory Requests and Limits in Pod YAML
+
+```yaml
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "250m"
+  limits:
+    memory: "256Mi"
+    cpu: "500m"
+```
+
+---
+
+Let me know if you'd like ready-to-use YAML templates for resource quotas, limit ranges, or deployment examples with proper resource configurations.
