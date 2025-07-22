@@ -54,5 +54,21 @@
       ],
       "key": "6"
     }
+  ],
+  "omnisearch:show-modal": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
+  ],
+  "omnisearch:show-modal-infile": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
   ]
 }
