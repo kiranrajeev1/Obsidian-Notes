@@ -96,15 +96,11 @@ This means:
 ## 🧾 Commands
 
 ##### Create and Apply ResourceQuota
-
 ###### Create a ResourceQuota from a YAML file
-
 ```bash
 kubectl apply -f resource-quota.yaml
 ```
-
 ###### Example ResourceQuota YAML
-
 ```yaml
 apiVersion: v1
 kind: ResourceQuota
