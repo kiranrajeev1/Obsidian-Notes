@@ -120,15 +120,11 @@ kubectl label node <node-name> <key>-
 kubectl label node worker-node-1 disktype-
 ```
 ##### Create Pods with Node Affinity
-
 ###### Apply a pod spec that uses nodeAffinity
-
 ```bash
 kubectl apply -f pod-with-node-affinity.yaml
 ```
-
 ###### Example pod-with-node-affinity.yaml
-
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -148,29 +144,18 @@ spec:
   - name: nginx
     image: nginx
 ```
-
----
-
 ##### Check and Troubleshoot Affinity Behavior
-
 ###### View where the pod was scheduled
-
 ```bash
 kubectl get pod affinity-demo -o wide
 ```
-
 ###### Describe the pod to view applied affinity rules
-
 ```bash
 kubectl describe pod affinity-demo
 ```
-
 ###### Check why a pod is not scheduled (e.g., no matching node)
-
 ```bash
 kubectl describe pod <pod-name>
 ```
-
 ---
 
-Let me know if you'd like a YAML example for **preferred affinity** or want to combine it with **taints and tolerations** or **anti-affinity rules**.
