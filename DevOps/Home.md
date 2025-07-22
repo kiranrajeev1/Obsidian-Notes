@@ -1,10 +1,4 @@
-Here’s an improved, **cleaner and more attractive version** of your **Obsidian DevOps Dashboard** index page. It uses clear hierarchy, emoji for quick scanning, section groupings, and better formatting for clarity—while remaining Obsidian-compatible (Markdown + internal links).
-
----
-
 # 🧭 DevOps Dashboard
-
-> Central index for CI/CD & Kubernetes notes
 
 ---
 
@@ -22,7 +16,7 @@ Here’s an improved, **cleaner and more attractive version** of your **Obsidian
 ### 📚 Core Concepts
 
 - 📦 [[Pods]]
-    
+
 - 📂 [[Namespace]]
     
 - 📌 [[RS_SS_Deployment|ReplicaSet / StatefulSet / Deployment]]
@@ -64,4 +58,3 @@ Here’s an improved, **cleaner and more attractive version** of your **Obsidian
     
 
 ---
-
