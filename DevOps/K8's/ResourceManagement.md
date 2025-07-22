@@ -69,7 +69,7 @@ Kubernetes assigns one of three **QoS classes** to pods based on requests and li
 
 ---
 
-##### . **Example Configuration**
+##### **Example Configuration**
 
 ```yaml
 apiVersion: v1
@@ -91,7 +91,7 @@ spec:
 
 ---
 
-##### 6. **Commands to View Resources**
+##### **Commands to View Resources**
 
 ###### View current usage
 
@@ -114,7 +114,7 @@ kubectl get pod <pod-name> -o jsonpath="{.spec.containers[*].resources}"
 
 ---
 
-##### 7. **Why Use Resource Management**
+##### **Why Use Resource Management**
 
 - Prevent noisy neighbors (pods consuming excessive resources)
     
