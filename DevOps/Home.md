@@ -21,6 +21,8 @@
 - [[PersistentVolume]]
 - [[ResourceManagement]]
 - [[ResourceQuota]]
-- [[]]
+- [[NodeSelector]]
+- [[|NodeAffinity]]
+- [[Taints and Tolerations]]
 
 ---
