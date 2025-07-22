@@ -45,10 +45,7 @@ affinity:
 ```
 This ensures the pod is **only scheduled** on nodes labeled `disktype=ssd`.
 
----
-
 ##### Example: Preferred Node Affinity (Soft Rule)
-
 ```yaml
 affinity:
   nodeAffinity:
@@ -64,10 +61,7 @@ affinity:
 
 This prefers scheduling on `disktype=ssd` nodes but allows other nodes if none match.
 
----
-
 ##### Complete Pod Spec with Node Affinity
-
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -88,41 +82,14 @@ spec:
     image: nginx
 ```
 
----
 
 ##### Comparison: `nodeSelector` vs `nodeAffinity`
 
-|Feature|`nodeSelector`|`nodeAffinity`|
-|---|---|---|
-|Logic support|Simple key=value|Advanced (`In`, `NotIn`, `Exists`)|
-|Hard/Soft constraint|Only hard|Hard and soft|
-|Expressiveness|Limited|Flexible|
-
----
-
-##### Related Commands
-
-###### Label a node
-
-```bash
-kubectl label node <node-name> disktype=ssd
-```
-
-###### View pod placement
-
-```bash
-kubectl get pod <pod-name> -o wide
-```
-
-###### Describe a pod to see affinity rules
-
-```bash
-kubectl describe pod <pod-name>
-```
-
----
-
-Let me know if you'd like to see an example combining **nodeAffinity** with **taints**, **tolerations**, or **anti-affinity** rules!
+| Feature              | `nodeSelector`   | `nodeAffinity`                     |
+| -------------------- | ---------------- | ---------------------------------- |
+| Logic support        | Simple key=value | Advanced (`In`, `NotIn`, `Exists`) |
+| Hard/Soft constraint | Only hard        | Hard and soft                      |
+| Expressiveness       | Limited          | Flexible                           |
 
 ---
 
