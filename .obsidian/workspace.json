@@ -4,95 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1e42a373f14e2419",
+        "id": "5ebcec3aa3647a37",
         "type": "tabs",
         "children": [
           {
-            "id": "446af6d5d1cbf8c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevOps/K8's/ConfigMap.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ConfigMap"
-            }
-          },
-          {
-            "id": "27274c1248c0cdff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevOps/K8's/PersistentVolume.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PersistentVolume"
-            }
-          },
-          {
-            "id": "96899c89a8210e62",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevOps/K8's/ResourceManagement.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ResourceManagement"
-            }
-          },
-          {
-            "id": "ae0a52592355530b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevOps/K8's/ResourceQuota.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ResourceQuota"
-            }
-          },
-          {
-            "id": "2f6aec06cba5a26e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevOps/K8's/NodeSelector.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NodeSelector"
-            }
-          },
-          {
-            "id": "a1985a8c8a0445bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevOps/K8's/NodeAffinity.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NodeAffinity"
-            }
-          },
-          {
-            "id": "23275954f58a029e",
+            "id": "e0da88c00e9990f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -105,8 +21,7 @@
               "title": "Taints and Tolerations"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -292,7 +207,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "23275954f58a029e",
+  "active": "e0da88c00e9990f9",
   "lastOpenFiles": [
     "DevOps/K8's/NodeAffinity.md",
     "DevOps/K8's/Taints and Tolerations.md",
