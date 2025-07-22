@@ -64,25 +64,7 @@ spec:
 - Protect GPU nodes from general-purpose pods.
 - Evict unwanted pods using `NoExecute`.
 
-##### Commands Summary
-###### Add a taint to a node
-```bash
-kubectl taint nodes <node-name> key=value:NoSchedule
-```
-###### Remove a taint from a node
-```bash
-kubectl taint nodes <node-name> key:NoSchedule-
-```
-###### View node taints
-```bash
-kubectl describe node <node-name>
-```
-###### Deploy a pod with toleration
-```bash
-kubectl apply -f pod-with-toleration.yaml
-```
-
-
+---
 ## 🧾 Commands
 
 ```bash
