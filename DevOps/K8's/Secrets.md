@@ -13,7 +13,7 @@ In **Kubernetes (k8s)**, a **Secret** is an object used to store sensitive data 
 
 ---
 
-### 🧾 What Are Kubernetes Secrets?
+##### What Are Kubernetes Secrets?
 
 A **Secret** is a Kubernetes object of type `Secret`, which stores data in base64-encoded format. It allows you to:
 
@@ -24,7 +24,7 @@ A **Secret** is a Kubernetes object of type `Secret`, which stores data in base6
 
 ---
 
-### 🔐 Types of Secrets
+##### Types of Secrets
 
 Kubernetes supports several types of secrets:
 
@@ -38,9 +38,9 @@ Kubernetes supports several types of secrets:
 
 ---
 
-### 🛠️ How to Create a Secret
+##### How to Create a Secret
 
-#### 1. **Using a YAML manifest**
+###### 1. **Using a YAML manifest**
 
 ```yaml
 apiVersion: v1
@@ -59,7 +59,7 @@ Apply it with:
 kubectl apply -f my-secret.yaml
 ```
 
-#### 2. **Using `kubectl`**
+##### 2. **Using `kubectl`**
 
 ```bash
 kubectl create secret generic my-secret \
