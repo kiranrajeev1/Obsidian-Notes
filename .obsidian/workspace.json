@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "6aa0034024338026",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "aee0861d1b932c6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "DevOps/Home.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -207,10 +207,11 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "aee0861d1b932c6b",
   "lastOpenFiles": [
-    "DevOps/Jenkins/CI_CD_Pipeline.md",
+    "DevOps/K8's/Namespace.md",
     "DevOps/Home.md",
+    "DevOps/Jenkins/CI_CD_Pipeline.md",
     "DevOps/K8's/Secrets.md",
     "DevOps/K8's/ResourceManagement.md",
     "DevOps/K8's/ResourceQuota.md",
@@ -222,7 +223,6 @@
     "Untitled.md",
     "DevOps/K8's/Untitled 1.md",
     "DevOps/K8's/Service.md",
-    "DevOps/K8's/Namespace.md",
     "DevOps/K8's/Cronjob.md",
     "DevOps/K8's/Deployment.md",
     "tasks/random.md",
