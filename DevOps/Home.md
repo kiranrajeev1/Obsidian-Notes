@@ -53,3 +53,12 @@
     
 
 ---
+> [!div-class] Core Concepts
+> - 📦 [[Pods]]
+> - 🗂️ [[Namespace]]
+> - 📌 [[RS_SS_Deployment|ReplicaSet / StatefulSet / Deployment]]
+> - 🧱 [[Deployment]]
+> - 👷 [[Jobs]]
+> - 🕰️ [[Cronjob]]
+> - 🧑‍🔧 [[Daemonsets]]
+> - 📡 [[Service]]
