@@ -26,9 +26,7 @@ kubectl label nodes worker-node-1 disktype=ssd
 ```
 
 ---
-
 ##### Example: Pod with Node Selector
-
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -45,58 +43,19 @@ spec:
 This pod will **only be scheduled** on nodes with the label `disktype=ssd`.
 
 ---
-
 ##### Use Cases
-
-- Run GPU workloads on labeled GPU nodes (`gpu=true`)
-    
+- Run GPU workloads on labeled GPU nodes (`gpu=true`)    
 - Separate staging vs. production pods
-    
 - Place workloads on high-memory or SSD-backed nodes
-    
 - Route workloads to specific availability zones or regions
-    
-
 ---
-
 ##### Limitations
-
-- **One-to-one matching only**: `nodeSelector` doesn’t support complex logic (like OR, NOT)
-    
+- **One-to-one matching only**: `nodeSelector` doesn’t support complex logic (like OR, NOT)    
 - Doesn’t support **multi-label conditions** unless all labels match exactly
-    
 - For more flexibility, use:
-    
     - **nodeAffinity** (preferred and required rules)
-        
     - **taints and tolerations** (for excluding workloads)
-        
-
 ---
-
-##### Commands
-
-###### List all nodes and their labels
-
-```bash
-kubectl get nodes --show-labels
-```
-
-###### Add a label to a node
-
-```bash
-kubectl label node <node-name> <key>=<value>
-```
-
-###### Remove a label from a node
-
-```bash
-kubectl label node <node-name> <key>-
-```
-
----
-
-Let me know if you’d like an example combining `nodeSelector` with `affinity` or `tolerations` for more advanced scheduling logic.
 
 ## 🧾 Commands
 
