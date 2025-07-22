@@ -59,7 +59,7 @@ Apply it with:
 kubectl apply -f my-secret.yaml
 ```
 
-##### 2. **Using `kubectl`**
+###### 2. **Using `kubectl`**
 
 ```bash
 kubectl create secret generic my-secret \
@@ -69,11 +69,11 @@ kubectl create secret generic my-secret \
 
 ---
 
-### 📦 Consuming a Secret
+##### Consuming a Secret
 
 You can use a secret in a pod in three main ways:
 
-#### 1. **As environment variables**
+###### 1. **As environment variables**
 
 ```yaml
 env:
@@ -84,7 +84,7 @@ env:
       key: username
 ```
 
-#### 2. **As volumes (files in the container)**
+###### 2. **As volumes (files in the container)**
 
 ```yaml
 volumes:
@@ -100,26 +100,22 @@ volumeMounts:
   readOnly: true
 ```
 
-#### 3. **As imagePullSecrets**
+###### 3. **As imagePullSecrets**
 
 Used to authenticate to private container registries.
 
 ---
 
-### 🔒 Security Considerations
+##### Security Considerations
 
 - Secrets are **base64-encoded**, not encrypted by default.
-    
 - Enable **encryption at rest** using KMS providers.
-    
 - Access control is crucial—**use RBAC** to limit who can access secrets.
-    
 - Avoid logging secrets or exposing them via `kubectl describe` carelessly.
-    
 
 ---
 
-### 🧪 Viewing a Secret
+##### Viewing a Secret
 
 To decode a secret:
 
