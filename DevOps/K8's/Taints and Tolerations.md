@@ -31,12 +31,8 @@ kubectl taint nodes <node-name> <key>=<value>:<effect>
 kubectl taint nodes node1 env=prod:NoSchedule
 ```
 
----
-
 ##### Toleration in Pod Spec
-
 To allow a pod to run on a tainted node, add a matching toleration in the pod manifest:
-
 ```yaml
 tolerations:
 - key: "env"
@@ -45,10 +41,7 @@ tolerations:
   effect: "NoSchedule"
 ```
 
----
-
 ##### Example: Full Pod with Toleration
-
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -65,50 +58,30 @@ spec:
     effect: "NoSchedule"
 ```
 
----
-
 ##### Common Use Cases
-
 - Run system or privileged workloads on dedicated nodes.
-    
 - Separate dev/staging and production workloads.
-    
 - Protect GPU nodes from general-purpose pods.
-    
 - Evict unwanted pods using `NoExecute`.
-    
-
----
 
 ##### Commands Summary
-
 ###### Add a taint to a node
-
 ```bash
 kubectl taint nodes <node-name> key=value:NoSchedule
 ```
-
 ###### Remove a taint from a node
-
 ```bash
 kubectl taint nodes <node-name> key:NoSchedule-
 ```
-
 ###### View node taints
-
 ```bash
 kubectl describe node <node-name>
 ```
-
 ###### Deploy a pod with toleration
-
 ```bash
 kubectl apply -f pod-with-toleration.yaml
 ```
 
----
-
-Let me know if you'd like examples of using **taints with node affinity** or **best practices** for isolating critical workloads.
 
 ## 🧾 Commands
 
