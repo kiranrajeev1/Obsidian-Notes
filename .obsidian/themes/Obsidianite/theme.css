@@ -1535,21 +1535,19 @@ pre.line-numbers > code {
 
 
 .markdown-preview-view .internal-link {
-  display: inline-block;
-  padding: 6px 10px;
-  margin: 4px 4px 4px 0;
-  background-color: var(--background-secondary);
-  border: 1px solid var(--text-accent);
-  border-radius: 6px;
-  font-weight: 500;
-  color: var(--text-accent);
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
-  transition: background 0.2s ease, box-shadow 0.2s ease;
+  background-color: var(--background-secondary-alt) !important;
+  border: 1px solid var(--text-accent) !important;
+  border-radius: 12px !important;
+  padding: 2px 8px !important;
+  color: var(--text-accent) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  transition: background 0.2s ease, color 0.2s ease !important;
 }
 
 .markdown-preview-view .internal-link:hover {
-  background-color: var(--text-accent);
-  color: var(--background-primary);
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+  background-color: var(--text-accent) !important;
+  color: var(--background-primary) !important;
+  border-color: var(--text-accent) !important;
 }
 
