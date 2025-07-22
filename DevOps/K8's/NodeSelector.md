@@ -58,37 +58,26 @@ This pod will **only be scheduled** on nodes with the label `disktype=ssd`.
 ##### Label Nodes (to Enable Node Selector Targeting)
 
 ###### Add a label to a node
-
 ```bash
 kubectl label node <node-name> <key>=<value>
 ```
-
 **Example:**
-
 ```bash
 kubectl label node worker-node-1 disktype=ssd
 ```
-
 ###### List all nodes and their labels
-
 ```bash
 kubectl get nodes --show-labels
 ```
-
 ###### Get labels of a specific node
-
 ```bash
 kubectl get node <node-name> --show-labels
 ```
-
 ###### Remove a label from a node
-
 ```bash
 kubectl label node <node-name> <key>-
 ```
-
 **Example:**
-
 ```bash
 kubectl label node worker-node-1 disktype-
 ```
