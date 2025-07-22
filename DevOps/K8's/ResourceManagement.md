@@ -16,28 +16,18 @@ Kubernetes **resource management** is the process of allocating, limiting, and o
 It helps ensure:
 
 - **Efficient resource utilization**
-    
 - **Fair sharing** across workloads
-    
 - **System stability** under load
-    
 - **Guaranteed QoS (Quality of Service)**
-    
 
 ---
-
 ##### Key Concepts
-
----
 
 ###### 1. **Requests**
 
-- The **minimum** amount of resource a container is guaranteed to get.
-    
+- The **minimum** amount of resource a container is guaranteed to get.    
 - Used by the scheduler to decide **where** to place the pod.
-    
 - If not set, Kubernetes assumes **0**, and the pod may be starved.
-    
 
 ```yaml
 resources:
@@ -45,8 +35,6 @@ resources:
     memory: "256Mi"
     cpu: "250m"
 ```
-
----
 
 ###### 2. **Limits**
 
