@@ -54,22 +54,5 @@
       ],
       "key": "6"
     }
-  ],
-  "omnisearch:show-modal": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "A"
-    }
-  ],
-  "omnisearch:show-modal-infile": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "A"
-    }
   ]
 }
