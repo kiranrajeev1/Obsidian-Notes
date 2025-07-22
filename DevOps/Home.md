@@ -1,11 +1,11 @@
 # 🧭 DevOps Dashboard
----
+
 ## ⚙️ CI/CD Tools
 
 #### 🧪 Jenkins
 
 - 🔁 [[CI_CD_Pipeline]]
----
+
 ## ☸️ Kubernetes (K8s)
 
 ### 📚 Core Concepts
