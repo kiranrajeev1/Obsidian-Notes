@@ -55,7 +55,85 @@ This pod will **only be scheduled** on nodes with the label `disktype=ssd`.
 
 ## 🧾 Commands
 
+##### Label Nodes (to Enable Node Selector Targeting)
+
+###### Add a label to a node
+
 ```bash
-# Example:
-kubectl get pods
+kubectl label node <node-name> <key>=<value>
 ```
+
+**Example:**
+
+```bash
+kubectl label node worker-node-1 disktype=ssd
+```
+
+###### List all nodes and their labels
+
+```bash
+kubectl get nodes --show-labels
+```
+
+###### Get labels of a specific node
+
+```bash
+kubectl get node <node-name> --show-labels
+```
+
+###### Remove a label from a node
+
+```bash
+kubectl label node <node-name> <key>-
+```
+
+**Example:**
+
+```bash
+kubectl label node worker-node-1 disktype-
+```
+
+---
+
+##### Create Pods Using Node Selector
+
+###### Apply a pod YAML with a nodeSelector
+
+```bash
+kubectl apply -f pod-with-node-selector.yaml
+```
+
+###### Example `pod-with-node-selector.yaml`:
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  nodeSelector:
+    disktype: ssd
+```
+
+---
+
+##### Verify Pod Scheduling
+
+###### Check where the pod is scheduled
+
+```bash
+kubectl get pod nginx-pod -o wide
+```
+
+###### Describe pod to see nodeSelector applied and scheduling details
+
+```bash
+kubectl describe pod nginx-pod
+```
+
+---
+
+Let me know if you'd like an example combining `nodeSelector` with `affinity` or how it differs from `taints` and `tolerations`.
