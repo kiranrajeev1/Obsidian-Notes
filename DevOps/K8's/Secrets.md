@@ -143,7 +143,140 @@ echo 'dXNlcm5hbWU=' | base64 --decode
 
 ## 🧾 Commands
 
+Sure! Here's the complete list of **Kubernetes Secret commands** in clean **Markdown format** using `#####` (Heading 5) and `######` (Heading 6):
+
+---
+
+##### Secret Creation Commands
+
+###### Create a Secret from literals
+
 ```bash
-# Example:
-kubectl get pods
+kubectl create secret generic my-secret \
+  --from-literal=username=myuser \
+  --from-literal=password=mypass
 ```
+
+###### Create from a file
+
+```bash
+kubectl create secret generic my-secret \
+  --from-file=./username.txt \
+  --from-file=./password.txt
+```
+
+###### Create from a directory (each file becomes a key)
+
+```bash
+kubectl create secret generic my-secret \
+  --from-file=./secrets/
+```
+
+###### Create a Docker registry secret
+
+```bash
+kubectl create secret docker-registry my-docker-secret \
+  --docker-username=myuser \
+  --docker-password=mypass \
+  --docker-email=myemail@example.com \
+  --docker-server=https://index.docker.io/v1/
+```
+
+---
+
+##### View and Manage Secrets
+
+###### List all secrets
+
+```bash
+kubectl get secrets
+```
+
+###### Get details of a specific secret (base64-encoded)
+
+```bash
+kubectl get secret my-secret -o yaml
+```
+
+###### Decode a secret value
+
+```bash
+kubectl get secret my-secret -o jsonpath="{.data.username}" | base64 --decode
+```
+
+###### Describe a secret (metadata only, values not shown)
+
+```bash
+kubectl describe secret my-secret
+```
+
+---
+
+##### Edit / Update / Delete Secrets
+
+###### Edit a secret (opens in default editor)
+
+```bash
+kubectl edit secret my-secret
+```
+
+###### Delete a secret
+
+```bash
+kubectl delete secret my-secret
+```
+
+---
+
+##### Use Secrets in Pods
+
+###### Use as environment variables in a pod
+
+```yaml
+env:
+- name: DB_USER
+  valueFrom:
+    secretKeyRef:
+      name: my-secret
+      key: username
+```
+
+###### Use as a volume in a pod
+
+```yaml
+volumes:
+- name: secret-vol
+  secret:
+    secretName: my-secret
+
+volumeMounts:
+- name: secret-vol
+  mountPath: "/etc/secret"
+```
+
+###### Use as imagePullSecret for private registries
+
+```yaml
+imagePullSecrets:
+- name: my-docker-secret
+```
+
+---
+
+##### Import from YAML
+
+###### Apply a Secret from a manifest file
+
+```bash
+kubectl apply -f my-secret.yaml
+```
+
+---
+
+##### (Optional) Encrypt Secrets at Rest
+
+> Secrets can be encrypted at rest by configuring the Kubernetes API server. This cannot be done via `kubectl`. Let me know if you want those steps.
+
+---
+
+Let me know if you'd like the same in a downloadable `.md` file or with example manifests.
