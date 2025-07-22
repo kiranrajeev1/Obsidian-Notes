@@ -14,7 +14,6 @@
 
 Node affinity is part of **pod scheduling**, helping the Kubernetes scheduler decide **where** to place pods.
 
----
 ##### Why Use Node Affinity?
 - More expressive than `nodeSelector`
 - Can define **required** or **preferred** rules
@@ -23,7 +22,7 @@ Node affinity is part of **pod scheduling**, helping the Kubernetes scheduler de
     - Hardware (e.g., GPU)
     - Environment (e.g., prod, dev)
     - Custom labels
----
+
 ##### Types of Node Affinity
 There are two main types of node affinity:
 
@@ -32,10 +31,7 @@ There are two main types of node affinity:
 | `requiredDuringSchedulingIgnoredDuringExecution`  | Yes       | **Hard constraint**; pod won't be scheduled unless rule matches  |
 | `preferredDuringSchedulingIgnoredDuringExecution` | No        | **Soft constraint**; scheduler tries to match, but not mandatory |
 
----
-
 ##### Example: Required Node Affinity (Hard Rule)
-
 ```yaml
 affinity:
   nodeAffinity:
@@ -47,7 +43,6 @@ affinity:
           values:
           - ssd
 ```
-
 This ensures the pod is **only scheduled** on nodes labeled `disktype=ssd`.
 
 ---
