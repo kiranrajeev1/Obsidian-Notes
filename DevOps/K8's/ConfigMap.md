@@ -1,4 +1,4 @@
-b# Kubernetes – ConfigMap
+# Kubernetes – ConfigMap
 
 🗓️ **Date:** 09-07-2025  
 🕒 **Time:** 16:09  
