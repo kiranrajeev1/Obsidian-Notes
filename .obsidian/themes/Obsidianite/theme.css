@@ -200,22 +200,7 @@ a.tag[href*='#想法'] {
   background: var(--background-secondary);
 }
 
-/* Make internal links cleaner and more elegant */
-.markdown-preview-view a.internal-link {
-  text-decoration: none; /* Remove underline */
-  border-bottom: 1px dashed var(--text-accent); /* Optional dashed underline */
-  color: var(--text-accent); /* Use theme accent color */
-  padding: 1px 2px;
-  border-radius: 4px;
-  transition: background 0.2s ease;
-}
 
-.markdown-preview-view a.internal-link:hover {
-  background-color: var(--background-modifier-hover); /* Subtle hover background */
-  text-decoration: none;
-  border-bottom: 1px solid var(--text-accent-hover); /* Optional stronger underline on hover */
-  cursor: pointer;
-}
 
 .titlebar {
   background-color: var(--background-primary-alt);
