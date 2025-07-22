@@ -117,17 +117,11 @@ kubectl get pod <pod-name> -o jsonpath="{.spec.containers[*].resources}"
 ##### **Why Use Resource Management**
 
 - Prevent noisy neighbors (pods consuming excessive resources)
-    
 - Ensure high-priority apps get required CPU/memory
-    
 - Optimize scheduling and bin packing
-    
 - Prevent cluster instability due to OOM or CPU starvation
-    
 
 ---
-
-Let me know if you’d like help creating a custom resource quota, limit range, or best practices for production workloads.
 
 ## 🧾 Commands
 
