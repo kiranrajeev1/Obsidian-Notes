@@ -95,7 +95,87 @@ This means:
 ---
 ## 🧾 Commands
 
+##### Create and Apply ResourceQuota
+
+###### Create a ResourceQuota from a YAML file
+
 ```bash
-# Example:
-kubectl get pods
+kubectl apply -f resource-quota.yaml
 ```
+
+###### Example ResourceQuota YAML
+
+```yaml
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: dev-quota
+  namespace: dev
+spec:
+  hard:
+    requests.cpu: "2"
+    requests.memory: "4Gi"
+    limits.cpu: "4"
+    limits.memory: "8Gi"
+    pods: "10"
+    configmaps: "5"
+    secrets: "5"
+```
+
+---
+
+##### View ResourceQuotas
+
+###### List all ResourceQuotas in a namespace
+
+```bash
+kubectl get resourcequota -n <namespace>
+```
+
+###### View a specific ResourceQuota
+
+```bash
+kubectl get resourcequota <quota-name> -n <namespace>
+```
+
+###### Get all ResourceQuotas across all namespaces
+
+```bash
+kubectl get resourcequota --all-namespaces
+```
+
+###### Describe a specific ResourceQuota (detailed usage and limits)
+
+```bash
+kubectl describe resourcequota <quota-name> -n <namespace>
+```
+
+---
+
+##### Edit and Delete ResourceQuotas
+
+###### Edit a ResourceQuota
+
+```bash
+kubectl edit resourcequota <quota-name> -n <namespace>
+```
+
+###### Delete a ResourceQuota
+
+```bash
+kubectl delete resourcequota <quota-name> -n <namespace>
+```
+
+---
+
+##### Check Quota Enforcement
+
+###### Try creating a pod that exceeds the quota (should be rejected)
+
+```bash
+kubectl apply -f pod-that-exceeds-quota.yaml
+```
+
+---
+
+Let me know if you want ready-to-use YAMLs for specific quota use cases (e.g., CPU-only limits, object count limits, etc.).
