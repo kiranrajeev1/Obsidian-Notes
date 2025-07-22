@@ -18,6 +18,9 @@
 - [[Service]]
 - [[DevOps/K8's/ConfigMap|ConfigMap]]
 - [[Secrets]]
-- 
+- [[PersistentVolume]]
+- [[ResourceManagement]]
+- [[ResourceQuota]]
+- [[]]
 
 ---
