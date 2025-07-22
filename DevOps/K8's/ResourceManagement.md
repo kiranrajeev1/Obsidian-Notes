@@ -51,29 +51,25 @@ resources:
 ###### 3.**CPU & Memory Units**
 
 - **CPU:** Expressed in millicores (`1000m = 1 core`)
-    
     - `500m` = 0.5 vCPU
-        
 - **Memory:** Expressed in bytes
-    
-    - `128974848`, `129M`, or `123Mi` (Mi = mebibyte)
-        
+    - `128974848`, `129M`, or `123Mi` (Mi = mebibyte)        
 
 ---
 
-##### 4. **Quality of Service (QoS) Classes**
+##### **Quality of Service (QoS) Classes**
 
 Kubernetes assigns one of three **QoS classes** to pods based on requests and limits:
 
-|QoS Class|Conditions|
-|---|---|
-|**Guaranteed**|Requests and limits are set **and equal** for **all containers**|
-|**Burstable**|Requests and limits are set but **not equal** or **not set for all**|
-|**BestEffort**|No requests or limits are set for **any container**|
+| QoS Class      | Conditions                                                           |
+| -------------- | -------------------------------------------------------------------- |
+| **Guaranteed** | Requests and limits are set **and equal** for **all containers**     |
+| **Burstable**  | Requests and limits are set but **not equal** or **not set for all** |
+| **BestEffort** | No requests or limits are set for **any container**                  |
 
 ---
 
-##### 5. **Example Configuration**
+##### . **Example Configuration**
 
 ```yaml
 apiVersion: v1
