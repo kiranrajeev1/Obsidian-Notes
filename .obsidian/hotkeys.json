@@ -62,5 +62,14 @@
       ],
       "key": "A"
     }
+  ],
+  "omnisearch:show-modal-infile": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "A"
+    }
   ]
 }
