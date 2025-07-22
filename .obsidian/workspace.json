@@ -209,6 +209,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "DevOps/Jenkins/CI_CD_Pipeline.md",
     "DevOps/Home.md",
     "DevOps/K8's/Secrets.md",
     "DevOps/K8's/ResourceManagement.md",
@@ -230,7 +231,6 @@
     "Templates/Jenkins Note Template.md.md",
     "Templates/Kubernetes Note Template.md.md",
     "Daemons.md",
-    "DevOps/Jenkins/CI_CD_Pipeline.md",
     "DevOps/Kubernetes.md",
     "DevOps/K8's/RS_SS_Deployment.md",
     "DevOps/Jenkins/{{date}}.md",

@@ -4,7 +4,6 @@
 > **🧪 Jenkins**  
 > - 🔁 [[CI_CD_Pipeline|CI/CD Pipeline]]
 
-
 > [!note] ☸️ Kubernetes (K8s) – Core Concepts  
 > - 📦 [[Pods]]  
 > - 🗂️ [[Namespace]]  
@@ -14,7 +13,6 @@
 > - 🕰️ [[Cronjob]]  
 > - 🧑‍🔧 [[Daemonsets]]  
 > - 📡 [[Service]]
-
 
 > [!tip] ⚙️ Kubernetes Configuration  
 > - 🧾 [[ConfigMap]]  
