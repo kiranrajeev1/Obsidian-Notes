@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5ebcec3aa3647a37",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "e0da88c00e9990f9",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -207,8 +207,9 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e0da88c00e9990f9",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "DevOps/Home.md",
     "DevOps/K8's/Secrets.md",
     "DevOps/K8's/ResourceManagement.md",
     "DevOps/K8's/ResourceQuota.md",
@@ -218,7 +219,6 @@
     "DevOps/K8's/PersistentVolume.md",
     "DevOps/K8's/ConfigMap.md",
     "Untitled.md",
-    "DevOps/Home.md",
     "DevOps/K8's/Untitled 1.md",
     "DevOps/K8's/Service.md",
     "DevOps/K8's/Namespace.md",

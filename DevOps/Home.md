@@ -1,11 +1,20 @@
-# 🧭 DevOps Dashboard
+Here’s an improved, **cleaner and more attractive version** of your **Obsidian DevOps Dashboard** index page. It uses clear hierarchy, emoji for quick scanning, section groupings, and better formatting for clarity—while remaining Obsidian-compatible (Markdown + internal links).
 
 ---
+
+# 🧭 DevOps Dashboard
+
+> Central index for CI/CD & Kubernetes notes
+
+---
+
 ## ⚙️ CI/CD Tools
 
 ### 🧪 Jenkins
 
 - 🔁 [[CI_CD_Pipeline]]
+    
+
 ---
 
 ## ☸️ Kubernetes (K8s)
@@ -53,23 +62,8 @@
     
 - 🚫 [[Taints and Tolerations]]
     
-[[CI_CD_Pipeline|CI/CD Pipeline]]
-[[DevOps/K8's/ConfigMap|🧾 ConfigMap]]
-🔐 [[Secrets|Secrets]]
-| Section         | Link                            |
-|----------------|----------------------------------|
-| CI/CD          | [[CI_CD_Pipeline|CI/CD Pipeline]] |
-| Config         | [[Secrets|🔐 Secrets]]            |
 
-[CI/CD Pipeline](CI_CD_Pipeline)
-[Secrets](Secrets)
 ---
-> ### ⚙️ CI/CD  
-> - [[CI_CD_Pipeline|🛠️ Pipeline]]
-
-> ### ☸️ Kubernetes  
-> - [[Pods|📦 Pods]]  
-> - [[ConfigMap|🧾 ConfigMap]]
 
 ### 📁 Notes Structure Tips
 
