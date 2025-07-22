@@ -9,7 +9,7 @@
 
 ## 📝 Notes
 
-### Kubernetes Resource Management
+##### Kubernetes Resource Management
 
 Kubernetes **resource management** is the process of allocating, limiting, and optimizing **compute resources** (CPU, memory, and sometimes GPU or ephemeral storage) for containers running in a cluster.
 
