@@ -1534,18 +1534,19 @@ pre.line-numbers > code {
 }
 
 
-/* Override internal link styling to remove underline & make cleaner */
-.internal-link {
+.markdown-preview-view .internal-link,
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
   text-decoration: none !important;
   background-image: none !important;
-  border-bottom: 1px dashed var(--text-accent);
-  padding: 1px 2px;
-  border-radius: 4px;
+  border-bottom: 1px dashed var(--text-accent) !important;
+  padding: 1px 2px !important;
+  border-radius: 4px !important;
   color: var(--text-accent) !important;
 }
 
-.internal-link:hover {
-  background-color: var(--background-modifier-hover);
-  border-bottom: 1px solid var(--text-accent);
+.markdown-preview-view .internal-link:hover,
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline:hover {
+  background-color: var(--background-modifier-hover) !important;
+  border-bottom: 1px solid var(--text-accent) !important;
   color: var(--text-accent-hover, var(--text-accent)) !important;
 }
