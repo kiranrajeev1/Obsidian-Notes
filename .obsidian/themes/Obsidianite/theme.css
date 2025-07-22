@@ -1532,3 +1532,20 @@ pre.line-numbers > code {
   margin-bottom: 1em;
   line-height: 1.6;
 }
+
+
+/* Override internal link styling to remove underline & make cleaner */
+.internal-link {
+  text-decoration: none !important;
+  background-image: none !important;
+  border-bottom: 1px dashed var(--text-accent);
+  padding: 1px 2px;
+  border-radius: 4px;
+  color: var(--text-accent) !important;
+}
+
+.internal-link:hover {
+  background-color: var(--background-modifier-hover);
+  border-bottom: 1px solid var(--text-accent);
+  color: var(--text-accent-hover, var(--text-accent)) !important;
+}
