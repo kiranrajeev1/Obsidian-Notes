@@ -65,20 +65,13 @@ This requires setting up custom metric adapters.
 
 ###### When to Use HPA?
 Use HPA when:
-
 - Your app load varies dynamically.
-    
 - You want automatic scaling without human intervention.
-    
 - You have predictable resource metrics.
-    
-
----
 
 Would you like an example using **memory** or **custom metrics** as well?
 
 ---
-
 ## 🧾 Commands
 
 ```bash
