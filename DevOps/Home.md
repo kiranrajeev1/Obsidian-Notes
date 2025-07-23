@@ -13,6 +13,7 @@
 > - 🕰️ [[Cronjob]]  
 > - 🧑‍🔧 [[Daemonsets]]  
 > - 📡 [[Service]]
+> - [[Autoscaling]]
 
 > [!tip] ⚙️ Kubernetes Configuration  
 > - 🧾 [[ConfigMap]]  
