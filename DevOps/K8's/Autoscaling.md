@@ -9,6 +9,8 @@
 
 ## 📝 Notes
 
+##### Autoscaling
+Kubernetes (K8s) **autoscaling** is the mechanism by which Kubernetes automatically adjusts the number of **pods** or **nodes** in your cluster based on demand. This helps ensure your application is responsive under load and cost-effective during low demand.
 ##### HPA (Horizontal Pod Autoscaler)
 Kubernetes **HPA (Horizontal Pod Autoscaler)** is a built-in controller that automatically scales the number of pods in a **Deployment**, **ReplicaSet**, or **StatefulSet** based on observed resource usage like CPU, memory, or custom metrics.
 
