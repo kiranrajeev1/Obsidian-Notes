@@ -12,23 +12,12 @@
 ##### HPA (Horizontal Pod Autoscaler)
 Kubernetes **HPA (Horizontal Pod Autoscaler)** is a built-in controller that automatically scales the number of pods in a **Deployment**, **ReplicaSet**, or **StatefulSet** based on observed resource usage like CPU, memory, or custom metrics.
 
----
-
-### 🔧 **How HPA Works**
-
+###### **How HPA Works**
 1. **Metrics Collection**: HPA uses the **Metrics Server** to collect resource usage data.
-    
 2. **Target Utilization**: You define a target, such as "average CPU usage should be 60%".
-    
 3. **Scaling Logic**: If actual usage exceeds the target, HPA adds pods; if it’s below, it removes pods.
-    
 4. **Periodicity**: HPA checks metrics every **15 seconds by default** and may scale every **30 seconds**.
-    
-
----
-
-### 📋 **Example: CPU-based HPA**
-
+###### **Example: CPU-based HPA**
 ```yaml
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
@@ -51,13 +40,8 @@ spec:
 ```
 
 This tells Kubernetes:
-
 - Keep pod count between **2 and 10**.
-    
 - Target **60% average CPU usage** across all pods.
-    
-
----
 
 ### 📌 **Key Concepts**
 
