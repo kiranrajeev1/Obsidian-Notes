@@ -80,59 +80,46 @@ Other strategies:
 ---
 ## 🧾 Commands
 
-**📘 Common Commands:**
-Here are essential **Kubernetes DaemonSet commands**, formatted for **Obsidian** with no extra spacing or line breaks:
-
----
-
 ##### DaemonSet Commands
 
 ###### List all DaemonSets
-
 ```bash
 kubectl get daemonset
 ```
 
 ###### Get DaemonSets in a specific namespace
-
 ```bash
 kubectl get daemonset -n <namespace>
 ```
 
 ###### Describe a specific DaemonSet
-
 ```bash
 kubectl describe daemonset <name>
 ```
 
 ###### Create a DaemonSet from a YAML file
-
 ```bash
 kubectl apply -f <file>.yaml
 ```
 
 ###### Delete a DaemonSet
-
 ```bash
 kubectl delete daemonset <name>
 ```
 
 ###### View DaemonSet rollout status
-
 ```bash
 kubectl rollout status daemonset <name>
 ```
 
 ###### Force restart DaemonSet pods
-
 ```bash
 kubectl rollout restart daemonset <name>
 ```
 
 ###### Get pods managed by a DaemonSet
-
 ```bash
 kubectl get pods -l <label-key>=<label-value>
 ```
 
-Let me know if you want to include RBAC examples or advanced usage like node affinity.
+---
