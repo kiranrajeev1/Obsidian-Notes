@@ -150,27 +150,22 @@ kubectl apply -f <priorityclass.yaml>
 ```
 
 ###### View all PriorityClasses
-
 ```bash
 kubectl get priorityclass
 ```
 
 ###### Describe a specific PriorityClass
-
 ```bash
 kubectl describe priorityclass <name>
 ```
 
 ###### Delete a PriorityClass
-
 ```bash
 kubectl delete priorityclass <name>
 ```
 
 ###### Example: Create PriorityClass using `kubectl` directly
-
 ```bash
 kubectl create priorityclass high-priority --value=1000000 --description="Critical workloads" --global-default=false
 ```
-
-Let me know if you want inline creation examples or want to test preemption in a local setup.
+---
