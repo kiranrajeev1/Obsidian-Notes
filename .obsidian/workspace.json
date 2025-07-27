@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/K8's/Daemonsets.md",
+                "file": "DevOps/K8's/Autoscaling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daemonsets"
+              "title": "Autoscaling"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/K8's/Daemonsets.md",
+                "file": "DevOps/K8's/Autoscaling.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Daemonsets"
+              "title": "Outline of Autoscaling"
             }
           }
         ],
@@ -209,6 +209,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "DevOps/K8's/Daemonsets.md",
     "DevOps/Home.md",
     "DevOps/AWS/Key Pair.md",
     "DevOps/AWS",
@@ -236,7 +237,6 @@
     "Templates/Kubernetes Note Template.md.md",
     "Daemons.md",
     "DevOps/Kubernetes.md",
-    "DevOps/K8's/RS_SS_Deployment.md",
     "DevOps/Jenkins",
     "DevOps/K8's",
     "DevOps",
