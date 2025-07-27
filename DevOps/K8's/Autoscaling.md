@@ -109,41 +109,15 @@ spec:
     updateMode: "Auto"
 ```
 
----
-
 ###### Limitations
-
 - VPA does not work well with Horizontal Pod Autoscaler (HPA) based on CPU/memory metrics.
-    
 - Pods must be restarted to apply new recommendations (except in `Initial` mode).
-    
 - Not ideal for highly dynamic workloads with bursty traffic.
-    
-
----
 
 ###### Best Practices
-
-- Use **VPA in `Off` mode** first to observe recommended values.
-    
+- Use **VPA in `Off` mode** first to observe recommended values. 
 - Combine **VPA and HPA** only when HPA uses external/custom metrics.
-    
 - Monitor for unnecessary restarts caused by aggressive update policies.
-    
-
----
-
-###### Installation (Example with GKE)
-
-```bash
-kubectl apply -f https://github.com/kubernetes/autoscaler/releases/latest/download/vertical-pod-autoscaler.yaml
-```
-
-_Note_: Installation method may vary depending on the Kubernetes distribution.
-
----
-
-Let me know if you want a VPA + HPA comparison, YAML templates, or plugin recommendations for Obsidian integration.
 ---
 ## 🧾 Commands
 
