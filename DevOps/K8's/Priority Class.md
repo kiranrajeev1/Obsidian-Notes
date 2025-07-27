@@ -40,7 +40,7 @@ Use cases:
 
 **Note:** Preemption is graceful and not instantaneous.
 
-## 🧾 4. PriorityClass YAML Fields
+##### 4. PriorityClass YAML Fields
 
 ```yaml
 apiVersion: scheduling.k8s.io/v1
@@ -58,23 +58,22 @@ description: <string> # Optional
   * If set to `true`, all Pods that do **not** specify `priorityClassName` will inherit this class.
   * Only **one** PriorityClass should have `globalDefault: true` at any time.
 
-## 🗂️ 5. Scope of PriorityClass
+##### 5. Scope of PriorityClass
 
 * `PriorityClass` is a **cluster-level** resource.
 * It is **not** namespace-scoped.
 * A PriorityClass can be referenced by Pods in **any namespace**.
 
-## 🔧 6. Built-in PriorityClasses
+##### 6. Built-in PriorityClasses
 
 | Name                      | Priority Value | Use Case                         |
 | ------------------------- | -------------- | -------------------------------- |
 | `system-node-critical`    | 2000000000     | Essential node-level components  |
 | `system-cluster-critical` | 1000000000     | Cluster-wide critical components |
 
-## 🛠️ 7. Creating PriorityClasses
+##### 7. Creating PriorityClasses
 
-### Example: High Priority
-
+###### Example: High Priority
 ```yaml
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
@@ -85,8 +84,7 @@ globalDefault: false
 description: "Critical application components."
 ```
 
-### Example: Low Priority (Default)
-
+###### Example: Low Priority (Default)
 ```yaml
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
@@ -97,16 +95,16 @@ globalDefault: true
 description: "Default for non-critical workloads."
 ```
 
-## 🚀 8. Using PriorityClass in Pods
+##### 8. Using PriorityClass in Pods
 
-### Example: Pod with High Priority
+###### Example: Pod with High Priority
 
 ```yaml
 spec:
   priorityClassName: high-priority
 ```
 
-##### Example: Deployment with Low Priority
+###### Example: Deployment with Low Priority
 
 ```yaml
 spec:
