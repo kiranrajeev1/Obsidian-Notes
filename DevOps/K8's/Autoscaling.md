@@ -72,6 +72,7 @@ Use HPA when:
 - You have predictable resource metrics.
 
 Would you like an example using **memory** or **custom metrics** as well?
+---
 
 ---
 ## 🧾 Commands
