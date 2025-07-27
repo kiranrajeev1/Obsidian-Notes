@@ -183,5 +183,3 @@ kubectl delete vpa <vpa-name>
 ```
 
 ---
-
-Let me know if you'd like example YAML files for HPA or VPA.
