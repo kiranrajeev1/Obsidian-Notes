@@ -121,7 +121,88 @@ spec:
 ---
 ## 🧾 Commands
 
+##### HPA Commands
+
+###### Create HPA
 ```bash
-# Example:
-kubectl get pods
+kubectl autoscale deployment <deployment-name> \
+  --cpu-percent=50 \
+  --min=1 \
+  --max=10
 ```
+
+> Example:
+
+```bash
+kubectl autoscale deployment nginx-deployment --cpu-percent=50 --min=2 --max=5
+```
+
+---
+###### View HPA status
+```bash
+kubectl get hpa
+```
+
+---
+
+###### Describe HPA for detailed metrics
+
+```bash
+kubectl describe hpa <hpa-name>
+```
+
+---
+
+###### Delete HPA
+
+```bash
+kubectl delete hpa <hpa-name>
+```
+
+---
+
+##### VPA Commands
+
+> ⚠️ Make sure the VPA components are installed in your cluster before using these.
+
+---
+
+###### Create VPA (from YAML)
+
+```bash
+kubectl apply -f <vpa-config>.yaml
+```
+
+> Example:
+
+```bash
+kubectl apply -f vpa.yaml
+```
+
+---
+
+###### View VPA recommendations
+
+```bash
+kubectl get vpa
+```
+
+---
+
+###### Describe VPA (shows resource recommendations)
+
+```bash
+kubectl describe vpa <vpa-name>
+```
+
+---
+
+###### Delete VPA
+
+```bash
+kubectl delete vpa <vpa-name>
+```
+
+---
+
+Let me know if you'd like example YAML files for HPA or VPA.
