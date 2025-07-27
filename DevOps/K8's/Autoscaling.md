@@ -72,8 +72,78 @@ Use HPA when:
 - You have predictable resource metrics.
 
 Would you like an example using **memory** or **custom metrics** as well?
+
+---
+##### Kubernetes Vertical Pod Autoscaler (VPA)
+
+The **Vertical Pod Autoscaler (VPA)** automatically adjusts the CPU and memory requests and limits for containers to help ensure optimal resource utilization and application stability.
+
+###### Purpose of VPA
+
+- Automatically sets optimal resource requests for containers.
+- Helps avoid over-provisioning and under-provisioning.
+- Useful for workloads with predictable resource usage over time.
+
+###### Key Components
+- `VPA Recommender`: Monitors historical resource usage and makes recommendations.
+- `VPA Updater`: Deletes and recreates pods with updated resource requests if needed.
+- `VPA Admission Controller`: Mutates new pod specs to apply recommended resources at creation time.
+
+###### Modes of Operation
+1. **Off**: VPA only makes recommendations, does not apply them.
+2. **Auto**: VPA automatically updates pods by evicting and recreating them with new requests.
+3. **Initial**: VPA sets recommended values only at pod creation time.
+
+###### VPA CRD (Custom Resource Definition)
+```yaml
+apiVersion: autoscaling.k8s.io/v1
+kind: VerticalPodAutoscaler
+metadata:
+  name: my-vpa
+spec:
+  targetRef:
+    apiVersion: "apps/v1"
+    kind: Deployment
+    name: my-app
+  updatePolicy:
+    updateMode: "Auto"
+```
+
 ---
 
+###### Limitations
+
+- VPA does not work well with Horizontal Pod Autoscaler (HPA) based on CPU/memory metrics.
+    
+- Pods must be restarted to apply new recommendations (except in `Initial` mode).
+    
+- Not ideal for highly dynamic workloads with bursty traffic.
+    
+
+---
+
+###### Best Practices
+
+- Use **VPA in `Off` mode** first to observe recommended values.
+    
+- Combine **VPA and HPA** only when HPA uses external/custom metrics.
+    
+- Monitor for unnecessary restarts caused by aggressive update policies.
+    
+
+---
+
+###### Installation (Example with GKE)
+
+```bash
+kubectl apply -f https://github.com/kubernetes/autoscaler/releases/latest/download/vertical-pod-autoscaler.yaml
+```
+
+_Note_: Installation method may vary depending on the Kubernetes distribution.
+
+---
+
+Let me know if you want a VPA + HPA comparison, YAML templates, or plugin recommendations for Obsidian integration.
 ---
 ## 🧾 Commands
 
