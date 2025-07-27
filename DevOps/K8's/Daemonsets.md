@@ -58,12 +58,8 @@ spec:
         disktype: ssd
 ```
 
----
-
 ###### Rolling Updates for DaemonSets
-
 DaemonSets support **rolling updates** via `updateStrategy`:
-
 ```yaml
 spec:
   updateStrategy:
@@ -71,35 +67,17 @@ spec:
 ```
 
 Other strategies:
-
 - `OnDelete`: Pods are only updated when manually deleted.
-    
-
----
-
-###### Commands for Managing DaemonSets
-
-```bash
-kubectl get daemonset
-kubectl describe daemonset <name>
-kubectl delete daemonset <name>
-kubectl rollout status daemonset <name>
-```
-
----
 
 ###### Differences Between DaemonSet and Deployment
 
-|Feature|DaemonSet|Deployment|
-|---|---|---|
-|Pod Count|One per node|User-defined replica count|
-|Scheduling|All or selected nodes|Scheduler-managed|
-|Use Case|Background system agents|App workloads and services|
+| Feature    | DaemonSet                | Deployment                 |
+| ---------- | ------------------------ | -------------------------- |
+| Pod Count  | One per node             | User-defined replica count |
+| Scheduling | All or selected nodes    | Scheduler-managed          |
+| Use Case   | Background system agents | App workloads and services |
 
 ---
-
-Let me know if you'd like a cheat sheet or visual architecture summary.
-
 ## 🧾 Commands
 
 **📘 Common Commands:**
