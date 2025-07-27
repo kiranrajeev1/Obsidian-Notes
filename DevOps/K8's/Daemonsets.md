@@ -10,70 +10,95 @@
 ## 📝 Notes
 
 ##### DaemonSet
+A **DaemonSet** ensures that a copy of a specific pod runs on **all (or some) nodes** in a Kubernetes cluster. It's commonly used for background system-level tasks.
 
-A **DaemonSet** ensures that **a copy of a Pod runs on every node** (or
-specific nodes) in the cluster
-###### Use Cases:
+###### Use Cases
+- Running cluster-wide agents: 
+    - log collectors (e.g., Fluentd, Filebeat)
+    - monitoring agents (e.g., Prometheus Node Exporter)
+- Running storage daemons (e.g., Ceph, GlusterFS)
+- Running networking tools (e.g., CNI plugins)
 
-- Running **node-level services**, such as:
-- Log collectors (e.g., Fluentd, Filebeat)
-- Monitoring agents (e.g., Prometheus Node Exporter)
-- Networking plugins (e.g., CNI plugins)
-- Security tools (e.g., antivirus, audit)
+###### Key Features
+- Runs **one pod per node**. 
+- Automatically creates pods when:
+    - a new node joins the cluster.
+- Deletes pods when:
+    - a node is removed from the cluster.
+- Can be scoped to specific node groups using labels and selectors.
 
-##### Basic YAML Example:
-
-```YAML
+###### DaemonSet YAML Example
+```yaml
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-  name: my-daemon
+  name: my-daemonset
 spec:
   selector:
     matchLabels:
-      name: my-daemon
+      name: my-daemon-pod
   template:
     metadata:
       labels:
-        name: my-daemon
+        name: my-daemon-pod
     spec:
       containers:
       - name: my-container
         image: busybox
-
+        command: ["sh", "-c", "while true; do echo Hello from DaemonSet; sleep 30; done"]
 ```
 
-###### Key Features:
-
-- **Runs on all nodes automatically** (including new ones).
-- Use **node selectors or taints/tolerations** to control where Pods
-  run.
-- No need to specify replicas -- it's managed per node.
-
-###### My code
-
-```YAML
-apiVersion: apps/v1
-kind: DaemonSet
-metadata:
-  name: nginx-daemonset
-  labels:
-    app: nginx
+###### Scheduling on Specific Nodes
+Use `nodeSelector`, `nodeAffinity`, or `tolerations` to control where the DaemonSet runs.
+```yaml
 spec:
-  selector:
-    matchLabels:
-      name: nginx
   template:
-    metadata:
-      labels:
-        name: nginx
     spec:
-      containers:
-      - name: nginx
-        image: nginx:1.25
-        ports:
-        - containerPort: 80
+      nodeSelector:
+        disktype: ssd
 ```
+
+---
+
+###### Rolling Updates for DaemonSets
+
+DaemonSets support **rolling updates** via `updateStrategy`:
+
+```yaml
+spec:
+  updateStrategy:
+    type: RollingUpdate
+```
+
+Other strategies:
+
+- `OnDelete`: Pods are only updated when manually deleted.
+    
+
+---
+
+###### Commands for Managing DaemonSets
+
+```bash
+kubectl get daemonset
+kubectl describe daemonset <name>
+kubectl delete daemonset <name>
+kubectl rollout status daemonset <name>
+```
+
+---
+
+###### Differences Between DaemonSet and Deployment
+
+|Feature|DaemonSet|Deployment|
+|---|---|---|
+|Pod Count|One per node|User-defined replica count|
+|Scheduling|All or selected nodes|Scheduler-managed|
+|Use Case|Background system agents|App workloads and services|
+
+---
+
+Let me know if you'd like a cheat sheet or visual architecture summary.
 
 ## 🧾 Commands
 
