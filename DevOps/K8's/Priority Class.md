@@ -9,7 +9,7 @@
 
 ## 📝 Notes
 
-## 📌 1. Introduction to PriorityClass
+##### 📌 1. Introduction to PriorityClass
 
 `PriorityClass` is a Kubernetes object that allows you to define the importance of Pods using an integer-based priority. Higher values mean higher priority, influencing scheduling and **preemption** (eviction of lower-priority Pods).
 
@@ -109,7 +109,7 @@ spec:
   priorityClassName: high-priority
 ```
 
-### Example: Deployment with Low Priority
+##### Example: Deployment with Low Priority
 
 ```yaml
 spec:
@@ -118,7 +118,7 @@ spec:
       priorityClassName: low-priority
 ```
 
-## 🔄 9. Preemption: Choosing Victims
+##### 9. Preemption: Choosing Victims
 
 * **Lowest priority** Pods are evicted first
 * Evict **largest consumers** next
@@ -127,7 +127,7 @@ spec:
 * **Pods with the same priority are not preempted**
 * **Pods created earlier are scheduled first** if all other conditions are the same
 
-## ✅ 10. Best Practices
+##### 10. Best Practices
 
 * Use `globalDefault: true` on low-priority classes
 * Leave gaps in `value` to add intermediate classes later
@@ -135,19 +135,13 @@ spec:
 * Simulate preemption in test environments
 * Avoid overusing high-priority classes — reserve them for truly critical workloads
 
-## ⚠️ 11. Limitations
+##### 11. Limitations
 
 * **No extra resources:** Priority doesn't create capacity
 * **Eviction delay:** Grace period may slow scheduling
 * **Complexity:** Adds overhead to scheduling logic
 * **Non-preemptable Pods:** Some daemon-level Pods can't be evicted
 * **Only one global default allowed** — others are ignored
-
----
-
-By understanding and applying `PriorityClass`, you can build more stable, fair, and intelligent Kubernetes scheduling policies for critical workloads.
-
-
 
 ---
 
