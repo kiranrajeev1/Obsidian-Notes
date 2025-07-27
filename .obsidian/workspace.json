@@ -22,13 +22,17 @@
             }
           },
           {
-            "id": "6429f91d6fa4cdab",
+            "id": "ef6f242b66697040",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "DevOps/K8's/Priority Class.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Priority Class"
             }
           }
         ],
@@ -154,12 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "DevOps/K8's/Priority Class.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Priority Class"
             }
           }
         ],
@@ -217,9 +222,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "6429f91d6fa4cdab",
+  "active": "ef6f242b66697040",
   "lastOpenFiles": [
     "DevOps/K8's/Daemonsets.md",
+    "DevOps/K8's/Priority Class.md",
     "DevOps/K8's/Autoscaling.md",
     "DevOps/Home.md",
     "DevOps/AWS/Key Pair.md",
@@ -246,7 +252,6 @@
     "Templates/Jenkins Note Template.md.md",
     "Templates/Kubernetes Note Template.md.md",
     "Daemons.md",
-    "DevOps/Kubernetes.md",
     "DevOps/Jenkins",
     "DevOps/K8's",
     "DevOps",
