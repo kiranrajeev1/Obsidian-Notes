@@ -6,7 +6,6 @@
 🏷️ **Tags:** #kubernetes #devops #PriorityClass  
 
 ---
-
 ## 📝 Notes
 
 ##### 1. Introduction to PriorityClass
