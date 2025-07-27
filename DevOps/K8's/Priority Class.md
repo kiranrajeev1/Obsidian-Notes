@@ -9,11 +9,11 @@
 
 ## 📝 Notes
 
-##### 📌 1. Introduction to PriorityClass
+##### 1. Introduction to PriorityClass
 
 `PriorityClass` is a Kubernetes object that allows you to define the importance of Pods using an integer-based priority. Higher values mean higher priority, influencing scheduling and **preemption** (eviction of lower-priority Pods).
 
-## ❓ 2. Why is PriorityClass Needed?
+##### 2. Why is PriorityClass Needed?
 
 Without `PriorityClass`, the scheduler treats all Pods equally. This can cause:
 
@@ -27,16 +27,13 @@ Use cases:
 * Business-critical apps
 * Low-priority batch jobs
 
-## ⚙️ 3. How It Works
+##### 3. How It Works
 
-### a) Scheduling Phase
-
+###### a) Scheduling Phase
 * Scheduler attempts to place Pods based on resource requests and constraints.
 
-### b) Preemption Phase
-
+###### b) Preemption Phase
 * When a high-priority Pod is `Pending`:
-
   1. Scheduler identifies nodes where it *could* run.
   2. Evicts lower-priority Pods to free up space.
   3. Pod is scheduled once resources are available.
