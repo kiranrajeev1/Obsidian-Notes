@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Jenkins/CI_CD_Pipeline.md",
+                "file": "DevOps/Jenkins/notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of CI_CD_Pipeline"
+              "title": "Outline of notes"
             }
           }
         ],
@@ -207,8 +207,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "1aedae8325c3b1c9",
   "lastOpenFiles": [
+    "DevOps/Jenkins/CI_CD_Pipeline.md",
+    "DevOps/Jenkins/notes.md",
     "DevOps/Home.md",
     "DevOps/K8's/RS_SS_Deployment.md",
     "DevOps/K8's/Priority Class.md",
@@ -219,7 +221,6 @@
     "DevOps/K8's/PersistentVolume.md",
     "DevOps/K8's/Pods.md",
     "DevOps/K8's/Namespace.md",
-    "DevOps/Jenkins/CI_CD_Pipeline.md",
     "DevOps/K8's/Secrets.md",
     "DevOps/K8's/ResourceManagement.md",
     "DevOps/K8's/ResourceQuota.md",
@@ -236,7 +237,6 @@
     "tasks/template.md",
     "tasks",
     "Templates/Jenkins Note Template.md.md",
-    "Templates/Kubernetes Note Template.md.md",
     "DevOps/Jenkins",
     "DevOps/K8's",
     "DevOps",
