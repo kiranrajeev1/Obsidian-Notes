@@ -108,9 +108,7 @@ If both are present, mutation happens before validation.
 - Use **failurePolicy: Ignore** during early testing.
 - Keep webhook services highly available.
 - Use **`sideEffects` field** to declare side-effect-free behavior for webhooks.
-
 - Namespace-selective webhooks using `namespaceSelector`.
-    
 
 ---
 
@@ -156,17 +154,10 @@ webhooks:
 ##### Summary
 
 - Admission controllers are critical for enforcing security, defaulting, and policy.
-    
 - Kubernetes has many built-in controllers; for advanced needs, use admission webhooks.
-    
 - They operate between authorization and storage, ensuring compliance and control.
-    
 - Familiarity with both built-in and webhook-based controllers is expected in interviews.
-    
 
----
-
-Let me know if you want a separate section comparing **OPA/Gatekeeper**, **Kyverno**, and **admission webhooks**, or if you'd like lab-style examples using `kind` or `minikube`.
 ---
 
 ## 🧾 Commands
