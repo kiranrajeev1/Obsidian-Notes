@@ -157,10 +157,7 @@ kubectl get pods -n ingress-nginx
 - Must be deployed with attention to networking setup and controller-specific config
 
 
-```mermaid
-flowchart TD
-  A-->B
-```
+
 
 
 ```mermaid
@@ -171,11 +168,6 @@ flowchart TD
     D --> E[Service sends to Pod]
     C -->|No| F[Return 404 Not Found]
     B --> G[Handles TLS/SSL if Configured]
-```
-
-```mermaid
-graph TD
-  A --> B
 ```
 
 
