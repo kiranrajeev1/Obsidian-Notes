@@ -156,6 +156,17 @@ kubectl get pods -n ingress-nginx
 - Can use TLS and annotations for advanced behavior
 - Must be deployed with attention to networking setup and controller-specific config
 
+```mermaid
+flowchart TD
+    A[Client (Browser / HTTP)] --> B[Ingress Controller (e.g., NGINX)]
+    B --> C{Ingress Rules Match?}
+    C -->|Match Found| D[Forward to Service]
+    D --> E[Service Routes to Pod]
+    C -->|No Match| F[Return 404 Not Found]
+    B --> G[Handles TLS/SSL if Configured]
+```
+
+
 ---
 
 ## 🧾 Commands
