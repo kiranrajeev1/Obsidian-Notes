@@ -153,17 +153,8 @@ kubectl get pods -n ingress-nginx
 - Ingress enables HTTP/HTTPS routing to internal services via a single entry point
 - Requires an Ingress Controller to function (e.g., NGINX, Traefik)
 - Supports domain-based and path-based routing
-    
 - Can use TLS and annotations for advanced behavior
-    
 - Must be deployed with attention to networking setup and controller-specific config
-    
-
----
-
-Let me know if you'd like example configs for **multiple services under one domain**, **cert-manager integration**, or **Ingress with authentication**.
-
-
 
 ---
 
