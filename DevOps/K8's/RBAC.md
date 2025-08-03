@@ -193,7 +193,197 @@ Store RBAC YAML files in Git repositories for versioning and reviews.
 ---
 ## 🧾 Commands
 
+Here’s a complete, categorized list of **Kubernetes RBAC-related commands**, designed for **study, practice, and interviews**. These commands cover **creation**, **inspection**, **validation**, **debugging**, and **deletion** of RBAC components.
+
+---
+
+##### 1. Creating RBAC Resources
+
+###### Create a Role
+
 ```bash
-# Example:
-kubectl get pods
+kubectl create role pod-reader \
+  --verb=get,list,watch \
+  --resource=pods \
+  --namespace=dev
 ```
+
+###### Create a ClusterRole
+
+```bash
+kubectl create clusterrole node-reader \
+  --verb=get,list,watch \
+  --resource=nodes
+```
+
+###### Create a RoleBinding
+
+```bash
+kubectl create rolebinding read-pods \
+  --role=pod-reader \
+  --user=alice \
+  --namespace=dev
+```
+
+###### Create a ClusterRoleBinding
+
+```bash
+kubectl create clusterrolebinding admin-binding \
+  --clusterrole=cluster-admin \
+  --user=admin@example.com
+```
+
+###### Create RoleBinding for a ServiceAccount
+
+```bash
+kubectl create rolebinding sa-pod-access \
+  --role=pod-reader \
+  --serviceaccount=dev:my-sa \
+  --namespace=dev
+```
+
+---
+
+##### 2. Viewing and Inspecting RBAC Resources
+
+###### List Roles and RoleBindings
+
+```bash
+kubectl get roles -n dev
+kubectl get rolebindings -n dev
+```
+
+###### List ClusterRoles and ClusterRoleBindings
+
+```bash
+kubectl get clusterroles
+kubectl get clusterrolebindings
+```
+
+###### Describe RBAC Resources
+
+```bash
+kubectl describe role pod-reader -n dev
+kubectl describe rolebinding read-pods -n dev
+kubectl describe clusterrole node-reader
+kubectl describe clusterrolebinding admin-binding
+```
+
+###### View All API Resources and Groups
+
+```bash
+kubectl api-resources
+kubectl api-versions
+```
+
+###### Explain RBAC Resource Structure
+
+```bash
+kubectl explain role
+kubectl explain role.rules
+kubectl explain clusterrole.rules.verbs
+```
+
+---
+
+##### 3. Validating Access
+
+###### Check What a User/SA Can Do
+
+```bash
+kubectl auth can-i list pods --as=alice --namespace=dev
+kubectl auth can-i create deployments --as=system:serviceaccount:dev:my-sa
+```
+
+###### List Everything a User/SA Can Do
+
+```bash
+kubectl auth can-i --list --as=system:serviceaccount:dev:my-sa
+```
+
+###### Check Using Current User Context
+
+```bash
+kubectl auth can-i delete services
+```
+
+---
+
+##### 4. Troubleshooting RBAC Issues
+
+###### Who Can Access a Resource (requires plugin)
+
+```bash
+kubectl who-can get pods
+```
+
+###### Inspect Bound Roles
+
+```bash
+kubectl get rolebinding -n dev -o wide
+kubectl get clusterrolebinding -o yaml | grep -B5 -A10 "subject"
+```
+
+###### Debug Pod API Access
+
+```bash
+kubectl exec -it my-pod -n dev -- curl -sSk https://kubernetes.default.svc/api --header "Authorization: Bearer $(cat /var/run/secrets/kubernetes.io/serviceaccount/token)"
+```
+
+---
+
+##### 5. Deleting RBAC Resources
+
+###### Delete Role and RoleBinding
+
+```bash
+kubectl delete role pod-reader -n dev
+kubectl delete rolebinding read-pods -n dev
+```
+
+###### Delete ClusterRole and ClusterRoleBinding
+
+```bash
+kubectl delete clusterrole node-reader
+kubectl delete clusterrolebinding admin-binding
+```
+
+---
+
+##### 6. Advanced & Useful Shortcuts
+
+###### Create from YAML
+
+```bash
+kubectl apply -f rbac.yaml
+kubectl delete -f rbac.yaml
+```
+
+###### Dry Run RBAC Resources
+
+```bash
+kubectl create role test-role \
+  --verb=get,list \
+  --resource=pods \
+  --dry-run=client -o yaml
+```
+
+---
+
+##### Bonus: Helpful Plugins and Tools
+
+###### rakkess – Access Matrix (plugin)
+
+```bash
+kubectl rakkess --as=system:serviceaccount:dev:my-sa
+```
+
+###### rbac-lookup – Reverse RBAC Lookup
+
+```bash
+rbac-lookup alice
+```
+
+---
+
+Let me know if you'd like this as an Obsidian markdown file or want a quiz-style review based on these commands.
