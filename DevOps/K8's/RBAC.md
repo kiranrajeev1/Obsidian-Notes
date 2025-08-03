@@ -193,10 +193,6 @@ Store RBAC YAML files in Git repositories for versioning and reviews.
 ---
 ## 🧾 Commands
 
-Here’s a complete, categorized list of **Kubernetes RBAC-related commands**, designed for **study, practice, and interviews**. These commands cover **creation**, **inspection**, **validation**, **debugging**, and **deletion** of RBAC components.
-
----
-
 ##### 1. Creating RBAC Resources
 
 ###### Create a Role
@@ -386,4 +382,3 @@ rbac-lookup alice
 
 ---
 
-Let me know if you'd like this as an Obsidian markdown file or want a quiz-style review based on these commands.
