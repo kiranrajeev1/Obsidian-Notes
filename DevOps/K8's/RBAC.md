@@ -190,6 +190,18 @@ Store RBAC YAML files in Git repositories for versioning and reviews.
 | `rbac-lookup`        | Find who has a specific permission |
 | `rakkess`            | Displays user access matrix        |
 
+##### workflow
+```mermaid
+flowchart TD
+    A[Client Request to API Server] --> B[Authentication]
+    B -->|Success| C[Authorization : RBAC/ABAC/Webhook]
+    B -->|Fail| Z[401 Unauthorized]
+    C -->|Allowed| D[Admission Controllers]
+    C -->|Denied| Y[403 Forbidden]
+    D -->|Validated/Mutated| E[Persist to etcd]
+    D -->|Rejected| X[Rejected by Admission Controller]
+```
+
 ---
 ## 🧾 Commands
 
