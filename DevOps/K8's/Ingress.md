@@ -165,13 +165,14 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Client (Browser / HTTP)] --> B[Ingress Controller (e.g., NGINX)]
+    A[Client: Browser or HTTP] --> B[Ingress Controller (e.g. NGINX)]
     B --> C{Ingress Rules Match?}
-    C -->|Match Found| D[Forward to Service]
-    D --> E[Service Routes to Pod]
-    C -->|No Match| F[Return 404 Not Found]
+    C -->|Yes| D[Forward to Service]
+    D --> E[Service sends to Pod]
+    C -->|No| F[Return 404 Not Found]
     B --> G[Handles TLS/SSL if Configured]
 ```
+
 
 
 
