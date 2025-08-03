@@ -25,7 +25,6 @@ They are **plug-ins** that act as **gatekeepers** for your Kubernetes cluster, e
     - Validating Admission Controllers
     - Mutating Admission Controllers
 4. **Persistence in etcd**
-    
 
 Admission Controllers operate **after** the request is authenticated and authorized but **before** the object is stored.
 
@@ -34,18 +33,12 @@ Admission Controllers operate **after** the request is authenticated and authori
 ##### Types of Admission Controllers
 
 ###### Mutating Admission Controllers
-
 - Can **modify** incoming requests (e.g., inject labels, add default values).
-    
 - Example: `MutatingAdmissionWebhook`, `DefaultStorageClass`, `LimitRanger`
-    
 
 ###### Validating Admission Controllers
-
 - Can **accept or reject** requests based on cluster policies.
-    
 - Example: `ValidatingAdmissionWebhook`, `ResourceQuota`, `PodSecurity`
-    
 
 ---
 
@@ -67,33 +60,20 @@ Admission Controllers operate **after** the request is authenticated and authori
 ##### Admission Webhooks
 
 Admission controllers that are **custom and dynamic** are implemented as **webhooks**.
-
 ###### Types
-
 - `MutatingAdmissionWebhook`: Can **modify** the object
-    
 - `ValidatingAdmissionWebhook`: Can only **accept/reject**
-    
 
 ###### Use Cases
-
 - Enforce naming conventions
-    
 - Deny use of `latest` image tag
-    
 - Inject sidecar containers
-    
 - Require specific annotations or labels
-    
 
 ###### Registration
-
 Webhooks are registered using these Kubernetes resources:
-
 - `MutatingWebhookConfiguration`
-    
 - `ValidatingWebhookConfiguration`
-    
 
 ---
 
@@ -102,7 +82,6 @@ Webhooks are registered using these Kubernetes resources:
 Admission controllers are **enabled via the API server** (`kube-apiserver`) using the `--enable-admission-plugins` flag.
 
 Example:
-
 ```bash
 kube-apiserver \
   --enable-admission-plugins=NamespaceLifecycle,LimitRanger,PodSecurity \
@@ -115,10 +94,8 @@ Note: Many are enabled by default on managed clusters (e.g., GKE, EKS, AKS)
 
 ##### Order of Execution
 
-1. **Mutating Admission Controllers**
-    
+1. **Mutating Admission Controllers**    
 2. **Validating Admission Controllers**
-    
 
 If both are present, mutation happens before validation.
 
@@ -126,16 +103,12 @@ If both are present, mutation happens before validation.
 
 ##### Best Practices
 
-- Use admission webhooks for **custom policy enforcement**.
-    
+- Use admission webhooks for **custom policy enforcement**.    
 - Validate webhook availability; misconfigured webhooks can cause **cluster-wide API failures**.
-    
 - Use **failurePolicy: Ignore** during early testing.
-    
 - Keep webhook services highly available.
-    
 - Use **`sideEffects` field** to declare side-effect-free behavior for webhooks.
-    
+
 - Namespace-selective webhooks using `namespaceSelector`.
     
 
