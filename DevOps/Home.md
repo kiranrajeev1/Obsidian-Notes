@@ -12,7 +12,7 @@
 > - 👷 [[Jobs]]  
 > - 🕰️ [[Cronjob]]  
 > - 🧑‍🔧 [[Daemonsets]]  
-> - 📡 [[Service]]
+> - 📡 [[Service]]  
 > - ⚖️ [[Autoscaling]]
 
 > [!tip] ⚙️ Kubernetes Configuration  
@@ -28,3 +28,15 @@
 > - 📍 [[NodeSelector]]  
 > - 🎯 [[NodeAffinity]]  
 > - 🚫 [[Taints and Tolerations]]
+
+> [!example] 🔐 Access Management  
+> - 🛂 [[RBAC]]  
+> - 🚪 [[Admission Controller]]  
+> - 🌐 [[Ingress]]  
+> - 🔑 [[Priority Class]]
+
+> [!question] ⚙️ Utility & Quick Notes  
+> - 🧾 [[Quick_Notes]]  
+> - 📜 [[Namespace]]  
+> - 💡 [[Jobs]]  
+> - 🧩 [[Templates]]
