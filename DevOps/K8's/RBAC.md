@@ -61,9 +61,7 @@ rules:
 ##### 2. RoleBinding and ClusterRoleBinding
 
 ###### RoleBinding
-
 - Binds Role or ClusterRole to a user, group, or service account within a specific namespace
-    
 
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -84,7 +82,6 @@ roleRef:
 ###### ClusterRoleBinding
 
 - Binds a ClusterRole to subjects across the entire cluster
-    
 
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -120,22 +117,18 @@ roleRef:
 ###### Common Verbs
 
 - `get`, `list`, `watch`: Read operations
-    
 - `create`, `update`, `patch`, `delete`: Write operations
-    
 - `use`: Common with PodSecurityPolicies and Secrets
-    
 - `bind`, `escalate`: Advanced RBAC operations
-    
 
 ###### Common Resources
 
-|API Group|Resources|
-|---|---|
-|Core (`""`)|`pods`, `services`, `configmaps`|
-|`apps`|`deployments`, `statefulsets`|
-|`rbac.authorization.k8s.io`|`roles`, `rolebindings`|
-|`batch`|`jobs`, `cronjobs`|
+| API Group                   | Resources                        |
+| --------------------------- | -------------------------------- |
+| Core (`""`)                 | `pods`, `services`, `configmaps` |
+| `apps`                      | `deployments`, `statefulsets`    |
+| `rbac.authorization.k8s.io` | `roles`, `rolebindings`          |
+| `batch`                     | `jobs`, `cronjobs`               |
 
 ---
 
@@ -158,56 +151,46 @@ kubectl auth can-i --list --as=system:serviceaccount:dev:my-sa
 ##### 6. Best Practices
 
 ###### Principle of Least Privilege
-
 Grant the minimum set of permissions required.
 
 ###### Use Namespaces
-
 Isolate resources and access within namespaces using Role and RoleBinding.
 
 ###### Use Groups
-
 Grant roles to groups (e.g., `devs`, `ops`) for scalable access control.
 
 ###### Reuse ClusterRoles
-
 Define common permissions as ClusterRoles and bind them as needed.
 
 ###### Audit RBAC
-
 Use external tools to detect over-permissioned accounts.
 
 ###### Version Control
-
 Store RBAC YAML files in Git repositories for versioning and reviews.
 
 ---
 
 ##### 7. Common Pitfalls
 
-|Problem|Solution|
-|---|---|
-|Incorrect namespace in RoleBinding|Match RoleBinding and Role in the same namespace|
-|Typos in verbs or resources|Use `kubectl api-resources` and `kubectl explain`|
-|Using ClusterRoleBinding unnecessarily|Use RoleBinding for scoped permissions|
-|Escalated access via shared ClusterRole|Review all bindings to sensitive ClusterRoles|
+| Problem                                 | Solution                                          |
+| --------------------------------------- | ------------------------------------------------- |
+| Incorrect namespace in RoleBinding      | Match RoleBinding and Role in the same namespace  |
+| Typos in verbs or resources             | Use `kubectl api-resources` and `kubectl explain` |
+| Using ClusterRoleBinding unnecessarily  | Use RoleBinding for scoped permissions            |
+| Escalated access via shared ClusterRole | Review all bindings to sensitive ClusterRoles     |
 
 ---
 
 ##### 8. Tools
 
-|Tool|Purpose|
-|---|---|
-|`kubectl auth can-i`|Test permissions for a subject|
-|`kubeaudit`|Audits security and RBAC settings|
-|`rbac-lookup`|Find who has a specific permission|
-|`rakkess`|Displays user access matrix|
+| Tool                 | Purpose                            |
+| -------------------- | ---------------------------------- |
+| `kubectl auth can-i` | Test permissions for a subject     |
+| `kubeaudit`          | Audits security and RBAC settings  |
+| `rbac-lookup`        | Find who has a specific permission |
+| `rakkess`            | Displays user access matrix        |
 
 ---
-
-Let me know if you want this exported as a `.md` file or need additional examples (like multi-tenant RBAC or service account automation).
----
-
 ## 🧾 Commands
 
 ```bash
