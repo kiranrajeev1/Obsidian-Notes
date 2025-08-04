@@ -36,7 +36,7 @@
 > - 🔑 [[Priority Class]]
 
 > [!question] ⚙️ Utility & Quick Notes  
-> - 🧾 [[Quick_Notes]]  
+> - 🧾 [[Resources]]  
 > - 📜 [[Namespace]]  
 > - 💡 [[Jobs]]  
 > - 🧩 [[Templates]]

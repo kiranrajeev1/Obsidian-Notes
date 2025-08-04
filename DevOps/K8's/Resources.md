@@ -3,7 +3,7 @@
 🗓️ **Date:** 2025-07-01  
 🕒 **Time:** 23:41  
 
-🏷️ **Tags:** #kubernetes #devops # 
+🏷️ **Tags:** #kubernetes #devops #Resources 
 
 ---
 
