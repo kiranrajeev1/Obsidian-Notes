@@ -1,9 +1,9 @@
-# Kubernetes – Quick_Notes
+# Kubernetes – Resources
 
 🗓️ **Date:** 2025-07-01  
 🕒 **Time:** 23:41  
 
-🏷️ **Tags:** #kubernetes #devops #Quick_Notes  
+🏷️ **Tags:** #kubernetes #devops # 
 
 ---
 
