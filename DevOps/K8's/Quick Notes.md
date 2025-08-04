@@ -9,7 +9,7 @@
 ## 🚀 Topics to Study Later
 
 - [ ] Sidecar / init container 
-- [ ] 
+- [ ] openshift⏫ ⏫ 🏁 
 - [ ] 
 - [ ] 
 - [ ] 
